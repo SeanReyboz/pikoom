@@ -4,7 +4,7 @@ Repo contenant tous les projets de dev de l'agence Pikoom.
 # Site Web de l'Agence.
 
 Site web vitrine permettant de présenter et mettre en avant l'agence et ses
-membres, ainsi les projets réalisés/en cours de réalisation.
+membres, ainsi que les projets réalisés/en cours de réalisation.
 
 ## Contenu Attendu
 
