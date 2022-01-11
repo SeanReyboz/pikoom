@@ -1,6 +1,8 @@
 /* Main Colors */
-$color-base: #fff;
-$color-graybase: #000;
+
+$color-base: #fdfbfa; // Blanc principal
+$color-graybase: #2f4858;  // Noir-bleuté
+$color-accent: #F97C60;  // Orangé
 
 $color-primary: #a59dff;
 $color-secondary: #F8762C;
@@ -12,13 +14,13 @@ $color-warning: #FF9F4D;
 $color-danger: $color-error;
 
 $color-bg: $color-base;
-$color-text: #000;
+$color-text: $color-graybase;
 $color-link: inherit;
 $color-link-hover: inherit;
 
 /* Fonts */
-$font-family: "Roboto", sans-serif;
-$font-family-secondary: sans-serif;
+$font-family: "Manrope", sans-serif;
+$font-family-secondary: "Epilogue", sans-serif;
 $font-size: 14px;
 $font-weight: normal;
 $letter-spacing: normal;
