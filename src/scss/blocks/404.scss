@@ -1,0 +1,67 @@
+/*  Error 404: Not found  */
+#err-404 {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // header en absolute pour éviter l'overflow du main
+  header {
+    position: absolute;
+    display: block;
+    inset: 0;
+    pointer-events: none;
+
+    // ne pas afficher la navigation
+    ul {
+      // display: none;
+    }
+
+    a {
+      pointer-events: all;
+    }
+  }
+
+  .error-container {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 100px;
+
+    // Gros message d'erreur
+    h1 {
+      font-family: $font-family-secondary;
+      font-weight: 600;
+      font-size: 72px;
+      letter-spacing: -1px;
+      line-height: 1.1;
+      color: $color-graybase;
+
+      &::before,
+      &::after {
+        --offset: 2rem;
+
+        display: inline-block;
+        font-family: $font-family;
+        font-weight: 400;
+        font-size: 1.5rem;
+        letter-spacing: 0.4px;
+      }
+
+      &::before {
+        content: "Erreur 404";
+        margin-right: var(--offset);
+      }
+
+      &::after {
+        content: "(une fois de plus)";
+        margin-left: var(--offset);
+      }
+    }
+  }
+}
+
+// vim:tw=80:ts=2:noet:ft=scss:norl
