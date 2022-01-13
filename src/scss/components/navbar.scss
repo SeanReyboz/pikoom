@@ -13,14 +13,17 @@
 
   // liste liens de navigation
   ul {
-    max-width: 400px;
-    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     li {
       list-style: none;
+
+      // Espacement entre les liens
+      &:not(:last-of-type) {
+        padding-right: 64px;
+      }
 
       a {
         text-decoration: none;
