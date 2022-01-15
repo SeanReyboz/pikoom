@@ -37,5 +37,33 @@ membres, ainsi que les projets réalisés/en cours de réalisation.
 
 - Un accès aux réalisations.
 
+## Structure du projet
+
+```shell
+
+# dossier de travail: pikoom/src
+
+.                   # Fichiers markup (index, 404, equipe, realisations, etc.)
+├── js              # Tous les fichiers js du projet
+├── scss            # Fichiers de style
+│  ├── blocks       # Style de blocks (hero, slider, gallery, etc.)
+│  └── components   # Style de composants (header, footer, navbar, button, etc.)
+└── static          
+   └── assets       # Style compilé, images, icônes et médias en tout genre (pdf, vidéos, etc.)
+      ├── css
+      ├── icons
+      └── medias
+
+```
+
+### Commande `sass`
+
+En se trouvant dans le dossier `src` du repo, exécuter:
+
+```shell
+sass -w scss/main.scss static/assets/css/main.css
+```
+
+
 
 <!-- ts=4 -->
