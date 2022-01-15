@@ -14,7 +14,6 @@
     <link href="static/assets/css/main.css" rel="stylesheet" />
   </head>
   <body>
-    <!-- TODO: mettre de header en position absolute quoi qu'il arrive -->
     <header>
       <div class="main-wrapper">
         <!-- Navigation  -->
@@ -40,21 +39,74 @@
         </nav>
       </div>
     </header>
+    <!-- Contenu principal -->
     <main>
       <div class="main-wrapper">
+        <!-- Section de présentation  -->
         <section class="hero-sec">
           <h1 class="headline">
-            <span>Nous</span>
-            <span>sommes</span>
+            <span data-main-content="Nous">Nous</span>
+            <span data-main-content="sommes">sommes</span>
             <!-- TODO: changement de texte -->
-            <span data-before="optimistes" data-after="créatifs">Pikoom</span>
+            <span
+              data-main-content="Pikoom"
+              data-before="optimistes"
+              data-after="créatifs"
+            >
+              Pikoom
+            </span>
           </h1>
           <p class="description">
             <span>
               Une agence de communication étudiante optimiste et créative basée
               à Chambéry.
-						</span>
+            </span>
           </p>
+        </section>
+        <!-- Section "à propos de l'agence" / valeurs -->
+        <section class="values-sec">
+          <header>
+            <h2>
+              <span class="pre-title">Une agence, plusieurs valeurs...</span>
+              <span class="title">Un potentiel infini</span>
+            </h2>
+          </header>
+          <p class="about-pikoom">
+            Créée lors de la rentrée 2021, l’agence étudiante pikoom ... Lorem
+            ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+            libero id elit fusce metus sit montes, urna amet. Dignissim quis
+            semper leo in.
+          </p>
+          <!-- TODO: Ajouter le style pour chaque valeur & le layout quinconce -->
+          <div class="values-container">
+            <article>
+              <h3>Optimisme</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Pellentesque libero id elit fusce metus sit montes, urna amet.
+                Dignissim quis semper leo in. Enim tempus et, blandit
+                pellentesque proin auctor eget.
+              </p>
+            </article>
+            <article>
+              <h3>Ouverture d'esprit</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Pellentesque libero id elit fusce metus sit montes, urna amet.
+                Dignissim quis semper leo in. Enim tempus et, blandit
+                pellentesque proin auctor eget.
+              </p>
+            </article>
+            <article>
+              <h3>Honnêteté</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Pellentesque libero id elit fusce metus sit montes, urna amet.
+                Dignissim quis semper leo in. Enim tempus et, blandit
+                pellentesque proin auctor eget.
+              </p>
+            </article>
+          </div>
         </section>
       </div>
     </main>
