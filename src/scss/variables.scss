@@ -1,16 +1,22 @@
 /* Main Colors */
 
 $color-base: #fdfbfa; // Blanc principal
-$color-graybase: #2f4858;  // Noir-bleuté
-$color-accent: #F97C60;  // Orangé
+$color-graybase: #2f4858; // Noir-bleuté
+$color-accent: #f97c60; // Orangé
+
+$linear-gradient-1: linear-gradient(
+  269.7deg,
+  $color-accent 15.86%,
+  $color-graybase 63.99%
+);
 
 $color-primary: #a59dff;
-$color-secondary: #F8762C;
+$color-secondary: #f8762c;
 
-$color-error: #EB4242;
-$color-info: #01D7FD;
-$color-success: #51C67D;
-$color-warning: #FF9F4D;
+$color-error: #eb4242;
+$color-info: #01d7fd;
+$color-success: #51c67d;
+$color-warning: #ff9f4d;
 $color-danger: $color-error;
 
 $color-bg: $color-base;
@@ -26,6 +32,20 @@ $font-weight: normal;
 $letter-spacing: normal;
 $line-height: normal;
 
+/* Text */
+
+//  font-style font-variant font-weight font-size/line-height font-family;
+$title-ultra-large: normal normal 600 144px/85% $font-family-secondary;
+$title-extra-large: normal normal 600 92px/90% $font-family-secondary;
+$title-large: normal normal 600 64px/100% $font-family-secondary;
+$title-medium: normal normal 600 48px/100% $font-family-secondary;
+$title-regular: normal normal 500 32px/105% $font-family-secondary;
+
+$body-large: normal normal 400 24px/130% $font-family;
+$body-regular: normal normal 400 20px/150% $font-family;
+$body-small: normal normal 400 16px/150% $font-family;
+
+
 /* Screen sizes */
 $screen-xs: 375px;
 $screen-sm: 768px;
@@ -35,16 +55,16 @@ $screen-ml: 1400px;
 $screen-xl: 1600px;
 $screen-ul: 1900px;
 
-$screen-xs-min:$screen-xs;
-$screen-xs-max:($screen-sm - 1);
-$screen-sm-min:$screen-sm;
-$screen-sm-max:($screen-md - 1);
-$screen-md-min:$screen-md;
-$screen-md-max:($screen-lg - 1);
-$screen-lg-min:$screen-lg;
-$screen-lg-max:($screen-ml - 1);
-$screen-ml-min:$screen-ml;
-$screen-ml-max:($screen-xl - 1);
-$screen-xl-min:$screen-xl;
-$screen-xl-max:($screen-ul - 1);
-$screen-ul-min:$screen-ul;
+$screen-xs-min: $screen-xs;
+$screen-xs-max: ($screen-sm - 1);
+$screen-sm-min: $screen-sm;
+$screen-sm-max: ($screen-md - 1);
+$screen-md-min: $screen-md;
+$screen-md-max: ($screen-lg - 1);
+$screen-lg-min: $screen-lg;
+$screen-lg-max: ($screen-ml - 1);
+$screen-ml-min: $screen-ml;
+$screen-ml-max: ($screen-xl - 1);
+$screen-xl-min: $screen-xl;
+$screen-xl-max: ($screen-ul - 1);
+$screen-ul-min: $screen-ul;
