@@ -1,0 +1,23 @@
+/*  Section header components  */
+
+// TODO: utiliser un gradient linaire aléatoire
+
+section header {
+  .pre-title {
+    display: block;
+    font: $body-large;
+    letter-spacing: -0.2px;
+    padding-bottom: 12px;
+  }
+
+  .title {
+    display: inline-block;
+    padding-bottom: 72px;
+
+    font: $title-large;
+    color: transparent;
+    background: $linear-gradient-1;
+    background-clip: text;
+  }
+}
+// vim ts=2

@@ -5,14 +5,14 @@
   display: flex;
   align-items: center;
 
+  // Gros titre (Nous sommes pikoom)
   .headline {
     flex: 1.5;
     width: 100%;
-    height: 500px;
+    min-height: 500px;
     position: relative;
-    font-size: 144px;
+    font: $title-ultra-large;
     letter-spacing: -2px;
-    font-family: $font-family-secondary;
 
     display: flex;
     flex-direction: column;
@@ -25,8 +25,16 @@
         padding-left: 50%;
       }
       &:nth-of-type(2) {
-        -webkit-text-stroke: 3px $color-graybase;
-        -webkit-text-fill-color: $color-base;
+        // -webkit-text-stroke: 3px currentColor;
+        // -webkit-text-fill-color: $color-base;
+
+        color: $color-base;
+        --off: 1px;
+
+        text-shadow: var(--off) var(--off) 0px $color-graybase,
+          calc(var(--off) * -1) calc(var(--off) * -1) 0px $color-graybase,
+          var(--off) calc(var(--off) * -1) 0px $color-graybase,
+          calc(var(--off) * -1) var(--off) 0px $color-graybase;
       }
       &:nth-of-type(3) {
         padding-left: 50%;
@@ -35,10 +43,10 @@
     }
   }
 
+  // Description (une agence ...)
   .description {
     flex: 1.15;
-    font-size: 20px;
-    line-height: 1.5;
+    font: $body-regular;
 
     span {
       display: block;
