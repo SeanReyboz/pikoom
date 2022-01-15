@@ -13,6 +13,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
+  position: relative;
 
   background: $color-bg;
   color: $color-text;
@@ -28,6 +29,13 @@ body {
   .no-scroll &,
   .smooth & {
     overflow: hidden !important;
+  }
+
+  header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
   }
 }
 

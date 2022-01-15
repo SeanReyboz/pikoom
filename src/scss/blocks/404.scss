@@ -1,6 +1,5 @@
 /*  Error 404: Not found  */
 #err-404 {
-  position: relative;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -8,18 +7,9 @@
 
   // header en absolute pour éviter l'overflow du main
   header {
-    position: absolute;
-    display: block;
-    inset: 0;
-    pointer-events: none;
-
     // ne pas afficher la navigation
     ul {
       // display: none;
-    }
-
-    a {
-      pointer-events: all;
     }
   }
 
