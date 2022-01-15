@@ -1,0 +1,16 @@
+.realisation_brief{
+    h2{
+        font: $title-medium;
+    }
+    p {
+        font: $body-regular;
+    }
+    .data {
+        h4 {
+            font:normal normal 400 16px/100% $font-family;
+        opacity: 70%;}
+        p{
+            font:normal normal 500 16px/100% $font-family;
+        }
+    }
+}
