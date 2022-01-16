@@ -1,0 +1,46 @@
+.peoples {
+  padding-top: 361px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 384px);
+  grid-gap: 100px 32px;
+  justify-content: center;
+  .people_properties {
+    position: relative;
+    z-index: 2;
+    bottom: 75px;
+    left: 22px;
+    p {
+      color: $color-base;
+    }
+    .name {
+      font-family: Epilogue;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 95%;
+    }
+    .domain {
+      font-family: Manrope;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 150%;
+      text-transform: uppercase;
+    }
+  }
+  .people_hover {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+    position: absolute;
+    width: 384px;
+    height: 684px;
+    background: linear-gradient(
+        180deg,
+        rgba(39, 8, 1, 0.55) 0%,
+        rgba(49, 11, 2, 0.6) 100%
+      ),
+      linear-gradient(307.89deg, #f97c60 29.62%, #fa927a 76.88%);
+  }
+}
