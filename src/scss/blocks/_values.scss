@@ -6,5 +6,56 @@
     max-width: 592px;
     font: $body-regular;
   }
+
+  .values-container {
+    padding-block: 48px 96px;
+    display: grid;
+    row-gap: 32px;
+    grid-template-areas:
+      ". optimism"
+      "open-mindedness ."
+      ". honesty";
+
+    .value-optimism {
+      grid-area: optimism;
+    }
+    .value-open-mindedness {
+      grid-area: open-mindedness;
+    }
+    .value-honesty {
+      grid-area: honesty;
+    }
+
+    article {
+      max-width: 488px;
+
+      h3 {
+        position: relative;
+        font: $title-medium;
+        padding-bottom: 48px;
+
+        &::before {
+          position: absolute;
+          left: 8px;
+          top: 10px;
+          width: max-content;
+          content: attr(data-value-name);
+          font: $title-large;
+          color: $color-graybase;
+          opacity: 0.1;
+        }
+
+        &::after {
+          position: absolute;
+          content: attr(data-value-emoji);
+          margin-left: 24px;
+        }
+      }
+
+      p {
+        font: $body-regular;
+      }
+    }
+  }
 }
 // vim ts=2
