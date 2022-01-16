@@ -10,13 +10,13 @@
       type="image/svg"
       href="static/assets/icons/logo-p__orange.svg"
     />
-    <!-- Main stylesheet -->
-    <link href="static/assets/css/main.css" rel="stylesheet" />
     <!-- Swiper JS -->
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
     />
+    <!-- Main stylesheet -->
+    <link href="static/assets/css/main.css" rel="stylesheet" />
   </head>
   <body>
     <header>
@@ -158,19 +158,25 @@
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
-              <div class="swiper-slide">Slide 1</div>
+              <div class="swiper-slide">
+                <img
+                  src="./static/assets/images/picture_test.png"
+                  alt="placeholder"
+                />
+                <p>
+                  Issus d'une formation pluridisciplinaire, les membres de
+                  Pikoom ... lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit.
+                </p>
+              </div>
               <div class="swiper-slide">Slide 2</div>
               <div class="swiper-slide">Slide 3</div>
             </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
+            <!-- Slider navigation arrows -->
+            <div class="swiper-nav">
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
           </div>
         </section>
       </div>
@@ -228,7 +234,6 @@
         </div>
       </div>
     </footer>
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="js/app.js" type="module"></script>
   </body>
 </html>
