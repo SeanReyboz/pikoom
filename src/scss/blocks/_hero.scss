@@ -4,6 +4,37 @@
   height: 100%;
   display: flex;
   align-items: center;
+  position: relative;
+  pointer-events: none;
+
+  aside {
+    position: absolute;
+    inset: 0;
+  }
+
+  .floating-icon {
+    position: absolute;
+    animation: bounce-anim 12s cubic-bezier(0.45, 0, 0.55, 1) 0s infinite normal
+      forwards;
+
+    &[data-code-icon] {
+      left: 16%;
+      top: 30%;
+      transform: rotate(-26deg);
+      animation-delay: random($limit: 1500) + ms;
+    }
+    &[data-camera-icon] {
+      right: 17%;
+      top: 35%;
+      transform: rotate(25deg);
+      animation-delay: random($limit: 1500) + ms;
+    }
+    &[data-graph-icon] {
+      left: 19%;
+      bottom: 22%;
+      animation-delay: random($limit: 1500) + ms;
+    }
+  }
 
   // Gros titre (Nous sommes pikoom)
   .headline {
@@ -52,5 +83,34 @@
       display: block;
       max-width: 395px;
     }
+  }
+}
+
+// Animation des icones
+@keyframes bounce-anim {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70% {
+    transform: translateY(-6px);
+  }
+
+  20%,
+  40%,
+  60% {
+    transform: translateY(6px);
+  }
+
+  80% {
+    transform: translateY(4.4px);
+  }
+
+  90% {
+    transform: translateY(-4.4px);
   }
 }
