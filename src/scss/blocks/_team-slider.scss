@@ -21,6 +21,73 @@
   // slider
   .swiper {
     max-width: 592px;
-    cursor: grab;
+    max-height: 660px;
+    margin-inline: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 64px;
+
+    // slide wrapper
+    .swiper-wrapper {
+      height: unset;
+
+      .swiper-slide {
+        display: flex;
+        flex-direction: column;
+        row-gap: 54px;
+
+        // temp
+        img {
+          display: block;
+          max-height: 410px;
+        }
+
+        p {
+          max-width: 488px;
+          font: $body-regular;
+        }
+      }
+    }
+
+    // Bouton de navigation
+    &-nav {
+      max-width: 136px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      .swiper-button-next,
+      .swiper-button-prev {
+        all: unset;
+
+        display: inline-block;
+        width: 36px;
+        height: 36px;
+        border-radius: 100%;
+        background-position-y: center;
+        background-repeat: no-repeat;
+        background-color: $color-graybase;
+        cursor: pointer;
+
+        transition: background-color 180ms ease-out;
+
+        &:hover {
+          background-color: $color-accent;
+        }
+        &::after {
+          content: "";
+        }
+      }
+
+      .swiper-button-prev {
+        background-image: url("../icons/angle-left.svg");
+        background-position-x: 45%;
+      }
+      .swiper-button-next {
+        background-image: url("../icons/angle-right.svg");
+        background-position-x: 55%;
+      }
+    }
   }
 }
