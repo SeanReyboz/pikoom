@@ -1,18 +1,14 @@
-/// Team slider
-const swiper = new Swiper(".swiper", {
-  // Optional parameters
+import Swiper from "https://unpkg.com/swiper@7/swiper-bundle.esm.browser.min.js"
+
+const swiperSlider = new Swiper(".swiper", {
   direction: "horizontal",
   loop: true,
+  grabCursor: true,
 
-  pagination: {
-    el: ".swiper-pagination",
-  },
-
-  // Navigation arrows
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
 })
 
-export { swiper }
+export { swiperSlider }
