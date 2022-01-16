@@ -1,4 +1,9 @@
 /*  Hero block  */
+
+// TODO:
+// Exporter les icones dans la bonne orientation: l'animation de rebond annule
+// le `transform: rotate()` des images.
+
 .hero-sec {
   min-height: 100vh;
   height: 100%;
@@ -10,6 +15,7 @@
   aside {
     position: absolute;
     inset: 0;
+    z-index: -10;
   }
 
   .floating-icon {
@@ -20,13 +26,13 @@
     &[data-code-icon] {
       left: 16%;
       top: 30%;
-      transform: rotate(-26deg);
+      // transform: rotate(-26deg);
       animation-delay: random($limit: 1500) + ms;
     }
     &[data-camera-icon] {
       right: 17%;
       top: 35%;
-      transform: rotate(25deg);
+      // transform: rotate(25deg);
       animation-delay: random($limit: 1500) + ms;
     }
     &[data-graph-icon] {
