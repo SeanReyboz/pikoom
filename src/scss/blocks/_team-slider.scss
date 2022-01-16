@@ -1,6 +1,26 @@
 /*  Team section (index)  */
 .team-sec {
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  & > * {
+    flex-basis: 100%;
+  }
+
   header {
     max-width: 488px;
+
+    p {
+      padding-bottom: 100px;
+      font: $body-regular;
+    }
+  }
+
+  // slider
+  .swiper {
+    max-width: 592px;
+    cursor: grab;
   }
 }

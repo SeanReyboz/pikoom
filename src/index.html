@@ -12,6 +12,11 @@
     />
     <!-- Main stylesheet -->
     <link href="static/assets/css/main.css" rel="stylesheet" />
+    <!-- Swiper JS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header>
@@ -137,10 +142,10 @@
         <!-- Section presentation de l'équipe -->
         <section class="team-sec">
           <header>
-            <h1>
+            <h2>
               <span class="pre-title">Une équipe</span>
               <span class="title">Polyvalente &amp; dynamique</span>
-            </h1>
+            </h2>
             <p>
               Issus d'une formation pluridisciplinaire, les membres de Pikoom
               ... lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor
@@ -148,7 +153,25 @@
             </p>
             <a class="button cta" href="./equipe.html">Rencontrer l'équipe !</a>
           </header>
-          <div class="team-slider-container"></div>
+          <!-- Slider main container -->
+          <div class="team-slider-container swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">Slide 1</div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
         </section>
       </div>
     </main>
@@ -205,6 +228,8 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/app.js" type="module"></script>
   </body>
 </html>
 <!-- 
