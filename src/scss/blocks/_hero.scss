@@ -1,9 +1,5 @@
 /*  Hero block  */
 
-// TODO:
-// Exporter les icones dans la bonne orientation: l'animation de rebond annule
-// le `transform: rotate()` des images.
-
 .hero-sec {
   min-height: 100vh;
   height: 100%;
@@ -12,6 +8,7 @@
   position: relative;
   pointer-events: none;
 
+  // Floating icons container
   aside {
     position: absolute;
     inset: 0;
@@ -56,10 +53,12 @@
     justify-content: space-between;
 
     span {
+      --pad-left: 50%;
+
       color: $color-graybase;
 
       &:nth-of-type(1) {
-        padding-left: 50%;
+        padding-left: var(--pad-left);
       }
       &:nth-of-type(2) {
         // -webkit-text-stroke: 3px currentColor;
@@ -74,7 +73,7 @@
           calc(var(--off) * -1) var(--off) 0px $color-graybase;
       }
       &:nth-of-type(3) {
-        padding-left: 50%;
+        padding-left: var(--pad-left);
         color: $color-accent;
       }
     }
@@ -88,6 +87,72 @@
     span {
       display: block;
       max-width: 395px;
+    }
+  }
+
+  /// Media queries
+
+  @media screen and (max-width: $screen-lg-min) {
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    .headline {
+      min-height: unset;
+      justify-content: unset;
+
+      span {
+        --pad-left: 35%;
+      }
+    }
+
+    .headline,
+    .description {
+      flex: unset;
+    }
+  }
+
+  @media screen and(max-width: $screen-md-min) {
+    .headline {
+      font-size: 120px;
+      line-height: 1;
+    }
+    .floating-icon[data-graph-icon] {
+      bottom: 30%;
+      left: 27%;
+    }
+  }
+
+  @media screen and(max-width: $screen-sm-min) {
+    align-items: unset;
+
+    min-height: 85vh;
+    justify-content: center;
+    row-gap: 48px;
+
+    .headline {
+      font: $title-extra-large;
+      font-size: 72px;
+      line-height: 1.1;
+
+      span {
+        --pad-left: 0%;
+      }
+    }
+
+    // TODO: déterminer si on affiche aussi les icones en version mobile
+    .floating-icon {
+      display: none;
+
+      &[data-code-icon] {
+        top: 15%;
+      }
+      &[data-camera-icon] {
+        top: 25%;
+      }
+      &[data-graph-icon] {
+        bottom: 43%;
+        left: 35%;
+      }
     }
   }
 }
