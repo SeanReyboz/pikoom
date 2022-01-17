@@ -32,21 +32,22 @@
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
-      padding: 36px 24px;
+      //   padding: 36px 24px;
 
       // TEMPORARY
       background: $color-accent;
-      min-height: 720px;
+      max-height: 720px;
       height: 100%;
 
       // tag de catégorie (graph, comm, etc)
       &::before {
         position: absolute;
+        z-index: 2;
         top: 50px;
         left: 24px;
         content: attr(data-project-tag);
         font: $body-small;
-        letter-spacing: 0.4;
+        letter-spacing: 0.4px;
         text-transform: uppercase;
         color: $color-base;
       }
@@ -59,24 +60,43 @@
       }
 
       // Contenu de la carte
-      h4 {
-        font: $title-regular;
-        font-weight: 500;
-        letter-spacing: 0.4px;
-        padding-block: 16px 36px;
+
+      .project-card-img {
+        display: block;
+        width: auto;
+        height: 100%;
       }
 
-      time {
-        font: $body-small;
-        font-weight: 500;
-        letter-spacing: 0.4px;
-      }
+      .project-card-info {
+        position: absolute;
+        bottom: 36px;
+        left: 24px;
+        right: 24px;
 
-      hr {
-        margin: 0;
-        border: 0;
-        border-bottom: 1px solid $color-base;
+        span {
+          display: block;
+        }
+
+        .project-name {
+          font: $title-regular;
+          font-weight: 500;
+          letter-spacing: 0.4px;
+          padding-block: 16px 36px;
+        }
+
+        .project-date {
+          font: $body-small;
+          font-weight: 500;
+          letter-spacing: 0.4px;
+        }
+
+        .separator {
+          margin: 0;
+          border: 0;
+          border-bottom: 1px solid $color-base;
+        }
       }
+      // }
     }
   }
 }
