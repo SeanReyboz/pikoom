@@ -13,25 +13,29 @@
         &.demarche{
             background: conic-gradient(from 79.41deg at 27.66% 50%, #2F4858 -41.25deg, #2F4858 67.5deg, #F97C60 204.37deg, #2F4858 318.75deg, #2F4858 427.5deg);
 
-            background-clip: text;
+            background-clip: text; 
+            -webkit-background-clip: text;
             color: transparent;
         }
         &.problemes{
             background: conic-gradient(from 95.33deg at 16.94% 50%, #2F4858 -41.25deg, #2F4858 67.5deg, #F97C60 204.37deg, #2F4858 318.75deg, #2F4858 427.5deg);
 
-            background-clip: text;
+            background-clip: text; 
+            -webkit-background-clip: text;
             color: transparent;
         }
         &.equipe {
             background: conic-gradient(from 95.33deg at 16.94% 50%, #F97C60 -22.5deg, #2F4858 43.12deg, #2F4858 273.75deg, #F97C60 337.5deg, #2F4858 403.12deg);
 
-            background-clip: text;
+            background-clip: text; 
+            -webkit-background-clip: text;
             color: transparent;
         }
         &.bilan{
             background: conic-gradient(from 79.41deg at 27.66% 50%, #2F4858 -41.25deg, #2F4858 67.5deg, #F97C60 204.37deg, #2F4858 318.75deg, #2F4858 427.5deg);
 
-            background-clip: text;
+            background-clip: text; 
+            -webkit-background-clip: text;
             color: transparent;
         }
     }

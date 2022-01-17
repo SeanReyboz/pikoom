@@ -35,12 +35,14 @@
             &.demande{
                 background: conic-gradient(from 95.33deg at 16.94% 50%, #2F4858 -41.25deg, #2F4858 67.5deg, #F97C60 204.37deg, #2F4858 318.75deg, #2F4858 427.5deg);
                 background-clip: text;
+                -webkit-background-clip: text;
             color: transparent;
             }
             &.solution{
                 background: conic-gradient(from 249.54deg at 41.38% 50%, #2F4858 -41.25deg, #2F4858 67.5deg, #F97C60 204.37deg, #2F4858 318.75deg, #2F4858 427.5deg);
 
-                background-clip: text;
+                background-clip: text; 
+                -webkit-background-clip: text;
             color: transparent;
             }
         }
