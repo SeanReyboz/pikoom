@@ -1,16 +1,50 @@
 .realisation_brief{
-    h2{
-        font: $title-medium;
-    }
-    p {
-        font: $body-regular;
-    }
+    margin-bottom: 6.944vw;
+   .display { 
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7.778vw;
     .data {
+        display: flex;
+        flex-direction: column;
+        row-gap: 4.44vw;
         h4 {
             font:normal normal 400 16px/100% $font-family;
-        opacity: 70%;}
-        p{
-            font:normal normal 500 16px/100% $font-family;
+        opacity: 70%;
+        margin-bottom: 1.111vw;
         }
+        .paragraph{
+            display: flex; 
+            flex-direction: column;
+            row-gap:0.556vw;
+            p{
+            font:normal normal 500 16px/100% $font-family;
+            }
+        } 
     }
+}
+    .articles {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2.500vw;
+        max-width: 707px;
+        margin-right: 10%;
+        h2{
+            padding-bottom: 2.222vw;
+            font: $title-medium;
+        }
+        p {
+            font: $body-regular;
+        }  
+    
+    }
+img {
+    display: flex;
+    margin-left: auto;
+    padding-left: -20%;
+    width: 100%;
+    max-width: 1000px;
+    max-height: 556px;
+}
+
 }

@@ -1,10 +1,26 @@
 .realisation_title {
-    p{
-        font: $body-large;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    height: 100%;
+    div{
+        padding-bottom: 20%;
+        p{
+            font: $body-large;
+            margin-bottom: 2.222vw;
+        }
+        h1{
+            font:$title-extra-large;
+            width: 100%;
+        }
     }
-    h1{
-        font:$title-extra-large;
+    img {
+        position: absolute;
+        margin-left: 20%;
+        z-index: -1;
+        width: 100%;
+        max-width: 904px;
+        max-height: 556px;
     }
-
 
 }

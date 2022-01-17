@@ -1,6 +1,17 @@
 .realisation_participant {
+    margin-bottom: 6.944vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 207px);
+    grid-gap: 96px 120px;
+    justify-content: center;
     div{
+        img {
+            max-width:198px;
+            max-height:202.22px;
+            width: 100%;
+        }
         p {
+            text-align: center;
             font: normal normal 600 32px/102.5% $font-family-secondary;
         }
     }  

@@ -1,8 +1,18 @@
 .realisation_resume {
+    margin-bottom: 6.944vw;
+     .articles {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2.500vw;
+        max-width: 707px;
+        
+    margin-left: 23%;
     h2{
+        padding-bottom: 2.222vw;
         font: $title-medium;
     }
     p {
         font: $body-regular;
     }
+}
 }
