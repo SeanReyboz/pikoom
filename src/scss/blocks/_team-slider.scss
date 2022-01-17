@@ -5,6 +5,8 @@
   display: flex;
   justify-content: space-between;
 
+  font: $body-regular;
+
   & > * {
     flex-basis: 100%;
   }
@@ -14,7 +16,6 @@
 
     p {
       padding-bottom: 100px;
-      font: $body-regular;
     }
   }
 
@@ -45,7 +46,6 @@
 
         p {
           max-width: 488px;
-          font: $body-regular;
         }
       }
     }
@@ -87,6 +87,37 @@
       .swiper-button-next {
         background-image: url("../icons/angle-right.svg");
         background-position-x: 55%;
+      }
+    }
+  }
+
+  /// Media queries
+
+  @media screen and(max-width: $screen-md-min) {
+    padding-bottom: 96px;
+    flex-direction: column;
+    row-gap: 72px;
+
+    // TODO: On fait quoi du lien ?
+    .cta {
+      display: none;
+    }
+  }
+
+  @media screen and(max-width: $screen-sm-min) {
+    font: $body-medium;
+    row-gap: 48px;
+
+    .swiper {
+      &-nav {
+        max-width: 150px;
+        margin: 0 auto;
+
+        .swiper-button-next,
+        .swiper-button-prev {
+          width: 42px;
+          height: 42px;
+        }
       }
     }
   }
