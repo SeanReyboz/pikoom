@@ -2,7 +2,7 @@
   padding-top: 361px;
   display: grid;
   grid-template-columns: repeat(auto-fill, 384px);
-  grid-gap: 100px 32px;
+  grid-gap: 32px;
   justify-content: center;
   .people_hover {
     z-index: 1;
@@ -54,6 +54,8 @@
       flex-direction: column;
       text-align: initial;
       padding-left: 22px;
+      position: absolute;
+      top: 491px;
       a {
         text-decoration: none;
         &:hover {
