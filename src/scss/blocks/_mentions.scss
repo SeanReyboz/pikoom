@@ -1,0 +1,32 @@
+.mention_title {
+  font: $title-extra-large;
+  padding-top: 200px;
+  padding-bottom: 44px;
+  color: transparent;
+  background: $linear-gradient-1;
+  background-clip: text;
+  margin: 0 auto;
+  max-width: max-content;
+}
+.mentions_2_title {
+  font: $title-large;
+  padding-bottom: 64px;
+}
+.mentions_blocks {
+  max-width: 750px;
+}
+.credit_title {
+  font-size: 28px;
+}
+.mentions_conteners {
+  font: $body-regular;
+}
+.mentions_number {
+  padding-top: 100px;
+  font: $title-extra-large;
+  color: #2f4858;
+  opacity: 30%;
+}
+.credits:not(:last-of-type) {
+  padding-bottom: 32px;
+}
