@@ -1,7 +1,10 @@
 /*  Wrappers and alike  */
 
 .main-wrapper {
-  max-width: 1296px;
+  --padding: 24px;
+
+  max-width: calc(1296px + 2 * var(--padding));
   width: 100%;
   margin: 0 auto;
+  padding: 0 var(--padding);
 }
