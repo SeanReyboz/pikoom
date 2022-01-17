@@ -1,10 +1,10 @@
 /*  Values block  */
 .values-sec {
   min-height: 100vh;
+  font: $body-regular;
 
   .about-pikoom {
     max-width: 592px;
-    font: $body-regular;
   }
 
   .values-container {
@@ -51,9 +51,28 @@
           margin-left: 24px;
         }
       }
+    }
+  }
 
-      p {
-        font: $body-regular;
+  @media screen and(max-width: $screen-sm-min) {
+    font: $body-medium;
+
+    .values-container {
+      padding-top: 96px;
+      grid-template-areas: "optimism" "open-mindedness" "honesty";
+      row-gap: 72px;
+
+      article {
+        h3 {
+          font: $title-regular;
+
+          &::before {
+            font: $title-medium;
+          }
+          &::after {
+            margin-left: 16px;
+          }
+        }
       }
     }
   }

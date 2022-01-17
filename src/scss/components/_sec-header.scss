@@ -18,6 +18,19 @@ section header {
     color: transparent;
     background: $linear-gradient-1;
     background-clip: text;
+    -webkit-background-clip: text;
+  }
+
+  @media screen and(max-width: $screen-sm-min) {
+    .pre-title {
+      font: $body-medium;
+    }
+    .title {
+      font-size: 36px;
+      letter-spacing: 0px;
+      line-height: 1;
+      padding-bottom: 48px;
+    }
   }
 }
 // vim ts=2
