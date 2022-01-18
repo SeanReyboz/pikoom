@@ -40,7 +40,7 @@
         font-weight: normal;
         font-size: 16px;
         line-height: 150%;
-        text-align: justify;
+        text-align: start;
         padding: 0 22px;
       }
     }
@@ -107,7 +107,7 @@
     .people_hover {
       width: 300px;
       height: 534px;
-      &:focus {
+      &:hover {
         opacity: 0.95;
       }
       .people_whoitis {
@@ -136,6 +136,14 @@
     img {
       width: 300px;
       height: 534px;
+    }
+    .people_properties {
+      .name {
+        font-size: 24px;
+      }
+      .domain {
+        font-size: 14px;
+      }
     }
   }
 }
