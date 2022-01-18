@@ -34,6 +34,7 @@
       height: unset;
 
       .swiper-slide {
+        text-align: center;
         display: flex;
         flex-direction: column;
         row-gap: 54px;
@@ -46,6 +47,7 @@
         }
 
         p {
+          text-align: center;
           max-width: 488px;
         }
       }
@@ -73,8 +75,7 @@
 
         transition: background-color 180ms ease-out;
 
-        &:hover,
-        &:focus {
+        &:hover{
           background-color: $color-accent;
         }
         &::after {
