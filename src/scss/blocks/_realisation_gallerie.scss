@@ -1,0 +1,103 @@
+.realisation-projects-sec {
+    padding-top: 13.750vw;
+    min-height: 100vh;
+  
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  
+      & > * {
+        max-width: 488px;
+      }
+  
+      p {
+        font: $body-regular;
+      }
+    }
+  
+    .projects-card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 488px));
+      justify-content: space-between;
+      row-gap: 200px;
+      padding-inline: 20px;
+      padding-bottom: 300px;
+  
+      .project-card {
+        position: relative;
+        color: $color-base;
+        text-decoration: none;
+  
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        //   padding: 36px 24px;
+  
+        // TEMPORARY
+        background: $color-accent;
+        max-height: 720px;
+        height: 100%;
+  
+        // tag de catégorie (graph, comm, etc)
+        &::before {
+          position: absolute;
+          z-index: 2;
+          top: 50px;
+          left: 24px;
+          content: attr(data-project-tag);
+          font: $body-small;
+          letter-spacing: 0.4px;
+          text-transform: uppercase;
+          color: $color-base;
+        }
+  
+        // offset
+        &:nth-of-type(even) {
+          @media screen and(min-width: 1024px) {
+            margin-top: 188px;
+          }
+        }
+  
+        // Contenu de la carte
+  
+        .project-card-img {
+          display: block;
+          width: auto;
+          height: 100%;
+        }
+  
+        .project-card-info {
+          position: absolute;
+          bottom: 36px;
+          left: 24px;
+          right: 24px;
+  
+          span {
+            display: block;
+          }
+  
+          .project-name {
+            font: $title-regular;
+            font-weight: 500;
+            letter-spacing: 0.4px;
+            padding-block: 16px 36px;
+          }
+  
+          .project-date {
+            font: $body-small;
+            font-weight: 500;
+            letter-spacing: 0.4px;
+          }
+  
+          .separator {
+            margin: 0;
+            border: 0;
+            border-bottom: 1px solid $color-base;
+          }
+        }
+        // }
+      }
+    }
+  }
+  
