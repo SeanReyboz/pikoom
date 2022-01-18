@@ -1,5 +1,7 @@
 .realisation_participant {
+    text-align: center;
     .swiper_rea{ 
+        text-align: center;
     .carouselle{
         
             display: flex;
@@ -15,6 +17,9 @@
                     font: normal normal 600 32px/102.5% $font-family-secondary;
                 }
         }
+    }
+    .button {
+        margin-top: 2.500vw;
     }
     
     .swiper-pagination{
