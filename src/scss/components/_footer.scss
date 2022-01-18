@@ -88,6 +88,16 @@ footer {
       column-gap: 44px;
     }
   }
+
+  @media screen and(max-width: $screen-sm-min) {
+    .footer-nav ul {
+      display: none;
+    }
+    .inner-footer {
+      flex-direction: column;
+      row-gap: 42px;
+    }
+  }
 }
 
 // vim:tw=80:ts=2:noet:ft=scss:norl
