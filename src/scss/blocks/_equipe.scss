@@ -56,6 +56,9 @@
       padding-left: 22px;
       position: absolute;
       top: 491px;
+      span {
+        display: none;
+      }
       a {
         text-decoration: none;
         &:hover {
@@ -94,6 +97,45 @@
       font-size: 16px;
       line-height: 150%;
       text-transform: uppercase;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .peoples {
+    grid-template-columns: repeat(auto-fill, 300px);
+    .people_hover {
+      width: 300px;
+      height: 534px;
+      &:focus {
+        opacity: 0.95;
+      }
+      .people_whoitis {
+        padding-top: 60px;
+        .people_description {
+          font-size: 13px;
+        }
+      }
+      .people_network {
+        justify-content: space-between;
+        display: flex;
+        width: 278px;
+        margin: auto;
+        flex-direction: unset;
+        top: 398px;
+        span {
+          display: unset;
+        }
+        a {
+          &:nth-child(2) {
+            padding: 0;
+          }
+        }
+      }
+    }
+    img {
+      width: 300px;
+      height: 534px;
     }
   }
 }
