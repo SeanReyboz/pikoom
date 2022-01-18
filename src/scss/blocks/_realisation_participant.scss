@@ -8,13 +8,17 @@
         justify-content: space-between;
             div{
                 img {
-                    min-width:198px;
-                    max-height:202.22px;
-                    width: 100%;
+                    height: unset;
+                    max-height: 392.19px;
+                    max-width: 384px;
                 }
-                p {
+                h4 {
                     text-align: center;
                     font: normal normal 600 32px/102.5% $font-family-secondary;
+                }
+                p{
+                    font:$body-medium;
+                    max-width: 292.85px;
                 }
         }
     }
