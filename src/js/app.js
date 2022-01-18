@@ -1,3 +1,3 @@
 "use strict"
 
-import { swiperSlider } from "./teamSlider.js"
+import { swiperSlider, CaseStudyTeamSlider } from "./teamSlider.js"
