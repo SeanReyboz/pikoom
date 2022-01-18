@@ -5,6 +5,7 @@
   color: transparent;
   background: $linear-gradient-1;
   background-clip: text;
+  -webkit-background-clip: text;
   margin: 0 auto;
   max-width: max-content;
 }
@@ -20,6 +21,7 @@
 }
 .mentions_conteners {
   font: $body-regular;
+  margin-bottom: 3vw;
 }
 .mentions_number {
   padding-top: 100px;
