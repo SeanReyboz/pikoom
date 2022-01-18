@@ -14,6 +14,9 @@
 
 # TODO
 
+- [ ] fixer les tailles d'images
+- [ ] style en hover
+- [ ] dégadé sur carte en contraste
 - [ ] Update des liens entre chaque page
 - [ ] Faire le curseur perso
 - [ ] Style de curseur personnalisé
