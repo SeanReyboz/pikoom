@@ -17,6 +17,7 @@
 @import "components/navbar";
 @import "components/sec-header";
 @import "components/footer";
+@import "components/link.scss";
 
 /*  Blocks  */
 
@@ -26,6 +27,7 @@
 @import "blocks/projects-preview";
 @import "blocks/404";
 @import "blocks/equipe";
+@import "blocks/contact";
 @import "blocks/realisation_title";
 @import "blocks/realisation_brief";
 @import "blocks/_realisation_gallerie";

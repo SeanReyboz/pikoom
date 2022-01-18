@@ -16,8 +16,12 @@
 .mentions_blocks {
   max-width: 750px;
 }
-.credit_title {
-  font-size: 28px;
+.credits {
+  padding-bottom: 34px;
+  .credit_title {
+    font-size: 28px;
+    padding-bottom: 14px;
+  }
 }
 .mentions_conteners {
   font: $body-regular;
