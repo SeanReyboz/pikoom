@@ -5,6 +5,7 @@
 - [x] Page des réalisations
 - [x] Landing page
 - [x] Page contact
+- [x] Vérifier le contenu des mentions légales
 
 # ONGOING
 
@@ -14,7 +15,6 @@
 # TODO
 
 - [ ] Update des liens entre chaque page
-- [ ] Vérifier le contenu des mentions légales
 - [ ] Faire le curseur perso
 - [ ] Style de curseur personnalisé
 - [ ] Transitions changement de page
