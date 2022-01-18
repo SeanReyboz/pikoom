@@ -10,6 +10,53 @@ $linear-gradient-1: linear-gradient(
   $color-graybase 63.99%
 );
 
+$linear-gradient-2: linear-gradient(
+  269.7deg,
+  $color-graybase 15.86%,
+  $color-accent 63.99%
+);
+
+$linear-gradient-3: conic-gradient(
+  from 95.33deg at 16.94% 50%,
+  $color-graybase -41.25deg,
+  $color-graybase 67.5deg,
+  $color-accent 204.37deg,
+  $color-graybase 318.75deg,
+  $color-graybase 427.5deg
+);
+
+$linear-gradient-4: conic-gradient(
+  from 249.54deg at 41.38% 50%,
+  $color-graybase -41.25deg,
+  $color-graybase 67.5deg,
+  $color-accent 204.37deg,
+  $color-graybase 318.75deg,
+  $color-graybase 427.5deg
+);
+
+$linear-gradient-5: conic-gradient(
+  from 95.33deg at 16.94% 50%,
+  $color-accent -22.5deg,
+  $color-graybase 43.12deg,
+  $color-graybase 273.75deg,
+  $color-accent 337.5deg,
+  $color-graybase 403.12deg
+);
+
+$linear-gradient-6: conic-gradient(
+  from 79.41deg at 27.66% 50%,
+  $color-graybase -41.25deg,
+  $color-graybase 67.5deg,
+  $color-accent 204.37deg,
+  $color-graybase 318.75deg,
+  $color-graybase 427.5deg
+);
+
+$list: $linear-gradient-1, $linear-gradient-2, $linear-gradient-3,
+  $linear-gradient-4, $linear-gradient-5, $linear-gradient-6;
+
+$n: random(6);
+
 $color-primary: #a59dff;
 $color-secondary: #f8762c;
 
