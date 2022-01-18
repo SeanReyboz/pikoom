@@ -4,6 +4,7 @@
 - [x] Template d'étude de cas
 - [x] Page des réalisations
 - [x] Landing page
+- [x] Page contact
 
 # ONGOING
 
@@ -14,7 +15,6 @@
 
 - [ ] Update des liens entre chaque page
 - [ ] Vérifier le contenu des mentions légales
-- [ ] Page contact
 - [ ] Faire le curseur perso
 - [ ] Style de curseur personnalisé
 - [ ] Transitions changement de page

@@ -1,0 +1,44 @@
+.contacts {
+  padding-top: 176px;
+  .contact_title {
+    font-family: Epilogue;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 100%;
+    background: $linear-gradient-1;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+    padding-bottom: 40px;
+  }
+  .contact_description {
+    margin: auto;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 200%;
+    max-width: 592px;
+    padding-bottom: 70px;
+  }
+  .contact_networks {
+    display: flex;
+    justify-content: space-between;
+    max-width: 500px;
+    margin: auto;
+    .contact_net {
+      text-decoration: none;
+      img {
+        padding-right: 8px;
+      }
+    }
+  }
+  iframe {
+    filter: grayscale(1);
+    padding: 50px 0;
+    display: flex;
+    margin: auto;
+  }
+}
