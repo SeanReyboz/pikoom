@@ -10,6 +10,11 @@
       type="image/svg"
       href="../static/assets/icons/logo-p__orange.svg"
     />
+    <!-- Swiper JS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
     <!-- Main stylesheet -->
     <link href="../static/assets/css/main.css" rel="stylesheet" />
   </head>
@@ -86,7 +91,7 @@
                   <p>Communication</p>
                   <p>Graphisme</p>
                   <p>Audiovisuel</p>
-                  <p>Organisation d’évènement</p>
+                  <p>Organisation d'évènement</p>
                 </div>
               </div>
               <div>
@@ -218,28 +223,23 @@
             </article>
             <section class="realisation_participant">
               <h2 class="equipe">Notre équipe</h2>
-              <div class="swiper_rea">
-                <div class="carouselle">
+              <div class="swiper_rea swiper">
+                <div class="swiper-wrapper carouselle">
                   <div class="swiper-slide">
                     <img
+                      src="../static/assets/images/gabrielb_logo-pikoom.png"
+                      alt="Gabriel Berthaud"
                       loading="lazy"
-                      src="../static/assets/images/picture_test.png"
-                      alt=""
                     />
-                    <h4>Gabriel<br />Berthaud</h4>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Euismod varius ac fusce enim, lacus tellus ornare in id.
-                      Quis id amet, ante viverra urna vel elementum aliquam.
-                    </p>
+                    <p></p>
                   </div>
                   <div class="swiper-slide">
                     <img
+                      src="../static/assets/images/gabrielb_logo-pikoom.png"
+                      alt="Gabriel Berthaud"
                       loading="lazy"
-                      src="../static/assets/images/picture_test.png"
-                      alt=""
                     />
-                    <h4>Julien<br />Hilt</h4>
+                    <h4>Gabriel Berthaud</h4>
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       Euismod varius ac fusce enim, lacus tellus ornare in id.
@@ -247,17 +247,11 @@
                     </p>
                   </div>
                 </div>
-                <div class="swiper-pagination">
-                  <span class="swiper-pagination-bullet"></span>
-                  <span class="swiper-pagination-bullet"></span>
-                  <span class="swiper-pagination-bullet"></span>
-                  <span class="swiper-pagination-bullet"></span>
-                  <span class="swiper-pagination-bullet"></span>
-                </div>
-                <a class="button cta" src="../equipe.html"
-                  >Rencontrer l'équipe !</a
-                >
+                <div class="swiper-pagination"></div>
               </div>
+              <a class="button cta" href="../equipe.html">
+                Rencontrer l'équipe !
+              </a>
             </section>
             <div class="gallerie">
               <img
@@ -345,11 +339,12 @@
         <div class="footer-bottom">
           <div class="copyrights">
             <p>Pikoom 🌵 &copy; 2022</p>
-            <a href="#">Mentions légales</a>
+            <a href="../mention.html">Mentions légales</a>
           </div>
           <a href="#" class="back-to-top">Retour en haut</a>
         </div>
       </div>
     </footer>
+    <script src="../js/app.js" type="module"></script>
   </body>
 </html>

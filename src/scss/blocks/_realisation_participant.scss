@@ -1,55 +1,72 @@
 .realisation_participant {
+  //   text-align: center;
+
+  .swiper_rea {
     text-align: center;
-    .swiper_rea{ 
-        text-align: center;
-    .carouselle{
-        
-            display: flex;
-        justify-content: space-between;
-            div{
-                img {
-                    height: unset;
-                    max-height: 392.19px;
-                    max-width: 384px;
-                }
-                h4 {
-                    text-align: center;
-                    font: normal normal 600 32px/102.5% $font-family-secondary;
-                }
-                p{
-                    font:$body-medium;
-                    max-width: 292.85px;
-                }
-        }
-    }
-    .button {
-        margin-top: 2.500vw;
-    }
-    
-    .swiper-pagination{
-        max-width: 200px;
-      width: 100%;
+
+    .carouselle {
       display: flex;
       justify-content: space-between;
-      margin: auto;
-        .swiper-pagination-bullet{
-            width: 24px;
+
+      div {
+        img {
+          height: unset;
+          max-height: 392.19px;
+          max-width: 384px;
+        }
+        h4 {
+          text-align: center;
+          font: normal normal 600 32px/102.5% $font-family-secondary;
+        }
+        p {
+          font: $body-medium;
+          max-width: 292.85px;
+        }
+      }
+    }
+
+    .button {
+      margin-top: 2.5vw;
+    }
+
+    .swiper-slide {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+
+    .swiper-pagination {
+      right: 0;
+      left: 0;
+      max-width: 200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .swiper-pagination-bullet {
+        left: 0;
+        right: 0;
+
+        width: 24px;
         height: 24px;
-        background-position-y: center;
-        background-repeat: no-repeat;
         border-radius: 100%;
         background-color: $color-graybase;
         cursor: pointer;
-            transition: background-color 180ms ease-out;
-            &:hover {
-                background-color: $color-accent;
-              }
-              &::after {
-                content: "";
-              }
-            //background-image: url("../icons/pagination_dot.svg");
-            background-position-x: 45%;
-        };
+        transition: background-color 180ms ease-out;
+        opacity: 1;
+
+        &:hover,
+        :focus,
+        &-active {
+          background-color: $color-accent;
+        }
+      }
     }
-}
+  }
 }
