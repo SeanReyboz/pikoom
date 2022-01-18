@@ -1,63 +1,65 @@
 .realisation_resume {
-    margin-bottom: 6.944vw;
-     .articles {
-        display: flex;
-        flex-direction: column;
-        row-gap: 2.500vw;
-        max-width: 707px;
-        
+  margin-bottom: 6.944vw;
+  .articles {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5vw;
+    max-width: 707px;
+
     margin-left: 23%;
-    h2{
-        padding-bottom: 2.222vw;
-        font: $title-medium;
-        &.demarche{
-            background: conic-gradient(from 79.41deg at 27.66% 50%, #2F4858 -41.25deg, #2F4858 67.5deg, #F97C60 204.37deg, #2F4858 318.75deg, #2F4858 427.5deg);
+    h2 {
+      padding-bottom: 2.222vw;
+      font: $title-medium;
+      &.demarche {
+        $n: random(6);
+        background: list.nth($list, $n);
 
-            background-clip: text; 
-            -webkit-background-clip: text;
-            color: transparent;
-        }
-        &.problemes{
-            background: conic-gradient(from 95.33deg at 16.94% 50%, #2F4858 -41.25deg, #2F4858 67.5deg, #F97C60 204.37deg, #2F4858 318.75deg, #2F4858 427.5deg);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+      &.problemes {
+        $n: random(6);
+        background: list.nth($list, $n);
 
-            background-clip: text; 
-            -webkit-background-clip: text;
-            color: transparent;
-        }
-        &.equipe {
-            background: conic-gradient(from 95.33deg at 16.94% 50%, #F97C60 -22.5deg, #2F4858 43.12deg, #2F4858 273.75deg, #F97C60 337.5deg, #2F4858 403.12deg);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+      &.equipe {
+        $n: random(6);
+        background: list.nth($list, $n);
 
-            background-clip: text; 
-            -webkit-background-clip: text;
-            color: transparent;
-        }
-        &.bilan{
-            background: conic-gradient(from 79.41deg at 27.66% 50%, #2F4858 -41.25deg, #2F4858 67.5deg, #F97C60 204.37deg, #2F4858 318.75deg, #2F4858 427.5deg);
-
-            background-clip: text; 
-            -webkit-background-clip: text;
-            color: transparent;
-        }
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+      &.bilan {
+        $n: random(6);
+        background: list.nth($list, $n);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+      }
     }
     ul {
-        margin-bottom: 1.667vw;
-        li{
-            font: $body-large;
-        }
+      margin-bottom: 1.667vw;
+      li {
+        font: $body-large;
+      }
     }
     p {
-        font: $body-regular;
-        margin-bottom: 2.500vw;
+      font: $body-regular;
+      margin-bottom: 2.5vw;
     }
-}
-.gallerie{
-
+  }
+  .gallerie {
     height: 100vh;
     img {
-        width: 100vw;
-        height: 100vh;
-        position: absolute;
-        left: 0;
+      width: 100vw;
+      height: 100vh;
+      position: absolute;
+      left: 0;
     }
-}
+  }
 }
