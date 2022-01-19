@@ -6,19 +6,21 @@
 - [x] Landing page
 - [x] Page contact
 - [x] Vérifier le contenu des mentions légales
+- [x] fixer les tailles d'images
+- [x] style en hover des liens
+- [x] dégadé sur carte en contraste
+- [x] Faire le curseur perso
+- [x] Style de curseur personnalisé
 
 # ONGOING
 
 - [ ] Slider page étude de cas
 - [ ] Contenu des pages / études de cas
+- [ ] Update des liens entre chaque page
+- [ ] Transitions changement de page
 
 # TODO
 
-- [ ] fixer les tailles d'images
-- [ ] style en hover
-- [ ] dégadé sur carte en contraste
-- [ ] Update des liens entre chaque page
-- [ ] Faire le curseur perso
-- [ ] Style de curseur personnalisé
-- [ ] Transitions changement de page
+- [ ] style en hover des cartes
 - [ ] Animations (texte, scroll, etc)
+- [ ] Bouton retour en haut
