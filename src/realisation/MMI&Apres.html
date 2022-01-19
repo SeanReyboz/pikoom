@@ -19,7 +19,16 @@
     <link href="../static/assets/css/main.css" rel="stylesheet" />
   </head>
 
-  <body>
+  <body data-barba="wrapper">
+    <!-- page transition -->
+    <div class="loader">
+      <div class="page-transition"></div>
+    </div>
+    <div
+      class="barba-wrapper"
+      data-barba="container"
+      data-barba-namespace="contact"
+    >
     <header>
       <div class="main-wrapper">
         <!-- Navigation  -->
@@ -483,5 +492,6 @@
       </div>
     </footer>
     <script src="../js/app.js" type="module"></script>
+    <script src="../js/libs/barba.js"></script>
   </body>
 </html>
