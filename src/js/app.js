@@ -1,12 +1,16 @@
 "use strict"
 
 import { swiperSlider, CaseStudyTeamSlider } from "./teamSlider.js"
+import { verticalScrollPosition, scrollTop } from "./backToTopBtn.js"
 import { Cursor } from "./cursor.js"
 
 // Créer le curseur
 window.onload = () => {
   const cursor = new Cursor(document.querySelector(".cursor"))
 }
+
+// Ajout d'un écouteur d'évènement sur le bouton retour en haut
+window.onscroll = () => verticalScrollPosition()
 
 const body = document.querySelector("body")
 const transition = document.querySelector(".page-transition")
@@ -22,6 +26,54 @@ function delay(n) {
 
 barba.init({
   sync: true,
+  views: [
+    {
+      namespace: "home",
+      beforeEnter() {},
+      afterEnter() {
+        return new Swiper(".team-slider-container", {
+          direction: "horizontal",
+          loop: true,
+          grabCursor: true,
+
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        })
+      },
+    },
+    {
+      namespace: "realisation",
+      beforeEnter() {},
+      afterEnter() {
+        return new Swiper(".swiper_rea", {
+          direction: "horizontal",
+
+          slidesPerView: 1,
+          loop: true,
+          grabCursor: true,
+          autoplay: {
+            delay: 3000,
+            disableOnInteraction: true,
+          },
+
+          breakpoints: {
+            // Quand la largeur de la fenêtre est >= 768px
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 24,
+            },
+          },
+
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        })
+      },
+    },
+  ],
   transitions: [
     {
       // En quittant chaque page
@@ -46,6 +98,9 @@ barba.init({
           delay: 0.3,
           transition: "Power3.easeOut",
         }).set(".page-transition", { top: "0%", height: "0%" })
+
+        // Positionner l'utilisateur en haut du document
+        scrollTop()
       },
 
       // Avant chaque transition
@@ -57,6 +112,7 @@ barba.init({
       after() {
         body.classList.remove("no-scroll")
         // Recréer un curseur
+        // Rafraichir la page
         return new Cursor(document.querySelector(".cursor"))
       },
     },
