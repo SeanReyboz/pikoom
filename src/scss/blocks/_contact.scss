@@ -1,11 +1,7 @@
 .contacts {
   padding-top: 176px;
   .contact_title {
-    font-family: Epilogue;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 64px;
-    line-height: 100%;
+    font: $title-large;
     background: $linear-gradient-1;
     background-clip: text;
     -webkit-background-clip: text;
@@ -15,11 +11,7 @@
   }
   .contact_description {
     margin: auto;
-    font-family: Manrope;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 200%;
+    font: $body-regular;
     max-width: 592px;
     padding-bottom: 70px;
   }
@@ -28,16 +20,27 @@
     justify-content: space-between;
     max-width: 500px;
     margin: auto;
+
     .contact_net {
-      font-family: Manrope;
-      font-style: normal;
+      font: $body-medium;
       font-weight: 500;
-      font-size: 16px;
-      line-height: 100%;
+      line-height: 1;
       text-decoration: none;
-      img {
+      display: flex;
+      align-items: center;
+
+      svg {
         padding-right: 8px;
         width: 32px;
+
+        path {
+          transition: fill 200ms ease-out;
+        }
+      }
+
+      &:hover path,
+      &:focus-visible path {
+        fill: $color-accent;
       }
     }
   }
