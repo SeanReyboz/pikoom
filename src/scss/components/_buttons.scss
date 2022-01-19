@@ -24,6 +24,7 @@
 
   &:hover,
   &:focus {
+    color: $color-base;
     background-color: $color-accent;
   }
 }
