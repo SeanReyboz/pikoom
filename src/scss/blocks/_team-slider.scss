@@ -28,11 +28,21 @@
     flex-direction: column;
     align-items: flex-start;
     row-gap: 64px;
+    &::before{
+        content: "";
+        position: absolute;
+        background-image: url("../icons/blob.svg");
+        inset: 0;
+        background-position: top right;
+        background-repeat: no-repeat;
+        pointer-events: none;
+      }
 
     // slide wrapper
     .swiper-wrapper {
       height: unset;
-
+      position: relative;
+      
       .swiper-slide {
         text-align: center;
         display: flex;
