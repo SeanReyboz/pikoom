@@ -1,358 +1,521 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <title>Pikoom &mdash; Agence Multimédia Étudiante</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#F97C60" />
+    <link
+      rel="icon"
+      type="image/svg"
+      href="static/assets/icons/logo-p__orange.svg"
+    />
+    <!-- Swiper JS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <!-- Main stylesheet -->
+    <link href="static/assets/css/main.css" rel="stylesheet" />
+  </head>
 
-<head>
-  <title>Pikoom &mdash; Agence Multimédia Étudiante</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#F97C60" />
-  <link rel="icon" type="image/svg" href="static/assets/icons/logo-p__orange.svg" />
-  <!-- Swiper JS -->
-  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-  <!-- Main stylesheet -->
-  <link href="static/assets/css/main.css" rel="stylesheet" />
-</head>
-
-<body>
-  <header>
-    <div class="main-wrapper">
-      <!-- Navigation  -->
-      <nav role="navigation" class="navbar">
-        <a href="#" aria-current="page" class="home clickable-indicator">
-          <img class="brand-icon" src="static/assets/icons/logo-p__orange.svg" alt="Logo de l'agence" />
-        </a>
-        <ul>
-          <li>
-            <a href="equipe.html" class="clickable-indicator">L'équipe</a>
-          </li>
-          <li>
-            <a href="realisation.html" class="clickable-indicator">Réalisations</a>
-          </li>
-          <li>
-            <a href="contact.html" class="clickable-indicator">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <!-- Contenu principal -->
-  <main>
-    <div class="main-wrapper">
-      <!-- Section de présentation  -->
-      <section class="hero-sec">
-        <h1 class="headline">
-          <span data-main-content="Nous">Nous</span>
-          <span data-main-content="sommes">sommes</span>
-          <!-- TODO: changement de texte -->
-          <span data-main-content="Pikoom" data-before="optimistes" data-after="créatifs">
-            Pikoom
-          </span>
-        </h1>
-        <p class="description">
-          <span>
-            Une agence de communication étudiante optimiste et créative basée
-            à Chambéry.
-          </span>
-        </p>
-        <aside>
-          <img class="floating-icon" data-camera-icon src="./static/assets/icons/camera.svg" alt="Icône audio-visuel" />
-          <img class="floating-icon" data-code-icon src="./static/assets/icons/code.svg" alt="Icône programmation" />
-          <img class="floating-icon" data-graph-icon src="./static/assets/icons/drawing.svg" alt="Icône graphisme" />
-        </aside>
-      </section>
-      <!-- Section "à propos de l'agence" / valeurs -->
-      <section class="values-sec">
-        <header>
-          <h2>
-            <span class="pre-title">Une agence, plusieurs valeurs...</span>
-            <span class="title">Un potentiel infini</span>
-          </h2>
-        </header>
-        <p class="about-pikoom">
-          Créée en septembre 2021, l'agence Pikoom se compose de 14
-          étudiant·e·s aux profils divers et complémentaires. De la
-          communication au graphisme en passant par l'audiovisuel et la
-          programmation, chaque membre apporte sa pierre à l'édifice pour
-          réaliser des projets multimédias. La cohésion d'équipe de Pikoom
-          repose sur trois valeurs fondamentales.
-        </p>
-        <!-- TODO: Ajouter le style pour chaque valeur & le layout quinconce -->
-        <div class="values-container">
-          <article class="value-optimism">
-            <h3 data-value-name="Optimisme" data-value-emoji="🚀">
-              Optimisme
-            </h3>
-            <p>
-              Chez Pikoom, la réussite d'un projet réside aussi dans le
-              plaisir que les étudiant·e·s ont pris pour le réaliser. Les
-              plages de réalisation projet sont donc des moments qui lient
-              bonne humeur, travail et esprit d'équipe.
-            </p>
-          </article>
-          <article class="value-open-mindedness">
-            <h3 data-value-name="Ouverture d'esprit" data-value-emoji="💡">
-              Ouverture d'esprit
-            </h3>
-            <p>
-              Comme dans toute bonne agence, chacun·e a le droit de s'exprimer
-              et de donner son point de vue. La diversité des idées des
-              membres de l'agence est la source de la créativité de Pikoom. De
-              nature curieuse, les étudiant·e·s de Pikoom n'ont pas peur de
-              repousser leurs limites.
-            </p>
-          </article>
-          <article class="value-honesty">
-            <h3 data-value-name="Hônneteté" data-value-emoji="🤝">
-              Honnêteté
-            </h3>
-            <p>
-              L'honnêteté est essentielle que ce soit au sein d'une agence
-              mais également pour entretenir une bonne relation client. Pikoom
-              met un point d'honneur sur le partage, la confiance et la
-              transparence entre tou·te·s les act·eur·rice·s d'un projet.
-            </p>
-          </article>
-        </div>
-      </section>
-      <!-- Section presentation de l'équipe -->
-      <section class="team-sec">
-        <header>
-          <h2>
-            <span class="pre-title">L'équipe</span>
-            <span class="title">Polyvalente &amp; dynamique</span>
-          </h2>
-          <p>
-            Issus d'une formation pluridisciplinaire, les membres de Pikoom
-            sont des spécialistes du multimédia.
-          </p>
-          <a class="button cta" href="./equipe.html">Rencontrez l'équipe !</a>
-        </header>
-        <!-- Slider main container -->
-        <div class="team-slider-container swiper">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper draggable">
-            <!-- Slides -->
-            <div class="swiper-slide">
-              <img src="./static/assets/images/clemencev_logo-pikoom.png" alt="Clémence Veyret" loading="lazy" />
-              <p>
-                “Nous sommes tous des étoiles, Il nous sufffit d'apprendre à
-                briller”
-              </p>
-            </div>
-            <div class="swiper-slide">
-              <img src="./static/assets/images/elodieh_logo-pikoom.png" alt="Élodie Heurtin" loading="lazy" />
-              <p>
-                “The only time you fail is when you fall down and stay down”
-              </p>
-            </div>
-            <div class="swiper-slide">
-              <img src="./static/assets/images/noef_logo-pikoom.png" alt="Noé Flipo" loading="lazy" />
-              <p>"Promettez-moi d'apprendre à sallir la beauté mon ami"</p>
-            </div>
-            <div class="swiper-slide">
-              <img src="./static/assets/images/seanr_logo-pikoom.png" alt="Sean Reyboz" loading="lazy" />
-              <p>
-                “Whether you think you can or can't, in both cases you're
-                right”
-              </p>
-            </div>
-            <div class="swiper-slide">
-              <img src="./static/assets/images/emmanuelf_logo-pikoom.png" alt="Emmanuel Faure" loading="lazy" />
-              <p>“Têtu un jour, têtu toujours”</p>
-            </div>
-            <div class="swiper-slide">
-              <img src="./static/assets/images/valenting_logo-pikoom.png" alt="Valentin Gassend" loading="lazy" />
-              <p>“En dev tout est possible”</p>
-            </div>
-            <div class="swiper-slide">
-              <img src="./static/assets/images/valentinl_logo-pikoom.png" alt="Valentin Lansigu" loading="lazy" />
-              <p>“Prendre la vie côté programmation”</p>
-            </div>
-            <div class="swiper-slide">
-              <img src="./static/assets/images/gabrielb_logo-pikoom.png" alt="Gabriel Berthaud" loading="lazy" />
-              <p>“Si la vie te donne des fleurs, prends-les”</p>
-            </div>
-            <div class="swiper-slide">
-              <img src="./static/assets/images/julienh_logo-pikoom.png" alt="Julien Hilt" loading="lazy" />
-              <p>“La vie c'est comme du fromage mais sans les trous”</p>
-            </div>
-            <div class="swiper-slide">
-              <img src="./static/assets/images/leoa_logo-pikoom.png" alt="Léo Achard" loading="lazy" />
-              <p>
-                “Design is not just what it looks like and feels like. Design
-                is how it works.”
-              </p>
-            </div>
-            <div class="swiper-slide">
-              <img src="./static/assets/images/lorianem_logo-pikoom.png" alt="Loriane Macé" loading="lazy" />
-              <p>
-                "Rien n'est impossible, seules les limites de nos esprits
-                définissent certaines choses comme inconcevables"
-              </p>
-            </div>
-            <div class="swiper-slide">
-              <img src="./static/assets/images/mathildes_logo-pikoom.png" alt="Mathilde Sabourin" loading="lazy" />
-              <p>
-                “Il suffit d'y croire très fort pour que ça devienne vrai”
-              </p>
-            </div>
-            <div class="swiper-slide">
-              <img src="./static/assets/images/maxencef_logo-pikoom.png" alt="Maxence Flety" loading="lazy" />
-              <p>“Deviens celui qu'une simple lueur de soleil émerveille.”</p>
-            </div>
-            <div class="swiper-slide">
-              <img src="./static/assets/images/claudiaj_logo-pikoom.png" alt="Claudia Jacob" loading="lazy" />
-              <p>“Apprends à marcher avant de courir”</p>
-            </div>
-          </div>
-          <!-- Slider navigation arrows -->
-          <div class="swiper-nav">
-            <button class="swiper-button-prev button"></button>
-            <button class="swiper-button-next button"></button>
-          </div>
-        </div>
-      </section>
-      <!-- Section aperçu des réalisations  -->
-      <section class="projects-sec">
-        <header>
-          <h2>
-            <span class="pre-title">Des projets riches et variés</span>
-            <span class="title">Découvrez nos réalisations !</span>
-          </h2>
-          <p>
-            Au cours de l'année, les membres de Pikoom ont pu mettre en
-            application leurs compétences dans de divers projets multimédias.
-            La polyvalence et l'enthousiasme des étudiant·e·s se reflètent
-            dans les réalisations de l'agence.
-          </p>
-        </header>
-        <!-- cartes projet -->
-        <div class="projects-card-container">
-          <a href="realisation/MMI&Apres.html" class="project-card discoverable" data-project-tag="ÉVÉNEMENTIEL">
-            <div class="project-card-img-hover"></div>
-            <img class="project-card-img" src="./static/assets/images/MMI_&_Apres.png" alt="Aperçu du projet!"
-              loading="lazy" />
-            <div class="project-card-info">
-              <time class="project-date">Jan 2022</time>
-              <h4 class="project-name">MMI &amp; Après</h4>
-              <hr class="separator" />
-            </div>
+  <body>
+    <header>
+      <div class="main-wrapper">
+        <!-- Navigation  -->
+        <nav role="navigation" class="navbar">
+          <a href="#" aria-current="page" class="home clickable-indicator">
+            <img
+              class="brand-icon"
+              src="static/assets/icons/logo-p__orange.svg"
+              alt="Logo de l'agence"
+            />
           </a>
-          <a href="#" class="project-card discoverable" data-project-tag="CAPTATION AUDIOVISUELLE">
-            <div class="project-card-img-hover"></div>
-            <img class="project-card-img" src="./static/assets/images/picture_test.png" alt="Aperçu du projet!"
-              loading="lazy" />
-            <div class="project-card-info">
-              <time class="project-date">Oct 2021</time>
-              <h4 class="project-name">Vernissage Ben</h4>
-              <hr class="separator" />
-            </div>
-          </a>
-          <a href="#" class="project-card discoverable" data-project-tag="CAPTATION AUDIOVISUELLE">
-            <div class="project-card-img-hover"></div>
-            <img class="project-card-img" src="./static/assets/images/picture_test.png" alt="Aperçu du projet!"
-              loading="lazy" />
-            <div class="project-card-info">
-              <time class="project-date">Sep 2021 - Dec 2021</time>
-              <h4 class="project-name">Soirées de l'instant</h4>
-              <hr class="separator" />
-            </div>
-          </a>
-          <a href="#" class="project-card discoverable" data-project-tag="SUPPORT DE COMMUNICATION">
-            <div class="project-card-img-hover"></div>
-            <img class="project-card-img" src="./static/assets/images/Le_club_des_entreprises.png"
-              alt="Aperçu du projet!" loading="lazy" />
-            <div class="project-card-info">
-              <time class="project-date">Sep 2021</time>
-              <h4 class="project-name">Le club des entreprises</h4>
-              <hr class="separator" />
-            </div>
-          </a>
-        </div>
-      </section>
-    </div>
-  </main>
-  <!-- Footer -->
-  <footer>
-    <div class="main-wrapper">
-      <nav class="footer-nav navbar">
-        <a href="#" aria-current="page" class="home clickable-indicator">
-          <img class="brand-icon" src="static/assets/icons/logo-p__orange.svg" alt="Logo de l'agence" loading="lazy" />
-        </a>
-        <ul>
-          <li>
-            <a href="equipe.html" class="clickable-indicator">L'équipe</a>
-          </li>
-          <li>
-            <a href="realisation.html" class="clickable-indicator">
-              Réalisations
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <hr class="separator" />
-      <div class="inner-footer">
-        <div class="about-container">
-          <div class="about">
-            <h5>Pikoom</h5>
-            <p>
-              Agence de communication étudiante optimiste et créative basée à
-              Chambéry.
-            </p>
-          </div>
-          <div class="credits">
-            <a href="https://www.univ-smb.fr" target="_blank" rel="noopener noreferrer" class="button">
-              <img src="./static/assets/images/logo-USMB.png" alt="Logo Université Savoie Mont-Blanc" class="credit-img"
-                loading="lazy" />
-            </a>
-            <a href="https://mmi.univ-smb.fr/" target="_blank" rel="noopener noreferrer" class="button">
-              <img src="./static/assets/images/logo-MMICHY.png" alt="Logo IUT MMI Chambéry" class="credit-img"
-                loading="lazy" />
-            </a>
-          </div>
-        </div>
-        <address class="address">
-          <h5>Adresse</h5>
-          <p>28 Avenue du Lac d'Annecy</p>
-          <p>73370 Le Bourget-du-Lac</p>
-          <p>France</p>
-        </address>
-        <div class="contact">
-          <h5>Contact</h5>
           <ul>
             <li>
-              <a href="mailto:agence.pikoom@gmail.com" class="clickable-indicator">
-                Mail
-              </a>
+              <a href="equipe.html" class="clickable-indicator">L'équipe</a>
             </li>
             <li>
-              <a href="//instagram.com/pikoomagence" target="_blank" class="clickable-indicator">
-                Instagram
+              <a href="realisation.html" class="clickable-indicator"
+                >Réalisations</a
+              >
+            </li>
+            <li>
+              <a href="contact.html" class="clickable-indicator">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- Contenu principal -->
+    <main>
+      <div class="main-wrapper">
+        <!-- Section de présentation  -->
+        <section class="hero-sec">
+          <h1 class="headline">
+            <span data-main-content="Nous">Nous</span>
+            <span data-main-content="sommes">sommes</span>
+            <!-- TODO: changement de texte -->
+            <span
+              data-main-content="Pikoom"
+              data-before="optimistes"
+              data-after="créatifs"
+            >
+              Pikoom
+            </span>
+          </h1>
+          <p class="description">
+            <span>
+              Une agence de communication étudiante optimiste et créative basée
+              à Chambéry.
+            </span>
+          </p>
+          <aside>
+            <img
+              class="floating-icon"
+              data-camera-icon
+              src="./static/assets/icons/camera.svg"
+              alt="Icône audio-visuel"
+            />
+            <img
+              class="floating-icon"
+              data-code-icon
+              src="./static/assets/icons/code.svg"
+              alt="Icône programmation"
+            />
+            <img
+              class="floating-icon"
+              data-graph-icon
+              src="./static/assets/icons/drawing.svg"
+              alt="Icône graphisme"
+            />
+          </aside>
+        </section>
+        <!-- Section "à propos de l'agence" / valeurs -->
+        <section class="values-sec">
+          <header>
+            <h2>
+              <span class="pre-title">Une agence, plusieurs valeurs...</span>
+              <span class="title">Un potentiel infini</span>
+            </h2>
+          </header>
+          <p class="about-pikoom">
+            Créée en septembre 2021, l'agence Pikoom se compose de 14
+            étudiant·e·s aux profils divers et complémentaires. De la
+            communication au graphisme en passant par l'audiovisuel et la
+            programmation, chaque membre apporte sa pierre à l'édifice pour
+            réaliser des projets multimédias. La cohésion d'équipe de Pikoom
+            repose sur trois valeurs fondamentales.
+          </p>
+          <!-- TODO: Ajouter le style pour chaque valeur & le layout quinconce -->
+          <div class="values-container">
+            <article class="value-optimism">
+              <h3 data-value-name="Optimisme" data-value-emoji="🚀">
+                Optimisme
+              </h3>
+              <p>
+                Chez Pikoom, la réussite d'un projet réside aussi dans le
+                plaisir que les étudiant·e·s ont pris pour le réaliser. Les
+                plages de réalisation projet sont donc des moments qui lient
+                bonne humeur, travail et esprit d'équipe.
+              </p>
+            </article>
+            <article class="value-open-mindedness">
+              <h3 data-value-name="Ouverture d'esprit" data-value-emoji="💡">
+                Ouverture d'esprit
+              </h3>
+              <p>
+                Comme dans toute bonne agence, chacun·e a le droit de s'exprimer
+                et de donner son point de vue. La diversité des idées des
+                membres de l'agence est la source de la créativité de Pikoom. De
+                nature curieuse, les étudiant·e·s de Pikoom n'ont pas peur de
+                repousser leurs limites.
+              </p>
+            </article>
+            <article class="value-honesty">
+              <h3 data-value-name="Hônneteté" data-value-emoji="🤝">
+                Honnêteté
+              </h3>
+              <p>
+                L'honnêteté est essentielle que ce soit au sein d'une agence
+                mais également pour entretenir une bonne relation client. Pikoom
+                met un point d'honneur sur le partage, la confiance et la
+                transparence entre tou·te·s les act·eur·rice·s d'un projet.
+              </p>
+            </article>
+          </div>
+        </section>
+        <!-- Section presentation de l'équipe -->
+        <section class="team-sec">
+          <header>
+            <h2>
+              <span class="pre-title">L'équipe</span>
+              <span class="title">Polyvalente &amp; dynamique</span>
+            </h2>
+            <p>
+              Issus d'une formation pluridisciplinaire, les membres de Pikoom
+              sont des spécialistes du multimédia.
+            </p>
+            <a class="button cta" href="./equipe.html">Rencontrez l'équipe !</a>
+          </header>
+          <!-- Slider main container -->
+          <div class="team-slider-container swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper draggable">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img
+                  src="./static/assets/images/clemencev_logo-pikoom.png"
+                  alt="Clémence Veyret"
+                  loading="lazy"
+                />
+                <p>
+                  “Nous sommes tous des étoiles, Il nous sufffit d'apprendre à
+                  briller”
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./static/assets/images/elodieh_logo-pikoom.png"
+                  alt="Élodie Heurtin"
+                  loading="lazy"
+                />
+                <p>
+                  “The only time you fail is when you fall down and stay down”
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./static/assets/images/noef_logo-pikoom.png"
+                  alt="Noé Flipo"
+                  loading="lazy"
+                />
+                <p>"Promettez-moi d'apprendre à sallir la beauté mon ami"</p>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./static/assets/images/seanr_logo-pikoom.png"
+                  alt="Sean Reyboz"
+                  loading="lazy"
+                />
+                <p>
+                  “Whether you think you can or can't, in both cases you're
+                  right”
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./static/assets/images/emmanuelf_logo-pikoom.png"
+                  alt="Emmanuel Faure"
+                  loading="lazy"
+                />
+                <p>“Têtu un jour, têtu toujours”</p>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./static/assets/images/valenting_logo-pikoom.png"
+                  alt="Valentin Gassend"
+                  loading="lazy"
+                />
+                <p>“En dev tout est possible”</p>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./static/assets/images/valentinl_logo-pikoom.png"
+                  alt="Valentin Lansigu"
+                  loading="lazy"
+                />
+                <p>“Prendre la vie côté programmation”</p>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./static/assets/images/gabrielb_logo-pikoom.png"
+                  alt="Gabriel Berthaud"
+                  loading="lazy"
+                />
+                <p>“Si la vie te donne des fleurs, prends-les”</p>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./static/assets/images/julienh_logo-pikoom.png"
+                  alt="Julien Hilt"
+                  loading="lazy"
+                />
+                <p>“La vie c'est comme du fromage mais sans les trous”</p>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./static/assets/images/leoa_logo-pikoom.png"
+                  alt="Léo Achard"
+                  loading="lazy"
+                />
+                <p>
+                  “Design is not just what it looks like and feels like. Design
+                  is how it works.”
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./static/assets/images/lorianem_logo-pikoom.png"
+                  alt="Loriane Macé"
+                  loading="lazy"
+                />
+                <p>
+                  "Rien n'est impossible, seules les limites de nos esprits
+                  définissent certaines choses comme inconcevables"
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./static/assets/images/mathildes_logo-pikoom.png"
+                  alt="Mathilde Sabourin"
+                  loading="lazy"
+                />
+                <p>
+                  “Il suffit d'y croire très fort pour que ça devienne vrai”
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./static/assets/images/maxencef_logo-pikoom.png"
+                  alt="Maxence Flety"
+                  loading="lazy"
+                />
+                <p>“Deviens celui qu'une simple lueur de soleil émerveille.”</p>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./static/assets/images/claudiaj_logo-pikoom.png"
+                  alt="Claudia Jacob"
+                  loading="lazy"
+                />
+                <p>“Apprends à marcher avant de courir”</p>
+              </div>
+            </div>
+            <!-- Slider navigation arrows -->
+            <div class="swiper-nav">
+              <button class="swiper-button-prev button"></button>
+              <button class="swiper-button-next button"></button>
+            </div>
+          </div>
+        </section>
+        <!-- Section aperçu des réalisations  -->
+        <section class="projects-sec">
+          <header>
+            <h2>
+              <span class="pre-title">Des projets riches et variés</span>
+              <span class="title">Découvrez nos réalisations !</span>
+            </h2>
+            <p>
+              Au cours de l'année, les membres de Pikoom ont pu mettre en
+              application leurs compétences dans de divers projets multimédias.
+              La polyvalence et l'enthousiasme des étudiant·e·s se reflètent
+              dans les réalisations de l'agence.
+            </p>
+          </header>
+          <!-- cartes projet -->
+          <div class="projects-card-container">
+            <a
+              href="realisation/MMI&Apres.html"
+              class="project-card discoverable"
+              data-project-tag="ÉVÉNEMENTIEL"
+            >
+              <div class="project-card-img-hover"></div>
+              <img
+                class="project-card-img"
+                src="./static/assets/images/MMI_&_Apres.png"
+                alt="Aperçu du projet!"
+                loading="lazy"
+              />
+              <div class="project-card-info">
+                <time class="project-date">Jan 2022</time>
+                <h4 class="project-name">MMI &amp; Après</h4>
+                <hr class="separator" />
+              </div>
+            </a>
+            <a
+              href="#"
+              class="project-card discoverable"
+              data-project-tag="CAPTATION AUDIOVISUELLE"
+            >
+              <div class="project-card-img-hover"></div>
+              <img
+                class="project-card-img"
+                src="./static/assets/images/picture_test.png"
+                alt="Aperçu du projet!"
+                loading="lazy"
+              />
+              <div class="project-card-info">
+                <time class="project-date">Oct 2021</time>
+                <h4 class="project-name">Vernissage Ben</h4>
+                <hr class="separator" />
+              </div>
+            </a>
+            <a
+              href="#"
+              class="project-card discoverable"
+              data-project-tag="CAPTATION AUDIOVISUELLE"
+            >
+              <div class="project-card-img-hover"></div>
+              <img
+                class="project-card-img"
+                src="./static/assets/images/picture_test.png"
+                alt="Aperçu du projet!"
+                loading="lazy"
+              />
+              <div class="project-card-info">
+                <time class="project-date">Sep 2021 - Dec 2021</time>
+                <h4 class="project-name">Soirées de l'instant</h4>
+                <hr class="separator" />
+              </div>
+            </a>
+            <a
+              href="#"
+              class="project-card discoverable"
+              data-project-tag="SUPPORT DE COMMUNICATION"
+            >
+              <div class="project-card-img-hover"></div>
+              <img
+                class="project-card-img"
+                src="./static/assets/images/Le_club_des_entreprises.png"
+                alt="Aperçu du projet!"
+                loading="lazy"
+              />
+              <div class="project-card-info">
+                <time class="project-date">Sep 2021</time>
+                <h4 class="project-name">Le club des entreprises</h4>
+                <hr class="separator" />
+              </div>
+            </a>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <div class="main-wrapper">
+        <nav class="footer-nav navbar">
+          <a href="#" aria-current="page" class="home clickable-indicator">
+            <img
+              class="brand-icon"
+              src="static/assets/icons/logo-p__orange.svg"
+              alt="Logo de l'agence"
+              loading="lazy"
+            />
+          </a>
+          <ul>
+            <li>
+              <a href="equipe.html" class="clickable-indicator">L'équipe</a>
+            </li>
+            <li>
+              <a href="realisation.html" class="clickable-indicator">
+                Réalisations
               </a>
             </li>
           </ul>
+        </nav>
+        <hr class="separator" />
+        <div class="inner-footer">
+          <div class="about-container">
+            <div class="about">
+              <h5>Pikoom</h5>
+              <p>
+                Agence de communication étudiante optimiste et créative basée à
+                Chambéry.
+              </p>
+            </div>
+            <div class="credits">
+              <a
+                href="https://www.univ-smb.fr"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="button"
+              >
+                <img
+                  src="./static/assets/images/logo-USMB.png"
+                  alt="Logo Université Savoie Mont-Blanc"
+                  class="credit-img"
+                  loading="lazy"
+                />
+              </a>
+              <a
+                href="https://mmi.univ-smb.fr/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="button"
+              >
+                <img
+                  src="./static/assets/images/logo-MMICHY.png"
+                  alt="Logo IUT MMI Chambéry"
+                  class="credit-img"
+                  loading="lazy"
+                />
+              </a>
+            </div>
+          </div>
+          <address class="address">
+            <h5>Adresse</h5>
+            <p>28 Avenue du Lac d'Annecy</p>
+            <p>73370 Le Bourget-du-Lac</p>
+            <p>France</p>
+          </address>
+          <div class="contact">
+            <h5>Contact</h5>
+            <ul>
+              <li>
+                <a
+                  href="mailto:agence.pikoom@gmail.com"
+                  class="clickable-indicator"
+                >
+                  Mail
+                </a>
+              </li>
+              <li>
+                <a
+                  href="//instagram.com/pikoomagence"
+                  target="_blank"
+                  class="clickable-indicator"
+                >
+                  Instagram
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr class="separator" />
+        <div class="footer-bottom">
+          <div class="copyrights">
+            <p>Pikoom 🌵 &copy; 2022</p>
+            <a href="./mention.html" class="clickable-indicator">
+              Mentions légales
+            </a>
+          </div>
         </div>
       </div>
-      <hr class="separator" />
-      <div class="footer-bottom">
-        <div class="copyrights">
-          <p>Pikoom 🌵 &copy; 2022</p>
-          <a href="./mention.html" class="clickable-indicator">
-            Mentions légales
-          </a>
-        </div>
-      </div>
+    </footer>
+    <a class="back-to-top-btn button">
+      <svg
+        width="30"
+        height="30"
+        viewBox="0 0 30 30"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M19.6266 15.7072C20.0171 16.0977 20.6502 16.0977 21.0408 15.7072C21.4313 15.3167 21.4313 14.6835 21.0408 14.293L19.6266 15.7072ZM15.0003 9.66675L15.7074 8.95964C15.3169 8.56912 14.6837 8.56912 14.2932 8.95964L15.0003 9.66675ZM8.95989 14.293C8.56936 14.6835 8.56936 15.3167 8.95989 15.7072C9.35041 16.0977 9.98357 16.0977 10.3741 15.7072L8.95989 14.293ZM14.0003 20.3334C14.0003 20.8857 14.448 21.3334 15.0003 21.3334C15.5526 21.3334 16.0003 20.8857 16.0003 20.3334L14.0003 20.3334ZM27.3337 15.0001C27.3337 21.8116 21.8118 27.3334 15.0003 27.3334V29.3334C22.9164 29.3334 29.3337 22.9162 29.3337 15.0001H27.3337ZM15.0003 27.3334C8.18881 27.3334 2.66699 21.8116 2.66699 15.0001H0.666992C0.666992 22.9162 7.08424 29.3334 15.0003 29.3334V27.3334ZM2.66699 15.0001C2.66699 8.18857 8.18881 2.66675 15.0003 2.66675V0.666748C7.08424 0.666748 0.666992 7.084 0.666992 15.0001H2.66699ZM15.0003 2.66675C21.8118 2.66675 27.3337 8.18857 27.3337 15.0001H29.3337C29.3337 7.084 22.9164 0.666748 15.0003 0.666748V2.66675ZM21.0408 14.293L15.7074 8.95964L14.2932 10.3739L19.6266 15.7072L21.0408 14.293ZM14.2932 8.95964L8.95989 14.293L10.3741 15.7072L15.7074 10.3739L14.2932 8.95964ZM16.0003 20.3334L16.0003 9.66675L14.0003 9.66675L14.0003 20.3334L16.0003 20.3334Z"
+          fill="#2F4858"
+        />
+      </svg>
+      <span>Top</span>
+    </a>
+    <div class="cursor">
+      <span data-drag-tooltip>drag&nbsp;✋</span>
+      <span data-discover-tooltip>découvrir</span>
     </div>
-  </footer>
-  <div class="cursor">
-    <span data-drag-tooltip>drag&nbsp;✋</span>
-    <span data-discover-tooltip>découvrir</span>
-  </div>
-  <!-- Scripts -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-  <script src="js/app.js" type="module"></script>
-</body>
-
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="js/app.js" type="module"></script>
+  </body>
 </html>
 <!-- 
   vim:tw=80:ts=2:noet:ft=html:norl 

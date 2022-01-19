@@ -1,0 +1,27 @@
+/*  Back to top component  */
+
+.back-to-top-btn {
+  position: fixed;
+  right: 42px;
+  bottom: 48px;
+  width: 64px;
+  height: 64px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  font: $body-medium;
+  text-decoration: none;
+
+  path {
+    fill: $color-graybase;
+    transition: fill 300ms ease-out;
+  }
+
+  &:hover path,
+  &:focus-visible path {
+    fill: $color-accent;
+  }
+}
