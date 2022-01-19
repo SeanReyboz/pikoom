@@ -11,16 +11,16 @@
 - [x] dégadé sur carte en contraste
 - [x] Faire le curseur perso
 - [x] Style de curseur personnalisé
+- [x] Slider page étude de cas
+- [x] Transitions changement de page
+- [x] Bouton retour en haut
 
 # ONGOING
 
-- [ ] Slider page étude de cas
 - [ ] Contenu des pages / études de cas
 - [ ] Update des liens entre chaque page
-- [ ] Transitions changement de page
 
 # TODO
 
 - [ ] style en hover des cartes
 - [ ] Animations (texte, scroll, etc)
-- [ ] Bouton retour en haut
