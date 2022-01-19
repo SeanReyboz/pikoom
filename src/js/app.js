@@ -1,5 +1,7 @@
 "use strict"
 
+import Swiper from "https://unpkg.com/swiper@7/swiper-bundle.esm.browser.min.js"
+
 import { swiperSlider, CaseStudyTeamSlider } from "./teamSlider.js"
 import { verticalScrollPosition, scrollTop } from "./backToTopBtn.js"
 import { Cursor } from "./cursor.js"
@@ -26,12 +28,46 @@ function delay(n) {
 
 barba.init({
   sync: true,
-  views: [
+  transitions: [
     {
-      namespace: "home",
-      beforeEnter() {},
-      afterEnter() {
-        return new Swiper(".team-slider-container", {
+      // En quittant chaque page
+      async leave() {
+        const done = this.async()
+        tl.to(".page-transition", {
+          top: "0%",
+          height: "100%",
+          duration: 0.6,
+          transition: "Power3.easeOut",
+        })
+        await delay(1000)
+        done()
+      },
+
+      // En arrivant sur une nouvelle page
+      enter() {
+        tl.to(".page-transition", {
+          top: "100%",
+          height: "100%",
+          duration: 0.6,
+          delay: 0.2,
+          transition: "Power3.easeOut",
+        }).set(".page-transition", { top: "0%", height: "0%" })
+
+        // Positionner l'utilisateur en haut du document
+        scrollTop()
+      },
+
+      // Avant chaque transition
+      before() {
+        body.classList.add("no-scroll")
+      },
+
+      // Après chaque transition
+      after() {
+        body.classList.remove("no-scroll")
+        // Recréer un curseur
+        // Rafraichir la page
+        const teamSlider = new Swiper(".team-slider-container", {
           direction: "horizontal",
           loop: true,
           grabCursor: true,
@@ -41,13 +77,7 @@ barba.init({
             prevEl: ".swiper-button-prev",
           },
         })
-      },
-    },
-    {
-      namespace: "realisation",
-      beforeEnter() {},
-      afterEnter() {
-        return new Swiper(".swiper_rea", {
+        const reaSlider = new Swiper(".swiper_rea", {
           direction: "horizontal",
 
           slidesPerView: 1,
@@ -71,48 +101,6 @@ barba.init({
             clickable: true,
           },
         })
-      },
-    },
-  ],
-  transitions: [
-    {
-      // En quittant chaque page
-      async leave() {
-        const done = this.async()
-        tl.to(".page-transition", {
-          top: "0%",
-          height: "100%",
-          duration: 1,
-          transition: "Power3.easeOut",
-        })
-        await delay(1000)
-        done()
-      },
-
-      // En arrivant sur une nouvelle page
-      enter() {
-        tl.to(".page-transition", {
-          top: "100%",
-          height: "100%",
-          duration: 0.6,
-          delay: 0.3,
-          transition: "Power3.easeOut",
-        }).set(".page-transition", { top: "0%", height: "0%" })
-
-        // Positionner l'utilisateur en haut du document
-        scrollTop()
-      },
-
-      // Avant chaque transition
-      before() {
-        body.classList.add("no-scroll")
-      },
-
-      // Après chaque transition
-      after() {
-        body.classList.remove("no-scroll")
-        // Recréer un curseur
-        // Rafraichir la page
         return new Cursor(document.querySelector(".cursor"))
       },
     },
