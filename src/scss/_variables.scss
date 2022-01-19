@@ -55,15 +55,6 @@ $linear-gradient-6: conic-gradient(
 $list: $linear-gradient-1, $linear-gradient-2, $linear-gradient-3,
   $linear-gradient-4, $linear-gradient-5, $linear-gradient-6;
 
-$color-primary: #a59dff;
-$color-secondary: #f8762c;
-
-$color-error: #eb4242;
-$color-info: #01d7fd;
-$color-success: #51c67d;
-$color-warning: #ff9f4d;
-$color-danger: $color-error;
-
 $color-bg: $color-base;
 $color-text: $color-graybase;
 $color-link: inherit;
