@@ -1,45 +1,67 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
+  <head>
     <title>Erreur 404: document introuvable</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#F97C60" />
-    <link rel="icon" type="image/svg" href="static/assets/icons/logo-p__orange.svg" />
+    <link
+      rel="icon"
+      type="image/svg"
+      href="static/assets/icons/logo-p__orange.svg"
+    />
     <!-- main stylesheet -->
     <link href="static/assets/css/main.css" rel="stylesheet" />
-</head>
+  </head>
 
-<body id="err-404">
+  <body id="err-404" data-barba="wrapper">
+      <!-- page transition -->
+    <div class="loader">
+        <div class="page-transition"></div>
+      </div>
+      <div
+        class="barba-wrapper"
+        data-barba="container"
+        data-barba-namespace="contact"
+      >
     <header>
-        <div class="main-wrapper">
-            <!-- Navigation  -->
-            <nav role="navigation" class="navbar">
-                <a href="./index.html" aria-current="page" class="home clickable-indicator">
-                    <img class="brand-icon" src="static/assets/icons/logo-p__orange.svg" alt="Logo de l'agence" />
-                </a>
-                <ul>
-                    <li>
-                        <a href="equipe.html" class="clickable-indicator">L'équipe</a>
-                    </li>
-                    <li>
-                        <a href="realisation.html" class="clickable-indicator">Réalisations</a>
-                    </li>
-                    <li>
-                        <a href="contact.html" class="clickable-indicator">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+      <div class="main-wrapper">
+        <!-- Navigation  -->
+        <nav role="navigation" class="navbar">
+          <a
+            href="./index.html"
+            aria-current="page"
+            class="home clickable-indicator"
+          >
+            <img
+              class="brand-icon"
+              src="static/assets/icons/logo-p__orange.svg"
+              alt="Logo de l'agence"
+            />
+          </a>
+          <ul>
+            <li>
+              <a href="equipe.html" class="clickable-indicator">L'équipe</a>
+            </li>
+            <li>
+              <a href="realisation.html" class="clickable-indicator"
+                >Réalisations</a
+              >
+            </li>
+            <li>
+              <a href="contact.html" class="clickable-indicator">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <!-- Main -->
     <main class="error-container">
-        <h1>Les développeurs ont dû tomber à court de cafféine...</h1>
-        <a href="../" class="button cta">Retour</a>
+      <h1>Les développeurs ont dû tomber à court de cafféine...</h1>
+      <a href="../" class="button cta">Retour</a>
     </main>
-</body>
-
+    <script src="js/libs/barba.js"></script>
+  </body>
 </html>
 <!-- 
   vim:tw=80:ts=2:noet:ft=html:norl 
