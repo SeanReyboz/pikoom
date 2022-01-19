@@ -1,0 +1,61 @@
+/*  Custom cursor style  */
+.cursor {
+  --size: attr(data-size);
+
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 15;
+  contain: layout style size;
+  pointer-events: none;
+  // Preparer le client à utiliser le GPU
+  transform: translate3D(0px, 0px, 0px) skewY(5deg);
+
+  top: -24px;
+  left: -24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  top: calc(var(--size) * -0.5);
+  left: calc(var(--size) * -0.5);
+  width: var(--size);
+  height: var(--size);
+  transform: scale(0.2);
+  background-color: $color-graybase;
+  border-radius: 50%;
+
+  border: 2px solid currentColor;
+  transition: background-color 150ms ease-out;
+
+  span {
+    position: absolute;
+    font: $body-regular;
+    color: $color-base;
+    opacity: 0;
+    visibility: none;
+    transition: all 100ms ease-out;
+    cursor: inherit;
+  }
+
+  &.hovering {
+    &-link {
+      background-color: transparent;
+    }
+    &-draggable {
+      cursor: grab;
+      span[data-drag-tooltip] {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+    &-discoverable {
+      cursor: none;
+      span[data-discover-tooltip] {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+}
