@@ -75,7 +75,7 @@
 
         transition: background-color 180ms ease-out;
 
-        &:hover{
+        &:hover,&:focus-visible{
           background-color: $color-accent;
         }
         &::after {
