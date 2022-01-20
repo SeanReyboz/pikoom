@@ -28,6 +28,8 @@ function delay(n) {
 
 barba.init({
   sync: true,
+  // debug: true,
+  // logLevel: "debug",
   transitions: [
     {
       // En quittant chaque page
@@ -102,8 +104,16 @@ barba.init({
             clickable: true,
           },
         })
+        window.addEventListener("scroll", () => verticalScrollPosition())
         return new Cursor(document.querySelector(".cursor"))
       },
     },
   ],
+  // requestError(trigger, action, url, response) {
+  //   console.log(action)
+  //   if (response.status && response.status === 404) {
+  //     barba.go("404.html")
+  //   }
+  //   return false
+  // },
 })
