@@ -2,6 +2,7 @@
 
 .back-to-top-btn {
   position: fixed;
+  z-index: 999;
   right: 42px;
   bottom: 48px;
   width: 64px;
@@ -29,5 +30,11 @@
   &:hover path,
   &:focus-visible path {
     fill: $color-accent;
+  }
+
+  @media screen and(max-width: $screen-sm-min) {
+    font: $body-small;
+    right: 20px;
+    bottom: 24px;
   }
 }

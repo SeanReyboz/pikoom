@@ -23,10 +23,17 @@
 # ONGOING
 
 - [x] Déploiement
+- [x] Masquer le curseur en version mobile
+- [ ] Changement de style du bouton retour aux réalisations
+- [ ] Meta description SEO-Friendly
 
 # TODO
 
 - [ ] Animations (texte, scroll, etc)
-- [ ] Responsive
-- [ ] Changement de style du bouton retour aux réalisations
-- [ ] Masquer le curseur en version mobile
+- [ ] Passer les liens vers les RS/portfolio de la page équipe en `display: none`
+- [ ] Menu responsive
+- [ ] Page réalisations responsive
+- [ ] Page de réalisation individuelle responsive
+- [ ] Page des mentions légales responsive
+- [ ] Page contact responsive
+- [ ] Transition barba responsive
