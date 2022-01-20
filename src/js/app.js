@@ -71,6 +71,7 @@ barba.init({
           direction: "horizontal",
           loop: true,
           grabCursor: true,
+          initialSlide: Math.floor(Math.random() * 14),
 
           navigation: {
             nextEl: ".swiper-button-next",
