@@ -1,160 +1,162 @@
-h1 {
-  font: $title-large;
-  background: $linear-gradient-1;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  text-align: center;
-  padding-top: 120px;
-}
-.peoples {
-  padding-top: 120px;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 384px);
-  grid-gap: 32px;
-  justify-content: center;
-  .people_hover {
-    z-index: 1;
-    opacity: 0;
-    position: absolute;
-    color: $color-base;
+.equipee {
+  h1 {
+    font: $title-large;
+    background: $linear-gradient-1;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
     text-align: center;
-    width: 384px;
-    height: 684px;
-    background: linear-gradient(
-        180deg,
-        rgba(39, 8, 1, 0.55) 0%,
-        rgba(49, 11, 2, 0.6) 100%
-      ),
-      linear-gradient(307.89deg, #f97c60 29.62%, #fa927a 76.88%);
-    transition: opacity 300ms;
-    &:hover {
-      opacity: 0.95;
-    }
-    .people_whoitis {
-      padding-top: 64px;
-      padding-bottom: 87px;
-      .people_quote {
-        font-family: Manrope;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 24px;
-        line-height: 130%;
-        padding: 0 30px;
-        padding-bottom: 28px;
+    padding-top: 200px;
+  }
+  .peoples {
+    padding-top: 120px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 384px);
+    grid-gap: 32px;
+    justify-content: center;
+    .people_hover {
+      z-index: 1;
+      opacity: 0;
+      position: absolute;
+      color: $color-base;
+      text-align: center;
+      width: 384px;
+      height: 684px;
+      background: linear-gradient(
+          180deg,
+          rgba(39, 8, 1, 0.55) 0%,
+          rgba(49, 11, 2, 0.6) 100%
+        ),
+        linear-gradient(307.89deg, #f97c60 29.62%, #fa927a 76.88%);
+      transition: opacity 300ms;
+      &:hover {
+        opacity: 0.95;
       }
-      .people_description {
+      .people_whoitis {
+        padding-top: 64px;
+        padding-bottom: 87px;
+        .people_quote {
+          font-family: Manrope;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 24px;
+          line-height: 130%;
+          padding: 0 30px;
+          padding-bottom: 28px;
+        }
+        .people_description {
+          font-family: Manrope;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 150%;
+          text-align: start;
+          padding: 0 22px;
+        }
+      }
+      .people_network {
         font-family: Manrope;
         font-style: normal;
         font-weight: normal;
         font-size: 16px;
         line-height: 150%;
-        text-align: start;
-        padding: 0 22px;
-      }
-    }
-    .people_network {
-      font-family: Manrope;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 16px;
-      line-height: 150%;
-      display: grid;
-      flex-direction: column;
-      text-align: initial;
-      padding-left: 22px;
-      position: absolute;
-      top: 491px;
-      span {
-        display: none;
-      }
-      a {
-        text-decoration: none;
-        &:hover {
-          text-decoration: underline;
-        }
-        &:nth-child(2) {
-          padding: 8px 0;
-        }
-      }
-    }
-  }
-  img {
-    width: 384px;
-    height: 684px;
-  }
-  .people_properties {
-    position: relative;
-    z-index: 2;
-    bottom: 75px;
-    left: 22px;
-    //width: 94%;
-    p {
-      color: $color-base;
-    }
-    .name {
-      font-family: Epilogue;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 32px;
-      line-height: 95%;
-    }
-    .domain {
-      font-family: Manrope;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 16px;
-      line-height: 150%;
-      text-transform: uppercase;
-    }
-  }
-}
-
-@media (max-width: 480px) {
-  .peoples {
-    grid-template-columns: repeat(auto-fill, 300px);
-    .people_hover {
-      width: 300px;
-      height: 534px;
-      &:hover {
-        opacity: 0.95;
-      }
-      .people_whoitis {
-        padding-top: 60px;
-        .people_quote {
-          font-size: 14px;
-        }
-        .people_description {
-          font-size: 13px;
-        }
-      }
-      .people_network {
-        justify-content: space-between;
-        display: flex;
-        width: 278px;
-        margin: auto;
-        flex-direction: unset;
-        top: 398px;
+        display: grid;
+        flex-direction: column;
+        text-align: initial;
+        padding-left: 22px;
+        position: absolute;
+        top: 491px;
         span {
-          display: unset;
+          display: none;
         }
         a {
+          text-decoration: none;
+          &:hover {
+            text-decoration: underline;
+          }
           &:nth-child(2) {
-            padding: 0;
+            padding: 8px 0;
           }
         }
       }
     }
     img {
-      width: 300px;
-      height: 534px;
+      width: 384px;
+      height: 684px;
     }
     .people_properties {
+      position: relative;
+      z-index: 2;
+      bottom: 75px;
+      left: 22px;
+      //width: 94%;
+      p {
+        color: $color-base;
+      }
       .name {
-        font-size: 24px;
+        font-family: Epilogue;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 95%;
       }
       .domain {
-        font-size: 14px;
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 150%;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    .peoples {
+      grid-template-columns: repeat(auto-fill, 300px);
+      .people_hover {
+        width: 300px;
+        height: 534px;
+        &:hover {
+          opacity: 0.95;
+        }
+        .people_whoitis {
+          padding-top: 60px;
+          .people_quote {
+            font-size: 14px;
+          }
+          .people_description {
+            font-size: 13px;
+          }
+        }
+        .people_network {
+          justify-content: space-between;
+          display: flex;
+          width: 278px;
+          margin: auto;
+          flex-direction: unset;
+          top: 398px;
+          span {
+            display: unset;
+          }
+          a {
+            &:nth-child(2) {
+              padding: 0;
+            }
+          }
+        }
+      }
+      img {
+        width: 300px;
+        height: 534px;
+      }
+      .people_properties {
+        .name {
+          font-size: 24px;
+        }
+        .domain {
+          font-size: 14px;
+        }
       }
     }
   }
