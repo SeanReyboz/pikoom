@@ -1,5 +1,14 @@
+h1 {
+  font: $title-large;
+  background: $linear-gradient-1;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: center;
+  padding-top: 120px;
+}
 .peoples {
-  padding-top: 250px;
+  padding-top: 120px;
   display: grid;
   grid-template-columns: repeat(auto-fill, 384px);
   grid-gap: 32px;
