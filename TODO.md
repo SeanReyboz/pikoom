@@ -20,6 +20,7 @@
 
 - [ ] Contenu des pages / études de cas
 - [ ] Update des liens entre chaque page
+- [ ] Ajouter bouton back to top sur toutes les pages
 
 # TODO
 
