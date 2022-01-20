@@ -1,224 +1,339 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
+  <head>
     <title>Pikoom &mdash; Agence Multimédia Étudiante</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#F97C60" />
-    <link rel="icon" type="image/svg" href="static/assets/icons/logo-p__orange.svg" />
+    <link
+      rel="icon"
+      type="image/svg"
+      href="static/assets/icons/logo-p__orange.svg"
+    />
     <!-- Main stylesheet -->
     <link href="static/assets/css/main.css" rel="stylesheet" />
-</head>
+  </head>
 
-<body data-barba="wrapper">
+  <body data-barba="wrapper">
     <!-- page transition -->
     <div class="loader">
-        <div class="page-transition"></div>
+      <div class="page-transition"></div>
     </div>
-    <div class="barba-wrapper" data-barba="container" data-barba-namespace="realisation">
-        <header>
-            <div class="main-wrapper">
-                <!-- Navigation  -->
-                <nav role="navigation" class="navbar">
-                    <a href="./index.html" aria-current="page" class="home clickable-indicator">
-                        <img class="brand-icon" src="static/assets/icons/logo-p__orange.svg" alt="Logo de l'agence" />
-                    </a>
-                    <ul>
-                        <li>
-                            <a href="equipe.html" class="clickable-indicator">L'équipe</a>
-                        </li>
-                        <li>
-                            <a href="realisation.html" class="clickable-indicator">Réalisations</a>
-                        </li>
-                        <li>
-                            <a href="contact.html" class="clickable-indicator">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <main>
-            <div class="main-wrapper">
-                <section class="realisation-projects-sec">
-                    <header>
-                        <h2>
-                            <span class="pre-title">Des projets riches et variés</span>
-                            <span class="title">Découvrez nos réalisations !</span>
-                        </h2>
-                        <p>
-                            Qu'il s'agisse d'audio-visuel, de communication, de graphisme ou
-                            de programmation, les projets que nous réalisons sont
-                        </p>
-                    </header>
-                    <!-- cartes projet -->
-                    <div class="projects-card-container">
-                        <a href="./realisation/MMI&Apres.html" class="project-card discoverable"
-                            data-project-tag="évènementiel">
-                            <div class="project-card-img-hover"></div>
-                            <img loading="lazy" class="project-card-img" src="./static/assets/images/MMI_&_Apres.png"
-                                alt="Aperçu du projet!" />
-                            <div class="project-card-info">
-                                <time class="project-date">Jan 2022</time>
-                                <h4 class="project-name">MMI &amp; Après</h4>
-                                <hr class="separator" />
-                            </div>
-                        </a>
-                        <a href="./realisation/quart_dheure.html" class="project-card discoverable" data-project-tag="CAPTATION AUDIOVISUELLE">
-                            <div class="project-card-img-hover"></div>
-                            <img loading="lazy" class="project-card-img"
-                                src="./static/assets/images/Le_quart_d_heure_insolite.png" alt="Aperçu du projet!" />
-                            <div class="project-card-info">
-                                <time class="project-date">Jan 2022</time>
-                                <h4 class="project-name">Le quart d’heure insolite</h4>
-                                <hr class="separator" />
-                            </div>
-                        </a>
-                        <a href="./realisation/soiree_instant.html" class="project-card discoverable" data-project-tag="COMMUNICATION ET PROGRAMMATION">
-                            <div class="project-card-img-hover"></div>
-                            <img loading="lazy" class="project-card-img" src="./static/assets/images/picture_test.png"
-                                alt="Aperçu du projet!" />
-                            <div class="project-card-info">
-                                <time class="project-date">Jan 2022</time>
-                                <h4 class="project-name">Soirées de l’instant</h4>
-                                <hr class="separator" />
-                            </div>
-                        </a>
-                        <a href="./realisation/club_entreprises.html" class="project-card discoverable" data-project-tag="SUPPORT DE COMMUNICATION">
-                            <div class="project-card-img-hover"></div>
-                            <img loading="lazy" class="project-card-img"
-                                src="./static/assets/images/Le_club_des_entreprises.png" alt="Aperçu du projet!" />
-                            <div class="project-card-info">
-                                <time class="project-date">Jan 2022</time>
-                                <h4 class="project-name">Le club des entreprises</h4>
-                                <hr class="separator" />
-                            </div>
-                        </a>
-                        <a href="./realisation/nuit_blanche.html" class="project-card discoverable" data-project-tag="CAPTATION AUDIOVISUELLE">
-                            <div class="project-card-img-hover"></div>
-                            <img loading="lazy" class="project-card-img" src="./static/assets/images/Nuit_blanche.png"
-                                alt="Aperçu du projet!" />
-                            <div class="project-card-info">
-                                <time class="project-date">Jan 2022</time>
-                                <h4 class="project-name">Nuit Blanche</h4>
-                                <hr class="separator" />
-                            </div>
-                        </a>
-                        <a href="#" class="project-card discoverable" data-project-tag="REFONTE DE SITE WEB">
-                            <div class="project-card-img-hover"></div>
-                            <img loading="lazy" class="project-card-img" src="./static/assets/images/Soam.png"
-                                alt="Aperçu du projet!" />
-                            <div class="project-card-info">
-                                <time class="project-date">Jan 2022</time>
-                                <h4 class="project-name">Soam</h4>
-                                <hr class="separator" />
-                            </div>
-                        </a>
-                        <a href="#" class="project-card discoverable" data-project-tag="REFONTE DE SITE WEB">
-                            <div class="project-card-img-hover"></div>
-                            <img loading="lazy" class="project-card-img" src="./static/assets/images/MMI_Chambery.png"
-                                alt="Aperçu du projet!" />
-                            <div class="project-card-info">
-                                <time class="project-date">Jan 2022</time>
-                                <h4 class="project-name">MMI Chambéry</h4>
-                                <hr class="separator" />
-                            </div>
-                        </a>
-                        <a href="./realisation/ben.html" class="project-card discoverable" data-project-tag="CAPTATION AUDIOVISUELLE">
-                            <div class="project-card-img-hover"></div>
-                            <img loading="lazy" class="project-card-img" src="./static/assets/images/picture_test.png"
-                                alt="Aperçu du projet!" />
-                            <div class="project-card-info">
-                                <time class="project-date">Jan 2022</time>
-                                <h4 class="project-name">Vernissage Ben</h4>
-                                <hr class="separator" />
-                            </div>
-                        </a>
-                    </div>
-                </section>
-            </div>
-        </main>
-        <!-- Footer -->
-        <footer>
-            <div class="main-wrapper">
-                <nav class="footer-nav navbar">
-                    <a href="./index.html" aria-current="page" class="home clickable-indicator">
-                        <img class="brand-icon" src="static/assets/icons/logo-p__orange.svg" alt="Logo de l'agence"
-                            loading="lazy" />
-                    </a>
-                    <ul>
-                        <li>
-                            <a href="equipe.html" class="clickable-indicator">L'équipe</a>
-                        </li>
-                        <li>
-                            <a href="realisation.html" class="clickable-indicator">
-                                Réalisations
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <hr class="separator" />
-                <div class="inner-footer">
-                    <div class="about-container">
-                        <div class="about">
-                            <h5>Pikoom</h5>
-                            <p>
-                                Agence de communication étudiante optimiste et créative basée à
-                                Chambéry.
-                            </p>
-                        </div>
-                        <div class="credits">
-                            <a href="https://www.univ-smb.fr" target="_blank" rel="noopener noreferrer" class="button">
-                                <img src="./static/assets/images/logo-USMB.png" alt="Logo Université Savoie Mont-Blanc"
-                                    class="credit-img" loading="lazy" />
-                            </a>
-                            <a href="https://mmi.univ-smb.fr/" target="_blank" rel="noopener noreferrer" class="button">
-                                <img src="./static/assets/images/logo-MMICHY.png" alt="Logo IUT MMI Chambéry"
-                                    class="credit-img" loading="lazy" />
-                            </a>
-                        </div>
-                    </div>
-                    <address class="address">
-                        <h5>Adresse</h5>
-                        <p>28 Avenue du Lac d'Annecy</p>
-                        <p>73370 Le Bourget-du-Lac</p>
-                        <p>France</p>
-                    </address>
-                    <div class="contact">
-                        <h5>Contact</h5>
-                        <ul>
-                            <li>
-                                <a href="mailto:agence.pikoom@gmail.com" class="clickable-indicator">
-                                    Mail
-                                </a>
-                            </li>
-                            <li>
-                                <a href="//instagram.com/pikoomagence" target="_blank" class="clickable-indicator">
-                                    Instagram
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <hr class="separator" />
-                <div class="footer-bottom">
-                    <div class="copyrights">
-                        <p>Pikoom 🌵 &copy; 2022</p>
-                        <a href="./mention.html" class="clickable-indicator">
-                            Mentions légales
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <div class="cursor">
-            <span data-drag-tooltip>drag&nbsp;✋</span>
-            <span data-discover-tooltip>découvrir</span>
+    <div
+      class="barba-wrapper"
+      data-barba="container"
+      data-barba-namespace="realisation"
+    >
+      <header>
+        <div class="main-wrapper">
+          <!-- Navigation  -->
+          <nav role="navigation" class="navbar">
+            <a
+              href="./index.html"
+              aria-current="page"
+              class="home clickable-indicator"
+            >
+              <img
+                class="brand-icon"
+                src="static/assets/icons/logo-p__orange.svg"
+                alt="Logo de l'agence"
+              />
+            </a>
+            <ul>
+              <li>
+                <a href="equipe.html" class="clickable-indicator">L'équipe</a>
+              </li>
+              <li>
+                <a href="realisation.html" class="clickable-indicator"
+                  >Réalisations</a
+                >
+              </li>
+              <li>
+                <a href="contact.html" class="clickable-indicator">Contact</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <!-- Scripts -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-        <script src="js/libs/barba.js"></script>
-        <script src="js/app.js" type="module"></script>
-</body>
-
+      </header>
+      <main>
+        <div class="main-wrapper">
+          <section class="realisation-projects-sec">
+            <header>
+              <h2>
+                <span class="pre-title">Des projets riches et variés</span>
+                <span class="title">Découvrez nos réalisations !</span>
+              </h2>
+              <p>
+                Au cours de l'année, les membres de Pikoom ont pu mettre en
+                application leurs compétences dans de divers projets
+                multimédias. La polyvalence et l'enthousiasme des étudiant·e·s
+                se reflètent dans les réalisations de l'agence.
+              </p>
+            </header>
+            <!-- cartes projet -->
+            <div class="projects-card-container">
+              <a
+                href="./realisation/MMI&Apres.html"
+                class="project-card discoverable"
+                data-project-tag="évènementiel"
+              >
+                <div class="project-card-img-hover"></div>
+                <img
+                  loading="lazy"
+                  class="project-card-img"
+                  src="./static/assets/images/MMI_&_Apres.png"
+                  alt="Aperçu du projet!"
+                />
+                <div class="project-card-info">
+                  <time class="project-date">Jan 2022</time>
+                  <h4 class="project-name">MMI &amp; Après</h4>
+                  <hr class="separator" />
+                </div>
+              </a>
+              <a
+                href="./realisation/quart_dheure.html"
+                class="project-card discoverable"
+                data-project-tag="CAPTATION AUDIOVISUELLE"
+              >
+                <div class="project-card-img-hover"></div>
+                <img
+                  loading="lazy"
+                  class="project-card-img"
+                  src="./static/assets/images/Le_quart_d_heure_insolite.png"
+                  alt="Aperçu du projet!"
+                />
+                <div class="project-card-info">
+                  <time class="project-date">Jan 2022</time>
+                  <h4 class="project-name">Le quart d’heure insolite</h4>
+                  <hr class="separator" />
+                </div>
+              </a>
+              <a
+                href="./realisation/soiree_instant.html"
+                class="project-card discoverable"
+                data-project-tag="COMMUNICATION ET PROGRAMMATION"
+              >
+                <div class="project-card-img-hover"></div>
+                <img
+                  loading="lazy"
+                  class="project-card-img"
+                  src="./static/assets/images/soiree_de_linstant.png"
+                  alt="Aperçu du projet!"
+                />
+                <div class="project-card-info">
+                  <time class="project-date">Jan 2022</time>
+                  <h4 class="project-name">Soirées de l’instant</h4>
+                  <hr class="separator" />
+                </div>
+              </a>
+              <a
+                href="./realisation/club_entreprises.html"
+                class="project-card discoverable"
+                data-project-tag="SUPPORT DE COMMUNICATION"
+              >
+                <div class="project-card-img-hover"></div>
+                <img
+                  loading="lazy"
+                  class="project-card-img"
+                  src="./static/assets/images/Le_club_des_entreprises.png"
+                  alt="Aperçu du projet!"
+                />
+                <div class="project-card-info">
+                  <time class="project-date">Jan 2022</time>
+                  <h4 class="project-name">Le club des entreprises</h4>
+                  <hr class="separator" />
+                </div>
+              </a>
+              <a
+                href="./realisation/nuit_blanche.html"
+                class="project-card discoverable"
+                data-project-tag="CAPTATION AUDIOVISUELLE"
+              >
+                <div class="project-card-img-hover"></div>
+                <img
+                  loading="lazy"
+                  class="project-card-img"
+                  src="./static/assets/images/Nuit_blanche.png"
+                  alt="Aperçu du projet!"
+                />
+                <div class="project-card-info">
+                  <time class="project-date">Jan 2022</time>
+                  <h4 class="project-name">Nuit Blanche</h4>
+                  <hr class="separator" />
+                </div>
+              </a>
+              <a
+                href="./realisation/soam.html"
+                class="project-card discoverable"
+                data-project-tag="REFONTE DE SITE WEB"
+              >
+                <div class="project-card-img-hover"></div>
+                <img
+                  loading="lazy"
+                  class="project-card-img"
+                  src="./static/assets/images/Soam.png"
+                  alt="Aperçu du projet!"
+                />
+                <div class="project-card-info">
+                  <time class="project-date">Jan 2022</time>
+                  <h4 class="project-name">Soam</h4>
+                  <hr class="separator" />
+                </div>
+              </a>
+              <a
+                href="./realisation/mmi_chambery.html"
+                class="project-card discoverable"
+                data-project-tag="REFONTE DE SITE WEB"
+              >
+                <div class="project-card-img-hover"></div>
+                <img
+                  loading="lazy"
+                  class="project-card-img"
+                  src="./static/assets/images/MMI_Chambery.png"
+                  alt="Aperçu du projet!"
+                />
+                <div class="project-card-info">
+                  <time class="project-date">Jan 2022</time>
+                  <h4 class="project-name">MMI Chambéry</h4>
+                  <hr class="separator" />
+                </div>
+              </a>
+              <a
+                href="./realisation/ben.html"
+                class="project-card discoverable"
+                data-project-tag="CAPTATION AUDIOVISUELLE"
+              >
+                <div class="project-card-img-hover"></div>
+                <img
+                  loading="lazy"
+                  class="project-card-img"
+                  src="./static/assets/images/ben.png"
+                  alt="Aperçu du projet!"
+                />
+                <div class="project-card-info">
+                  <time class="project-date">Jan 2022</time>
+                  <h4 class="project-name">Vernissage Ben</h4>
+                  <hr class="separator" />
+                </div>
+              </a>
+            </div>
+          </section>
+        </div>
+      </main>
+      <!-- Footer -->
+      <footer>
+        <div class="main-wrapper">
+          <nav class="footer-nav navbar">
+            <a
+              href="./index.html"
+              aria-current="page"
+              class="home clickable-indicator"
+            >
+              <img
+                class="brand-icon"
+                src="static/assets/icons/logo-p__orange.svg"
+                alt="Logo de l'agence"
+                loading="lazy"
+              />
+            </a>
+            <ul>
+              <li>
+                <a href="equipe.html" class="clickable-indicator">L'équipe</a>
+              </li>
+              <li>
+                <a href="realisation.html" class="clickable-indicator">
+                  Réalisations
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <hr class="separator" />
+          <div class="inner-footer">
+            <div class="about-container">
+              <div class="about">
+                <h5>Pikoom</h5>
+                <p>
+                  Agence de communication étudiante optimiste et créative basée
+                  à Chambéry.
+                </p>
+              </div>
+              <div class="credits">
+                <a
+                  href="https://www.univ-smb.fr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="button"
+                >
+                  <img
+                    src="./static/assets/images/logo-USMB.png"
+                    alt="Logo Université Savoie Mont-Blanc"
+                    class="credit-img"
+                    loading="lazy"
+                  />
+                </a>
+                <a
+                  href="https://mmi.univ-smb.fr/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="button"
+                >
+                  <img
+                    src="./static/assets/images/logo-MMICHY.png"
+                    alt="Logo IUT MMI Chambéry"
+                    class="credit-img"
+                    loading="lazy"
+                  />
+                </a>
+              </div>
+            </div>
+            <address class="address">
+              <h5>Adresse</h5>
+              <p>28 Avenue du Lac d'Annecy</p>
+              <p>73370 Le Bourget-du-Lac</p>
+              <p>France</p>
+            </address>
+            <div class="contact">
+              <h5>Contact</h5>
+              <ul>
+                <li>
+                  <a
+                    href="mailto:agence.pikoom@gmail.com"
+                    class="clickable-indicator"
+                  >
+                    Mail
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="//instagram.com/pikoomagence"
+                    target="_blank"
+                    class="clickable-indicator"
+                  >
+                    Instagram
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <hr class="separator" />
+          <div class="footer-bottom">
+            <div class="copyrights">
+              <p>Pikoom 🌵 &copy; 2022</p>
+              <a href="./mention.html" class="clickable-indicator">
+                Mentions légales
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="cursor">
+        <span data-drag-tooltip>drag&nbsp;✋</span>
+        <span data-discover-tooltip>découvrir</span>
+      </div>
+    </div>
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="js/libs/barba.js"></script>
+    <script src="js/app.js" type="module"></script>
+  </body>
 </html>
