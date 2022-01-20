@@ -19,11 +19,11 @@
 - [x] Update des liens entre chaque page
 - [x] style en hover des cartes
 - [x] Ajouter bouton back to top sur toutes les pages
+- [x] Masquer le curseur en version mobile
 
 # ONGOING
 
 - [x] Déploiement
-- [x] Masquer le curseur en version mobile
 - [ ] Changement de style du bouton retour aux réalisations
 - [ ] Meta description SEO-Friendly
 

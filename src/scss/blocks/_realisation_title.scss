@@ -5,16 +5,30 @@
   height: 100%;
   div {
     padding-bottom: 20%;
+
     .return {
       a {
         display: flex;
+        align-items: baseline;
         text-decoration: none;
         font: $body-large;
-        img {
-          position: relative;
-          width: 40px;
-          height: 40px;
-          margin: 0;
+
+        .arrow-back {
+          max-width: 40px;
+          width: 100%;
+          height: auto;
+          padding-right: 16px;
+
+          path {
+            transition: fill 300ms ease-out;
+          }
+        }
+
+        &:hover,
+        &:focus-visible {
+          .arrow-back path {
+            fill: $color-accent;
+          }
         }
       }
     }
