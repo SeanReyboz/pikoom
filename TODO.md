@@ -15,16 +15,16 @@
 - [x] Transitions changement de page
 - [x] Bouton retour en haut
 - [x] 404
+- [x] Contenu des pages / études de cas
+- [x] Update des liens entre chaque page
+- [x] style en hover des cartes
+- [x] Ajouter bouton back to top sur toutes les pages
 
 # ONGOING
 
-- [ ] Contenu des pages / études de cas
-- [ ] Update des liens entre chaque page
-- [ ] Ajouter bouton back to top sur toutes les pages
+- [x] Déploiement
 
 # TODO
 
-- [ ] style en hover des cartes
 - [ ] Animations (texte, scroll, etc)
-- [ ] Déploiement
 - [ ] Responsive
