@@ -14,12 +14,12 @@
 - [x] Slider page étude de cas
 - [x] Transitions changement de page
 - [x] Bouton retour en haut
+- [x] 404
 
 # ONGOING
 
 - [ ] Contenu des pages / études de cas
 - [ ] Update des liens entre chaque page
-- [ ] 404
 
 # TODO
 
