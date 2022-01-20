@@ -14,6 +14,7 @@
 - [x] Slider page étude de cas
 - [x] Transitions changement de page
 - [x] Bouton retour en haut
+- [x] 404
 
 # ONGOING
 
@@ -24,3 +25,5 @@
 
 - [ ] style en hover des cartes
 - [ ] Animations (texte, scroll, etc)
+- [ ] Déploiement
+- [ ] Responsive
