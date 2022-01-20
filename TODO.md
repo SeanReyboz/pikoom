@@ -19,8 +19,11 @@
 
 - [ ] Contenu des pages / études de cas
 - [ ] Update des liens entre chaque page
+- [ ] 404
 
 # TODO
 
 - [ ] style en hover des cartes
 - [ ] Animations (texte, scroll, etc)
+- [ ] Déploiement
+- [ ] Responsive
