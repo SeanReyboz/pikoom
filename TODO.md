@@ -29,3 +29,4 @@
 - [ ] Animations (texte, scroll, etc)
 - [ ] Responsive
 - [ ] Changement de style du bouton retour aux réalisations
+- [ ] Masquer le curseur en version mobile
