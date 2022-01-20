@@ -1,3 +1,4 @@
 __tests__
 src/static/assets/css
 package.json
+public/build.sh
