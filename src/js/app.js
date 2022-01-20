@@ -102,6 +102,7 @@ barba.init({
             clickable: true,
           },
         })
+        window.addEventListener("scroll", () => verticalScrollPosition())
         return new Cursor(document.querySelector(".cursor"))
       },
     },
