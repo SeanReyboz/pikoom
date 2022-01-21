@@ -20,6 +20,7 @@
 - [x] style en hover des cartes
 - [x] Ajouter bouton back to top sur toutes les pages
 - [x] Masquer le curseur en version mobile
+- [x] Passer les liens vers les RS/portfolio de la page équipe en `display: none`
 
 # ONGOING
 
@@ -30,7 +31,6 @@
 # TODO
 
 - [ ] Animations (texte, scroll, etc)
-- [ ] Passer les liens vers les RS/portfolio de la page équipe en `display: none`
 - [ ] Menu responsive
 - [ ] Page réalisations responsive
 - [ ] Page de réalisation individuelle responsive
