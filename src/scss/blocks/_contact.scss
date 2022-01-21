@@ -8,18 +8,28 @@
     color: transparent;
     text-align: center;
     padding-bottom: 40px;
+    @media screen and(max-width:$screen-sm) {
+      font: $title-regular;
+    }
   }
   .contact_description {
     margin: auto;
     font: $body-regular;
     max-width: 592px;
     padding-bottom: 70px;
+    @media screen and(max-width:$screen-sm) {
+      font: $body-small;
+      text-align: center;
+    }
   }
   .contact_networks {
     display: flex;
     justify-content: space-between;
     max-width: 500px;
     margin: auto;
+    @media screen and(max-width:$screen-sm) {
+      flex-direction: column;
+    }
 
     .contact_net {
       font: $body-medium;
@@ -28,6 +38,12 @@
       text-decoration: none;
       display: flex;
       align-items: center;
+      @media screen and(max-width:$screen-sm) {
+        justify-content: center;
+        &:nth-child(1) {
+          padding-bottom: 10px;
+        }
+      }
 
       svg {
         padding-right: 8px;
@@ -49,5 +65,11 @@
     padding: 50px 0;
     display: flex;
     margin: auto;
+    @media screen and(max-width: $screen-md) {
+      width: 85vw;
+    }
+    @media screen and (max-width: $screen-xs) {
+      display: none;
+    }
   }
 }

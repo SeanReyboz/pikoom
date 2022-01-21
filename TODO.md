@@ -23,6 +23,7 @@
 - [x] Passer les liens vers les RS/portfolio de la page équipe en `display: none`
 - [x] Page réalisations responsive
 - [x] Page des mentions légales responsive
+- [x] Page contact responsive
 
 # ONGOING
 
@@ -35,5 +36,4 @@
 - [ ] Animations (texte, scroll, etc)
 - [ ] Menu responsive
 - [ ] Page de réalisation individuelle responsive
-- [ ] Page contact responsive
 - [ ] Transition barba responsive
