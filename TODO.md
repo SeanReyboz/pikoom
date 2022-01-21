@@ -21,6 +21,7 @@
 - [x] Ajouter bouton back to top sur toutes les pages
 - [x] Masquer le curseur en version mobile
 - [x] Passer les liens vers les RS/portfolio de la page équipe en `display: none`
+- [x] Page réalisations responsive
 
 # ONGOING
 
@@ -32,7 +33,6 @@
 
 - [ ] Animations (texte, scroll, etc)
 - [ ] Menu responsive
-- [ ] Page réalisations responsive
 - [ ] Page de réalisation individuelle responsive
 - [ ] Page des mentions légales responsive
 - [ ] Page contact responsive

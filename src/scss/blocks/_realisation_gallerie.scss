@@ -1,126 +1,141 @@
 .realisation-projects-sec {
-    padding-top: 13.750vw;
-    min-height: 100vh;
-  
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-  
-      & > * {
-        max-width: 488px;
-      }
-  
-      p {
-        font: $body-regular;
+  padding-top: 13.75vw;
+  min-height: 100vh;
+  @media screen and(max-width: 1024px) {
+    padding-top: 18.75vh;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media screen and(max-width: 1024px) {
+      flex-direction: column;
+    }
+    & > * {
+      max-width: 488px;
+      @media screen and(max-width: 1024px) {
+        max-width: 80vw;
       }
     }
-  
-    .projects-card-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 488px));
-      justify-content: space-between;
-      row-gap: 200px;
-      padding-inline: 20px;
-      padding-bottom: 300px;
-  
-      .project-card {
-        overflow: hidden;
-        position: relative;
-        color: $color-base;
-        text-decoration: none;
-  
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        //   padding: 36px 24px;
-  
-        // TEMPORARY
-        background: $color-graybase;
-        max-height: 720px;
-        height: 100%;
-  
-        // tag de catégorie (graph, comm, etc)
-        &::before {
-          position: absolute;
-          z-index: 2;
-          top: 50px;
-          left: 24px;
-          content: attr(data-project-tag);
-          font: $body-small;
-          letter-spacing: 0.4px;
-          text-transform: uppercase;
-          color: $color-base;
-        }
-  
-        // offset
-        &:nth-of-type(even) {
-          @media screen and(min-width: 1024px) {
-            margin-top: 188px;
-          }
-        }
-  
-        // Contenu de la carte
-  
-        .project-card-img {
-          display: block;
-          width: 100%;
-          height: auto;
-          filter: blur(0px);
-          transform: scale(1);
-          transition: all 300ms ease-out;
-          &:hover {
-            filter: blur(1.75px);
-            transform: scale(1.05);
-          }
-          
-        }
-        .project-card-img-hover {
-          z-index: 1;
-    opacity: 1;
-    position: absolute;
-    color: $color-base;
-    text-align: center;
-    width: 100%;
-    height: 25%;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.75) 100%);
 
-    transition: opacity 300ms;  
-          
-        }
-  
-        .project-card-info {
-          position: absolute;
-          bottom: 36px;
-          left: 24px;
-          right: 24px;
-          z-index: 1;
-  
-          span {
-            display: block;
-          }
-  
-          .project-name {
-            font: $title-regular;
-            font-weight: 500;
-            letter-spacing: 0.4px;
-            padding-block: 16px 36px;
-          }
-  
-          .project-date {
-            font: $body-small;
-            font-weight: 500;
-            letter-spacing: 0.4px;
-          }
-  
-          .separator {
-            margin: 0;
-            border: 0;
-            border-bottom: 1px solid $color-base;
-          }
-        }
-        // }
+    p {
+      font: $body-regular;
+      @media screen and(max-width: 1024px) {
+        padding-bottom: 88px;
       }
     }
   }
-  
+
+  .projects-card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 488px));
+    justify-content: space-between;
+    row-gap: 200px;
+    padding-inline: 20px;
+    padding-bottom: 300px;
+    @media screen and(max-width: 1024px) {
+      justify-content: center;
+      padding-bottom: 100px;
+    }
+
+    .project-card {
+      overflow: hidden;
+      position: relative;
+      color: $color-base;
+      text-decoration: none;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      //   padding: 36px 24px;
+
+      // TEMPORARY
+      background: $color-graybase;
+      max-height: 720px;
+      height: 100%;
+
+      // tag de catégorie (graph, comm, etc)
+      &::before {
+        position: absolute;
+        z-index: 2;
+        top: 50px;
+        left: 24px;
+        content: attr(data-project-tag);
+        font: $body-small;
+        letter-spacing: 0.4px;
+        text-transform: uppercase;
+        color: $color-base;
+      }
+
+      // offset
+      &:nth-of-type(even) {
+        @media screen and(min-width: 1024px) {
+          margin-top: 188px;
+        }
+      }
+
+      // Contenu de la carte
+
+      .project-card-img {
+        display: block;
+        width: 100%;
+        height: auto;
+        filter: blur(0px);
+        transform: scale(1);
+        transition: all 300ms ease-out;
+        &:hover {
+          filter: blur(1.75px);
+          transform: scale(1.05);
+        }
+      }
+      .project-card-img-hover {
+        z-index: 1;
+        opacity: 1;
+        position: absolute;
+        color: $color-base;
+        text-align: center;
+        width: 100%;
+        height: 25%;
+        background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0) 0%,
+          rgba(0, 0, 0, 0.75) 100%
+        );
+
+        transition: opacity 300ms;
+      }
+
+      .project-card-info {
+        position: absolute;
+        bottom: 36px;
+        left: 24px;
+        right: 24px;
+        z-index: 1;
+
+        span {
+          display: block;
+        }
+
+        .project-name {
+          font: $title-regular;
+          font-weight: 500;
+          letter-spacing: 0.4px;
+          padding-block: 16px 36px;
+        }
+
+        .project-date {
+          font: $body-small;
+          font-weight: 500;
+          letter-spacing: 0.4px;
+        }
+
+        .separator {
+          margin: 0;
+          border: 0;
+          border-bottom: 1px solid $color-base;
+        }
+      }
+      // }
+    }
+  }
+}
