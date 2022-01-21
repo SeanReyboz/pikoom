@@ -8,13 +8,30 @@
   -webkit-background-clip: text;
   margin: 0 auto;
   max-width: max-content;
+  @media screen and(max-width: $screen-sm-min) {
+    font-size: 36px;
+    letter-spacing: 0px;
+    line-height: 1;
+    padding-bottom: 48px;
+  }
 }
 .mentions_2_title {
   font: $title-large;
   padding-bottom: 64px;
+  @media screen and(max-width: $screen-sm-min) {
+    font: $title-regular;
+    padding-bottom: 36px;
+  }
 }
 .mentions_blocks {
   max-width: 750px;
+  div {
+    p.contain {
+      @media screen and(max-width: $screen-sm-min) {
+        font: $body-medium;
+      }
+    }
+  }
 }
 .credits {
   padding-bottom: 34px;
@@ -32,6 +49,9 @@
   font: $title-extra-large;
   color: #2f4858;
   opacity: 30%;
+  @media screen and(max-width: $screen-sm-min) {
+    font: $title-medium;
+  }
 }
 .credits:not(:last-of-type) {
   padding-bottom: 32px;

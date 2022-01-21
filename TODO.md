@@ -22,6 +22,7 @@
 - [x] Masquer le curseur en version mobile
 - [x] Passer les liens vers les RS/portfolio de la page équipe en `display: none`
 - [x] Page réalisations responsive
+- [x] Page des mentions légales responsive
 
 # ONGOING
 
@@ -34,6 +35,5 @@
 - [ ] Animations (texte, scroll, etc)
 - [ ] Menu responsive
 - [ ] Page de réalisation individuelle responsive
-- [ ] Page des mentions légales responsive
 - [ ] Page contact responsive
 - [ ] Transition barba responsive
