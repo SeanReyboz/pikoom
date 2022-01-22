@@ -63,3 +63,9 @@
     }
   }
 }
+
+@media screen and(max-width: $screen-sm-min) {
+  .cursor {
+    display: none;
+  }
+}
