@@ -83,11 +83,13 @@
         filter: blur(0px);
         transform: scale(1);
         transition: all 300ms ease-out;
-        &:hover {
-          filter: blur(1.75px);
-          transform: scale(1.05);
-        }
       }
+
+      &:hover .project-card-img {
+        filter: blur(1.75px);
+        transform: scale(1.05);
+      }
+
       .project-card-img-hover {
         z-index: 1;
         opacity: 1;
