@@ -18,6 +18,24 @@ const body = document.querySelector("body")
 const transition = document.querySelector(".page-transition")
 const tl = new TimelineMax()
 
+const toggleMenu = () => {
+  let newState
+  let html = document.querySelector("html")
+  let burger = document.querySelector(".burger")
+
+  if (burger.getAttribute("data-opened") === "false") newState = true
+  else newState = false
+
+  // Changer l'etat du menu
+  burger.setAttribute("data-opened", newState)
+
+  // Empecher le scroll
+  if (newState === true) html.classList.add("no-scroll")
+  else html.classList.remove("no-scroll")
+}
+
+document.querySelector(".burger").addEventListener("click", () => toggleMenu())
+
 function delay(n) {
   return new Promise(done => {
     setTimeout(() => {
@@ -56,19 +74,24 @@ barba.init({
         }).set(".page-transition", { top: "0%", height: "0%" })
 
         // Positionner l'utilisateur en haut du document
-        scrollTop()
+        window.scrollTo(0, 0)
       },
 
       // Avant chaque transition
       before() {
-        body.classList.add("no-scroll")
+        document.querySelector("html").classList.add("no-scroll")
+        document
+          .querySelector(".burger")
+          .removeEventListener("click", () => toggleMenu())
       },
 
       // Après chaque transition
       after() {
-        body.classList.remove("no-scroll")
-        // Recréer un curseur
-        // Rafraichir la page
+        document.querySelector("html").classList.remove("no-scroll")
+        document
+          .querySelector(".burger")
+          .addEventListener("click", () => toggleMenu())
+
         const teamSlider = new Swiper(".team-slider-container", {
           direction: "horizontal",
           loop: true,

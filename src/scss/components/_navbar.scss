@@ -32,6 +32,67 @@
       }
     }
   }
+
+  .burger {
+    position: relative;
+    z-index: 999;
+    padding: 0.4rem 0.8rem;
+    border: 0;
+    background: 0;
+
+    color: $color-graybase;
+    font-weight: 400;
+    font-family: $font-family;
+
+    // Ne pas afficher en version desktop
+    display: none;
+  }
+}
+
+// Menu responsive
+@media screen and(max-width: $screen-sm-min) {
+  body .barba-wrapper > header {
+    // position: static;
+  }
+
+  .navbar {
+    // afficher le burger
+    .burger {
+      display: block;
+
+      &[data-opened="true"] + ul {
+        transform: translateX(0%);
+      }
+    }
+
+    ul {
+      position: absolute;
+      z-index: 800;
+      left: 0;
+      top: 0;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 0 20px;
+
+      background: rgba($color-accent, 0.97);
+
+      transition: transform 250ms ease-in-out;
+      transform: translateX(100%);
+
+      li {
+        padding: 2rem 0;
+
+        a {
+          font: $title-medium;
+          color: $color-base;
+        }
+      }
+    }
+  }
 }
 
 // vim:tw=80:ts=2:noet:ft=scss:norl:
