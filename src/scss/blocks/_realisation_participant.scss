@@ -91,3 +91,13 @@
     display: table;
   }
 }
+@media screen and(max-width: $screen-md-min) {
+  .realisation_participant {
+    .equipe{
+      margin-left: 0;
+    }
+    .cta {
+      padding: 12px 24px;
+    }
+  }
+}

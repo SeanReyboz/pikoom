@@ -28,5 +28,9 @@
     background-color: $color-accent;
   }
 }
-
+@media screen and(max-width: $screen-md-min) {
+  .cta {
+    padding: 12px 24px;
+  }
+}
 // vim:tw=80:ts=2:noet:ft=scss:norl

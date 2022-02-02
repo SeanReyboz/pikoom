@@ -62,3 +62,13 @@
     }
   }
 }
+@media screen and(max-width: $screen-md-min) {
+  .realisation_resume { 
+    .articles{
+    margin-left: 0;
+    }
+    .realisation_participant{
+      margin-left: 0;
+    }
+  }
+}

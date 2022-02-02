@@ -62,3 +62,19 @@
     max-height: 556px;
   }
 }
+@media screen and(max-width: $screen-md-min) {
+  .realisation_brief {
+    .display{
+      flex-direction: column;
+      .data{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(150px, 250px));
+        justify-content: space-between;
+        padding-bottom: 5%;
+      }
+    }
+    iframe {
+      max-height: 66vw;
+    }
+  }
+}

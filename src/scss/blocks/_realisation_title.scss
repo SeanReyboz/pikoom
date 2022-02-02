@@ -55,3 +55,22 @@
     max-height: 556px;
   }
 }
+
+@media screen and(max-width: $screen-md-min) {
+  .realisation_title {
+    align-items: flex-start;
+    flex-direction: column;
+    min-height: 80vh;
+    div{
+      padding: 10% 0;
+    }
+    img {
+      position: unset;
+      margin-left: 0%;
+    }
+  }
+}
+
+@media screen and(max-width: $screen-sm-min) {
+
+}
