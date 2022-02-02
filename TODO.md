@@ -24,16 +24,15 @@
 - [x] Page réalisations responsive
 - [x] Page des mentions légales responsive
 - [x] Page contact responsive
+- [x] Menu responsive
+- [x] Page de réalisation individuelle responsive
+- [x] Transition barba responsive
+- [x] Déploiement
 
 # ONGOING
 
-- [x] Déploiement
-- [ ] Changement de style du bouton retour aux réalisations
 - [ ] Meta description SEO-Friendly
 
 # TODO
 
 - [ ] Animations (texte, scroll, etc)
-- [ ] Menu responsive
-- [ ] Page de réalisation individuelle responsive
-- [ ] Transition barba responsive
