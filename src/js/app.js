@@ -23,15 +23,23 @@ const toggleMenu = () => {
   let html = document.querySelector("html")
   let burger = document.querySelector(".burger")
 
-  if (burger.getAttribute("data-opened") === "false") newState = true
-  else newState = false
+  console.log(burger.dataset)
+
+  if (burger.getAttribute("data-opened") === "false") {
+    newState = true
+  } else {
+    newState = false
+  }
 
   // Changer l'etat du menu
   burger.setAttribute("data-opened", newState)
 
   // Empecher le scroll
-  if (newState === true) html.classList.add("no-scroll")
-  else html.classList.remove("no-scroll")
+  if (newState === true) {
+    html.classList.add("no-scroll")
+  } else {
+    html.classList.remove("no-scroll")
+  }
 }
 
 document.querySelector(".burger").addEventListener("click", () => toggleMenu())
