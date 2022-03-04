@@ -32,6 +32,7 @@
 # ONGOING
 
 - [ ] Meta description SEO-Friendly
+- [ ] Fixer la version mobile de la page mentions légales
 
 # TODO
 
