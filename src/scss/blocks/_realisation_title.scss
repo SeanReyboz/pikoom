@@ -8,7 +8,7 @@
 
     .return {
       a {
-        display: flex;
+        display: inline-flex;
         align-items: baseline;
         text-decoration: none;
         font: $body-large;
@@ -60,9 +60,16 @@
   .realisation_title {
     align-items: flex-start;
     flex-direction: column;
-    min-height: 80vh;
-    div{
+    min-height: unset;
+    padding-top: 72px;
+    padding-bottom: 32px;
+
+    div {
       padding: 10% 0;
+
+      .return a {
+        font: $body-medium;
+      }
     }
     img {
       position: unset;
@@ -71,6 +78,10 @@
   }
 }
 
-@media screen and(max-width: $screen-sm-min) {
-
+@media screen and(max-width: $screen-sm) {
+  .realisation_title {
+    div h1 {
+      font: $title-medium;
+    }
+  }
 }

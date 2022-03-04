@@ -63,11 +63,19 @@
   }
 }
 @media screen and(max-width: $screen-md-min) {
-  .realisation_resume { 
-    .articles{
-    margin-left: 0;
+  .realisation_resume {
+    .articles {
+      margin-left: 0;
+
+      article {
+        padding: 2rem 0;
+      }
+
+      h2 {
+        padding-bottom: 1rem;
+      }
     }
-    .realisation_participant{
+    .realisation_participant {
       margin-left: 0;
     }
   }

@@ -7,16 +7,16 @@
     .data {
       display: flex;
       flex-direction: column;
-      row-gap: 4.44vw;
+      row-gap: 2.5rem;
       h4 {
-        font: normal normal 400 16px/100% $font-family;
+        font: $body-medium;
         opacity: 70%;
-        margin-bottom: 1.111vw;
+        margin-bottom: 0.75rem;
       }
       .paragraph {
         display: flex;
         flex-direction: column;
-        row-gap: 0.556vw;
+        row-gap: 0.5rem;
         p {
           font: normal normal 500 16px/100% $font-family;
         }
@@ -64,15 +64,21 @@
 }
 @media screen and(max-width: $screen-md-min) {
   .realisation_brief {
-    .display{
+    .display {
       flex-direction: column;
-      .data{
+      .data {
         display: grid;
         grid-template-columns: repeat(2, minmax(150px, 250px));
         justify-content: space-between;
-        padding-bottom: 5%;
+        padding-bottom: 64px;
+      }
+
+      .articles {
+        row-gap: 4rem;
+        margin: 0;
       }
     }
+
     iframe {
       max-height: 66vw;
     }
