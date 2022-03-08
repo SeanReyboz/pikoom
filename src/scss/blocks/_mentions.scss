@@ -38,6 +38,10 @@
   .credit_title {
     font-size: 28px;
     padding-bottom: 14px;
+    @media screen and(max-width: $screen-sm-min) {
+      font-size: 20px;
+      font-weight: 700;
+    }
   }
 }
 .mentions_conteners {
