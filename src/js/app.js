@@ -82,7 +82,7 @@ barba.init({
         }).set(".page-transition", { top: "0%", height: "0%" })
 
         // Positionner l'utilisateur en haut du document
-        window.scrollTo(0, 0)
+        // window.scrollTo(0, 0)
       },
 
       // Avant chaque transition
@@ -136,6 +136,8 @@ barba.init({
           },
         })
         window.addEventListener("scroll", () => verticalScrollPosition())
+        // Retourner en haut
+        scrollTop()
         return new Cursor(document.querySelector(".cursor"))
       },
     },
