@@ -1,350 +1,513 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <title>Pikoom &mdash; Agence Multimédia Étudiante</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#F97C60" />
+    <link
+      rel="icon"
+      type="image/svg"
+      href="../static/assets/icons/logo-p__orange.svg"
+    />
+    <!-- Swiper JS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <!-- Main stylesheet -->
+    <link href="../static/assets/css/main.css" rel="stylesheet" />
+  </head>
 
-<head>
-  <title>Pikoom &mdash; Agence Multimédia Étudiante</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#F97C60" />
-  <link rel="icon" type="image/svg" href="../static/assets/icons/logo-p__orange.svg" />
-  <!-- Swiper JS -->
-  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-  <!-- Main stylesheet -->
-  <link href="../static/assets/css/main.css" rel="stylesheet" />
-</head>
-
-<body data-barba="wrapper">
-  <!-- page transition -->
-  <div class="loader">
-    <div class="page-transition"></div>
-  </div>
-  <div class="barba-wrapper" data-barba="container" data-barba-namespace="club-des-entreprises">
-    <header>
-      <div class="main-wrapper">
-        <!-- Navigation  -->
-        <nav role="navigation" class="navbar">
-          <a href="../index.html" class="clickable-indicator home" >
-            <img loading="lazy" class="brand-icon" src="../static/assets/icons/logo-p__orange.svg"
-              alt="Logo de l'agence" />
-          </a>
+  <body data-barba="wrapper">
+    <!-- page transition -->
+    <div class="loader">
+      <div class="page-transition"></div>
+    </div>
+    <div
+      class="barba-wrapper"
+      data-barba="container"
+      data-barba-namespace="club-des-entreprises"
+    >
+      <header>
+        <div class="main-wrapper">
+          <!-- Navigation  -->
+          <nav role="navigation" class="navbar">
+            <a href="../index.html" class="clickable-indicator home">
+              <img
+                loading="lazy"
+                class="brand-icon"
+                src="../static/assets/icons/logo-p__orange.svg"
+                alt="Logo de l'agence"
+              />
+            </a>
             <button class="burger clickable-indicator" data-opened="false">
               menu
             </button>
-          <ul>
-            <li>
-              <a href="../equipe.html" class="clickable-indicator">L'équipe</a>
-            </li>
-            <li>
-              <a href="../realisation.html" class="clickable-indicator">Réalisations</a>
-            </li>
-            <li>
-              <a href="../contact.html" class="clickable-indicator">Contact</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <main>
-      <div class="main-wrapper">
-        <section class="realisation_title">
-          <div>
-            <div class="return">
-              <a href="../realisation.html" class="clickable-indicator">
-                <svg
-                  class="arrow-back"
-                  width="25"
-                  height="15"
-                  viewBox="0 0 25 15"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M6.76234 14.7017C6.95284 14.8927 7.21123 15 7.48065 15C7.75007 15 8.00845 14.8927 8.19896 14.7017C8.38947 14.5107 8.49649 14.2516 8.49649 13.9815C8.49649 13.7114 8.38947 13.4524 8.19896 13.2614L3.46816 8.51832L24.0018 8.51832C24.2681 8.51368 24.522 8.40435 24.7087 8.21389C24.8954 8.02342 25 7.76705 25 7.5C25 7.23295 24.8954 6.97658 24.7087 6.78612C24.522 6.59565 24.2681 6.48632 24.0018 6.48168L3.46816 6.48168L8.19896 1.73864C8.38947 1.54764 8.49649 1.28859 8.49649 1.01847C8.49649 0.748358 8.38947 0.489305 8.19896 0.298304C8.00845 0.107303 7.75007 0 7.48065 0C7.21123 0 6.95284 0.107303 6.76234 0.298304L0.297535 6.77983C0.107027 6.97083 0 7.22988 0 7.5C0 7.77012 0.107027 8.02917 0.297535 8.22017L6.76234 14.7017Z"
-                    fill="#2F4858"
-                  />
-                </svg>
-                Les réalisations
-              </a>
-            </div>
-            <p>Étude de cas</p>
-            <h1>Le club des <br />entreprises</h1>
-          </div>
-          <img loading="lazy" src="../static/assets/images/club_principal.png" alt="" />
-        </section>
-        <section class="realisation_brief">
-          <div class="display">
-            <div class="data">
-              <div>
-                <h4>Date</h4>
-                <div class="paragraph">
-                  <p>28 Novembre 2021</p>
-                </div>
-              </div>
-              <div>
-                <h4>Client·e·s</h4>
-                <div class="paragraph">
-                  <p>Club des entreprises</p>
-                  <p>Représentée par Anne Naudy</p>
-                </div>
-              </div>
-              <div>
-                <h4>Expertise</h4>
-                <div class="paragraph">
-                  <p>Graphisme</p>
-                  <p>Communication</p>
-                </div>
-              </div>
-              <div>
-                <h4>Référent·e·s</h4>
-                <div class="paragraph">
-                  <p>Elodie Heurtin</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="articles">
-              <article>
-                <h2 class="context">Le contexte</h2>
-                <p>
-                  Le Club des Entreprises, représenté par Anne Naudy, est une association qui a pour objectif d’établir un contact entre les entreprises et les étudiant·e·s de l’USMB. Elle organise chaque année la “Semaine de l’emploi & entreprise” qui a généralement lieu au mois de novembre. Pour cette 14ème édition, le thème était “l’Entreprise Optimiste”.
-                </p>
-              </article>
-              <article>
-                <h2 class="demande">La demande</h2>
-                <p>
-                  L’agence Pikoom était chargée de réaliser l’affiche officielle, ses déclinaisons web ainsi que le programme détaillé de cette édition. 
-                </p>
-              </article>
-              <article>
-                <h2 class="objectif_cible">Les objectifs et les cibles</h2>
-                <h3 class="subtitle_articles">Les objectifs</h3>
-                <p>
-                  <b> Séduire</b> et <b>informer</b>  pour interpeller et <b> sensibiliser</b> les étudiants dans le but de leur donner envie de participer à l’événement
-                </p>
-                <h3 class="subtitle_articles">Les cibles</h3>
-                <p>
-                  La cible principale est les étudiants de l’USMB.               
-                </p>
-              </article>
-            </div>
-          </div>
-          <img loading="lazy" src="../static/assets/images/club_second.png" alt="" />
-        </section>
-        <section class="realisation_resume">
-          <div class="articles">
-            <article>
-              <h2 class="demarche">Notre démarche</h2>
-              <p>
-                Après un premier échange avec Anne Naudy, un cahier des
-                charges nous a été fourni pour être en mesure de respecter les
-                demandes et les deadlines. Suite à cet échange, nous avons
-                fait une réunion afin de répartir les tâches au sein du groupe
-                et de mettre en place un planning prévisionnel.
-              </p>
-              <p>
-                Afin de mener à bien ce projet visuel, un groupe de graphistes
-                et de communicant·e·s se sont alliés pour répondre à la
-                demande de la cliente. Nous avons mis en place des outils de
-                collaboration tels que Notion et Figma pour nous permettre de
-                réaliser tous les supports visuels attendus.
-              </p>
-              <p>
-                Pendant un mois, les graphistes et les communicant·e·s de
-                Pikoom ont travaillé sur la réalisation de ce projet. Nous
-                avons veillé à envoyer nos avancées régulièrement à la cliente
-                pour avoir des retours sur nos productions.
-              </p>
-              <p>
-                Pour être en adéquation avec le thème donné, nous avons choisi
-                comme couleur principale le jaune, représentation même de
-                l’optimisme. Souhaitant être inclusif·ve·s, nous avons réalisé
-                une version de l’affiche avec une étudiante mais également une
-                version avec un étudiant. Nos typographies ont été choisies
-                dans le but de dynamiser les supports et toucher notre cible
-                primaire, les étudiant·e·s.
-              </p>
-            </article>
-            <div class="gallerie">
-              <img loading="lazy" src="../static/assets/images/club_third.png" alt="" />
-            </div>
-            <article>
-              <h2 class="problemes">Problèmes rencontrés</h2>
-              <p>
-                Le problème que nous avons rencontré a été de ne pas poser de
-                limites avec la cliente en ce qui concerne les changements à
-                apporter au projet. En effet, les retours de notre cliente
-                étaient souvent accompagnés de modifications à apporter aux
-                supports qui ne figuraient pas dans le cahier des charges.
-                C’est dans ce genre de situation que nous nous sommes rendus
-                compte de l’importance du planning prévisionnel. Ce dernier
-                nous a permis d’être en capacité de nous réorganiser
-                rapidement et de livrer les rendus dans les temps.
-              </p>
-            </article>
-          </div>
-
-          <section class="realisation_participant">
-            <h2 class="equipe">Notre équipe</h2>
-            <div class="swiper_rea swiper">
-              <div class="swiper-wrapper carouselle draggable">
-                <div class="swiper-slide">
-                  <img src="../static/assets/images/elodieh_logo-pikoom.png" alt="Elodie Heurtin" loading="lazy" />
-                  <h4>Elodie Heurtin</h4>
-                  <p>
-                    Ce projet m’a permis d’acquérir de nouvelles compétences en gestion de projet et en relationnel.
-                  </p>
-                </div>
-                <div class="swiper-slide">
-                  <img src="../static/assets/images/mathildes_logo-pikoom.png" alt="Mathilde Sabourin" loading="lazy" />
-                  <h4>Mathilde Sabourin</h4>
-                  <p>
-                    Riche en apprentissage ! J’ai pu me familiariser avec la relation client, apprendre à travailler
-                    avec des contraintes et efficacité.
-                  </p>
-                </div>
-                <div class="swiper-slide">
-                  <img src="../static/assets/images/lorianem_logo-pikoom.png" alt="Loriane macé" loading="lazy" />
-                  <h4>Loriane Macé</h4>
-                  <p>
-                    Très instructif, j’ai pu mettre à profit mes compétences en communication visuelle ainsi
-                    qu’apprendre à travailler avec des délais courts.
-                  </p>
-                </div>
-                <div class="swiper-slide">
-                  <img src="../static/assets/images/noef_logo-pikoom.png" alt="Noé Flipo" loading="lazy" />
-                  <h4>Noé Flipo</h4>
-                  <p>
-                    J’ai vraiment apprécié travailler en groupe sur un projet mélangeant communication et graphisme.
-                  </p>
-                </div>
-                <div class="swiper-slide">
-                  <img src="../static/assets/images/leoa_logo-pikoom.png" alt="Léo Achard" loading="lazy" />
-                  <h4>Léo Achard</h4>
-                  <p>
-                    Une bonne expérience en tant que coordinateur.
-                  </p>
-                </div>
-                <div class="swiper-slide">
-                  <img src="../static/assets/images/valentinl_logo-pikoom.png" alt="Valentin lansigu" loading="lazy" />
-                  <h4>Valentin Lansigu</h4>
-                  <p>
-                    Première expérience graphique de l'année. Ça m’a permis de découvrir un projet où des livrables
-                    print sont attendus, j’ai apprécié le travail de groupe et les réflexions autour des propositions !
-                  </p>
-                </div>
-                <div class="swiper-pagination"></div>
-              </div>
-              <a class="button cta" href="../equipe.html">
-                Rencontrer l'équipe !
-              </a>
-          </section>
-          <div class="articles">
-            <div class="gallerie">
-              <img loading="lazy" src="../static/assets/images/club_fourth.png" alt="" />
-            </div>
-            <article>
-              <h2 class="bilan">Bilan général</h2>
-              <p>
-                La réalisation de ce projet graphique nous a permis de mettre
-                en application nos compétences en gestion de projet, en
-                graphisme et en communication. Nous étions contents des
-                supports que nous avons créés et fier·e·s d’avoir vu dans les
-                couloirs l’affiche officielle de l’événement.
-              </p>
-            </article>
-          </div>
-        </section>
-      </div>
-    </main>
-    <!-- Footer -->
-    <footer>
-      <div class="main-wrapper">
-        <nav class="footer-nav navbar">
-          <a href="../index.html" aria-current="page" class="home clickable-indicator">
-            <img class="brand-icon" src="../static/assets/icons/logo-p__orange.svg" alt="Logo de l'agence"
-              loading="lazy" />
-          </a>
-          <ul>
-            <li>
-              <a href="../equipe.html" class="clickable-indicator">L'équipe</a>
-            </li>
-            <li>
-              <a href="../realisation.html" class="clickable-indicator">
-                Réalisations
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <hr class="separator" />
-        <div class="inner-footer">
-          <div class="about-container">
-            <div class="about">
-              <h5>Pikoom</h5>
-              <p>
-                Agence de communication étudiante optimiste et créative basée
-                à Chambéry.
-              </p>
-            </div>
-            <div class="credits">
-              <a href="https://www.univ-smb.fr" target="_blank" rel="noopener noreferrer" class="button">
-                <img src="../static/assets/images/logo-USMB.png" alt="Logo Université Savoie Mont-Blanc"
-                  class="credit-img" loading="lazy" />
-              </a>
-              <a href="https://mmi.univ-smb.fr/" target="_blank" rel="noopener noreferrer" class="button">
-                <img src="../static/assets/images/logo-MMICHY.png" alt="Logo IUT MMI Chambéry" class="credit-img"
-                  loading="lazy" />
-              </a>
-            </div>
-          </div>
-          <address class="address">
-            <h5>Adresse</h5>
-            <p>28 Avenue du Lac d'Annecy</p>
-            <p>73370 Le Bourget-du-Lac</p>
-            <p>France</p>
-          </address>
-          <div class="contact">
-            <h5>Contact</h5>
             <ul>
               <li>
-                <a href="mailto:agence.pikoom@gmail.com" class="clickable-indicator">
-                  Mail
-                </a>
+                <a href="../equipe.html" class="clickable-indicator"
+                  >L'équipe</a
+                >
               </li>
               <li>
-                <a href="//instagram.com/pikoomagence" target="_blank" class="clickable-indicator">
-                  Instagram
+                <a href="../realisation.html" class="clickable-indicator"
+                  >Réalisations</a
+                >
+              </li>
+              <li>
+                <a href="../contact.html" class="clickable-indicator"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <div class="main-wrapper">
+          <section class="realisation_title">
+            <div>
+              <div class="return">
+                <a href="../realisation.html" class="clickable-indicator">
+                  <svg
+                    class="arrow-back"
+                    width="25"
+                    height="15"
+                    viewBox="0 0 25 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6.76234 14.7017C6.95284 14.8927 7.21123 15 7.48065 15C7.75007 15 8.00845 14.8927 8.19896 14.7017C8.38947 14.5107 8.49649 14.2516 8.49649 13.9815C8.49649 13.7114 8.38947 13.4524 8.19896 13.2614L3.46816 8.51832L24.0018 8.51832C24.2681 8.51368 24.522 8.40435 24.7087 8.21389C24.8954 8.02342 25 7.76705 25 7.5C25 7.23295 24.8954 6.97658 24.7087 6.78612C24.522 6.59565 24.2681 6.48632 24.0018 6.48168L3.46816 6.48168L8.19896 1.73864C8.38947 1.54764 8.49649 1.28859 8.49649 1.01847C8.49649 0.748358 8.38947 0.489305 8.19896 0.298304C8.00845 0.107303 7.75007 0 7.48065 0C7.21123 0 6.95284 0.107303 6.76234 0.298304L0.297535 6.77983C0.107027 6.97083 0 7.22988 0 7.5C0 7.77012 0.107027 8.02917 0.297535 8.22017L6.76234 14.7017Z"
+                      fill="#2F4858"
+                    />
+                  </svg>
+                  Les réalisations
+                </a>
+              </div>
+              <p>Étude de cas</p>
+              <h1>Le club des <br />entreprises</h1>
+            </div>
+            <img
+              loading="lazy"
+              src="../static/assets/images/club_principal.png"
+              alt=""
+            />
+          </section>
+          <section class="realisation_brief">
+            <div class="display">
+              <div class="data">
+                <div>
+                  <h4>Date</h4>
+                  <div class="paragraph">
+                    <p>28 Novembre 2021</p>
+                  </div>
+                </div>
+                <div>
+                  <h4>Client·e·s</h4>
+                  <div class="paragraph">
+                    <p>Club des entreprises</p>
+                    <p>Représentée par Anne Naudy</p>
+                  </div>
+                </div>
+                <div>
+                  <h4>Expertise</h4>
+                  <div class="paragraph">
+                    <p>Graphisme</p>
+                    <p>Communication</p>
+                  </div>
+                </div>
+                <div>
+                  <h4>Référent·e·s</h4>
+                  <div class="paragraph">
+                    <p>Elodie Heurtin</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="articles">
+                <article>
+                  <h2 class="context">Le contexte</h2>
+                  <p>
+                    <a
+                      class="hovering-link clickable-indicator"
+                      target="_blank"
+                      href="https://www.club-entreprises.univ-smb.fr/"
+                      >Le Club des Entreprises</a
+                    >
+                    , représenté par Anne Naudy, est une association qui a pour
+                    objectif d’établir un contact entre les entreprises et les
+                    étudiant·e·s de l’
+                    <a
+                      class="hovering-link clickable-indicator"
+                      target="_blank"
+                      href="https://www.univ-smb.fr/"
+                      >USMB</a
+                    >
+                    . Elle organise chaque année la
+                    <a
+                      class="hovering-link clickable-indicator"
+                      target="_blank"
+                      href="https://www.club-entreprises.univ-smb.fr/nos-evenements/la-semaine-emploi-entreprises/"
+                      >“Semaine de l’emploi & entreprise”</a
+                    >
+                    qui a généralement lieu au mois de novembre. Pour cette
+                    <b> 14ème édition</b>, le thème était
+                    <b> “l’Entreprise Optimiste”</b>.
+                  </p>
+                </article>
+                <article>
+                  <h2 class="demande">La demande</h2>
+                  <p>
+                    L’agence Pikoom était chargée de réaliser l’
+                    <b>affiche officielle</b> , ses
+                    <b> déclinaisons web</b> ainsi que le
+                    <b> programme détaillé</b> de cette édition.
+                  </p>
+                </article>
+                <article>
+                  <h2 class="objectif_cible">Les objectifs et les cibles</h2>
+                  <h3 class="subtitle_articles">Les objectifs</h3>
+                  <p>
+                    <b> Séduire</b> et <b>informer</b> pour interpeller et
+                    <b> sensibiliser</b> les étudiants dans le but de leur
+                    donner envie de participer à l’événement
+                  </p>
+                  <h3 class="subtitle_articles">Les cibles</h3>
+                  <p>La cible principale est les étudiants de l’USMB.</p>
+                </article>
+              </div>
+            </div>
+            <img
+              loading="lazy"
+              src="../static/assets/images/club_second.png"
+              alt=""
+            />
+          </section>
+          <section class="realisation_resume">
+            <div class="articles">
+              <article>
+                <h2 class="demarche">Notre démarche</h2>
+                <p>
+                  Après un premier échange avec Anne Naudy, un
+                  <b> cahier des charges</b> regroupant les <b> attentes</b> et
+                  les <b> deadlines</b> a été fourni aux étudiant·e·s de
+                  l’agence Pikoom. Afin de mener à bien ce projet visuel, un
+                  groupe de graphistes et de communicant·e·s se sont alliés pour
+                  répondre à la demande de la cliente en respectant le
+                  <b> planning prévisionnel </b>mis en place. Le groupe a
+                  utilisé des <b>outils de collaboration</b> tels que
+                  <b> Notion</b> et <b> Figma</b> pour pouvoir réaliser tous les
+                  supports visuels attendus.
+                </p>
+                <p>
+                  Pendant un mois, les graphistes et les communicant·e·s de
+                  Pikoom ont travaillé sur la réalisation de ce projet. Le
+                  groupe a veillé à régulièrement <b> informer la cliente</b>sur
+                  l’avancée des productions pour que cette dernière leur fasse
+                  des <b>retours</b> .
+                </p>
+                <p>
+                  Pour être en adéquation avec le thème donné, les étudiant·e·s
+                  ont choisi comme couleur principale le <b> jaune</b>,
+                  représentation même de l’ <b> optimisme</b>. Souhaitant être
+                  inclusif·ve·s, deux affiches ont été réalisées, l’une avec une
+                  <b> étudiante</b> et l’autre un <b> étudiant</b>. Nos
+                  <b>typographies</b> ont été choisies dans le but de
+                  <b> dynamiser</b> les supports et <b> toucher</b> notre cible
+                  primaire, les étudiant·e·s.
+                </p>
+              </article>
+              <div class="gallerie">
+                <img
+                  loading="lazy"
+                  src="../static/assets/images/club_third.png"
+                  alt=""
+                />
+              </div>
+              <article>
+                <h2 class="problemes">
+                  Les problèmes rencontrés et les solutions apportées
+                </h2>
+                <ul>
+                  <h3 class="subtitle_articles">Les problèmes</h3>
+                  <li>
+                    Il y a eu beaucoup de modifications à apporter dans un délai
+                    parfois très court.
+                  </li>
+                  <li>
+                    Pris dans le feu de l’action, le groupe n’a pas pensé à
+                    demander un avis extérieur à un professeur de graphisme pour
+                    avoir des retours sur les productions.
+                  </li>
+                </ul>
+
+                <ul>
+                  <h3 class="subtitle_articles">Les solutions</h3>
+                  <li>
+                    Il a fallu privilégier ce projet et prendre du temps sur les
+                    autres projets pour pouvoir apporter ces modifications de
+                    dernières minutes et le rendre en temps et en heure.
+                  </li>
+
+                  <li>
+                    A l’avenir les étudiant·e·s prendront conseil auprès des
+                    professeur·e·s qualifié·e·s.
+                  </li>
+                </ul>
+              </article>
+              <article>
+                <h2 class="bilan">Bilan général</h2>
+                <p>
+                  Ce projet a permis à chaque membre de mettre en avant sa
+                  <b> créativité </b>et ses <b> compétences en graphisme</b>. Le
+                  groupe a su faire preuve de <b> réactivité </b>et
+                  <b> entretenir</b>
+                  une <b> bonne relation</b> avec la cliente tout au long du
+                  projet. Les membres de l’équipe étaient content·e·s de
+                  retrouver leurs affiches sur le <b> campus </b>et sur les
+                  <b> réseaux sociaux</b>.
+                </p>
+              </article>
+            </div>
+
+            <section class="realisation_participant">
+              <h2 class="equipe">Notre équipe</h2>
+              <div class="swiper_rea swiper">
+                <div class="swiper-wrapper carouselle draggable">
+                  <div class="swiper-slide">
+                    <img
+                      src="../static/assets/images/elodieh_logo-pikoom.png"
+                      alt="Elodie Heurtin"
+                      loading="lazy"
+                    />
+                    <h4>Elodie Heurtin</h4>
+                    <p>
+                      Ce projet m’a permis d’acquérir de nouvelles compétences
+                      en gestion de projet et en relationnel.
+                    </p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="../static/assets/images/mathildes_logo-pikoom.png"
+                      alt="Mathilde Sabourin"
+                      loading="lazy"
+                    />
+                    <h4>Mathilde Sabourin</h4>
+                    <p>
+                      Riche en apprentissage ! J’ai pu me familiariser avec la
+                      relation client, apprendre à travailler avec des
+                      contraintes et efficacité.
+                    </p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="../static/assets/images/lorianem_logo-pikoom.png"
+                      alt="Loriane macé"
+                      loading="lazy"
+                    />
+                    <h4>Loriane Macé</h4>
+                    <p>
+                      Très instructif, j’ai pu mettre à profit mes compétences
+                      en communication visuelle ainsi qu’apprendre à travailler
+                      avec des délais courts.
+                    </p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="../static/assets/images/noef_logo-pikoom.png"
+                      alt="Noé Flipo"
+                      loading="lazy"
+                    />
+                    <h4>Noé Flipo</h4>
+                    <p>
+                      J’ai vraiment apprécié travailler en groupe sur un projet
+                      mélangeant communication et graphisme.
+                    </p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="../static/assets/images/leoa_logo-pikoom.png"
+                      alt="Léo Achard"
+                      loading="lazy"
+                    />
+                    <h4>Léo Achard</h4>
+                    <p>Une bonne expérience en tant que coordinateur.</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="../static/assets/images/valentinl_logo-pikoom.png"
+                      alt="Valentin lansigu"
+                      loading="lazy"
+                    />
+                    <h4>Valentin Lansigu</h4>
+                    <p>
+                      Première expérience graphique de l'année. Ça m’a permis de
+                      découvrir un projet où des livrables print sont attendus,
+                      j’ai apprécié le travail de groupe et les réflexions
+                      autour des propositions !
+                    </p>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+                <a class="button cta" href="../equipe.html">
+                  Rencontrer l'équipe !
+                </a>
+              </div>
+            </section>
+            <div class="articles">
+              <div class="gallerie">
+                <img
+                  loading="lazy"
+                  src="../static/assets/images/club_fourth.png"
+                  alt=""
+                />
+              </div>
+              <article>
+                <h2 class="bilan">Bilan général</h2>
+                <p>
+                  La réalisation de ce projet graphique nous a permis de mettre
+                  en application nos compétences en gestion de projet, en
+                  graphisme et en communication. Nous étions contents des
+                  supports que nous avons créés et fier·e·s d’avoir vu dans les
+                  couloirs l’affiche officielle de l’événement.
+                </p>
+              </article>
+            </div>
+          </section>
+        </div>
+      </main>
+      <!-- Footer -->
+      <footer>
+        <div class="main-wrapper">
+          <nav class="footer-nav navbar">
+            <a
+              href="../index.html"
+              aria-current="page"
+              class="home clickable-indicator"
+            >
+              <img
+                class="brand-icon"
+                src="../static/assets/icons/logo-p__orange.svg"
+                alt="Logo de l'agence"
+                loading="lazy"
+              />
+            </a>
+            <ul>
+              <li>
+                <a href="../equipe.html" class="clickable-indicator"
+                  >L'équipe</a
+                >
+              </li>
+              <li>
+                <a href="../realisation.html" class="clickable-indicator">
+                  Réalisations
                 </a>
               </li>
             </ul>
+          </nav>
+          <hr class="separator" />
+          <div class="inner-footer">
+            <div class="about-container">
+              <div class="about">
+                <h5>Pikoom</h5>
+                <p>
+                  Agence de communication étudiante optimiste et créative basée
+                  à Chambéry.
+                </p>
+              </div>
+              <div class="credits">
+                <a
+                  href="https://www.univ-smb.fr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="button"
+                >
+                  <img
+                    src="../static/assets/images/logo-USMB.png"
+                    alt="Logo Université Savoie Mont-Blanc"
+                    class="credit-img"
+                    loading="lazy"
+                  />
+                </a>
+                <a
+                  href="https://mmi.univ-smb.fr/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="button"
+                >
+                  <img
+                    src="../static/assets/images/logo-MMICHY.png"
+                    alt="Logo IUT MMI Chambéry"
+                    class="credit-img"
+                    loading="lazy"
+                  />
+                </a>
+              </div>
+            </div>
+            <address class="address">
+              <h5>Adresse</h5>
+              <p>28 Avenue du Lac d'Annecy</p>
+              <p>73370 Le Bourget-du-Lac</p>
+              <p>France</p>
+            </address>
+            <div class="contact">
+              <h5>Contact</h5>
+              <ul>
+                <li>
+                  <a
+                    href="mailto:agence.pikoom@gmail.com"
+                    class="clickable-indicator"
+                  >
+                    Mail
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="//instagram.com/pikoomagence"
+                    target="_blank"
+                    class="clickable-indicator"
+                  >
+                    Instagram
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <hr class="separator" />
+          <div class="footer-bottom">
+            <div class="copyrights">
+              <p>Pikoom 🌵 &copy; 2022</p>
+              <a href="../mention.html" class="clickable-indicator">
+                Mentions légales
+              </a>
+            </div>
           </div>
         </div>
-        <hr class="separator" />
-        <div class="footer-bottom">
-          <div class="copyrights">
-            <p>Pikoom 🌵 &copy; 2022</p>
-            <a href="../mention.html" class="clickable-indicator">
-              Mentions légales
-            </a>
-          </div>
-        </div>
+      </footer>
+      <a class="back-to-top-btn button" href="#">
+        <svg
+          width="30"
+          height="30"
+          viewBox="0 0 30 30"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M19.6266 15.7072C20.0171 16.0977 20.6502 16.0977 21.0408 15.7072C21.4313 15.3167 21.4313 14.6835 21.0408 14.293L19.6266 15.7072ZM15.0003 9.66675L15.7074 8.95964C15.3169 8.56912 14.6837 8.56912 14.2932 8.95964L15.0003 9.66675ZM8.95989 14.293C8.56936 14.6835 8.56936 15.3167 8.95989 15.7072C9.35041 16.0977 9.98357 16.0977 10.3741 15.7072L8.95989 14.293ZM14.0003 20.3334C14.0003 20.8857 14.448 21.3334 15.0003 21.3334C15.5526 21.3334 16.0003 20.8857 16.0003 20.3334L14.0003 20.3334ZM27.3337 15.0001C27.3337 21.8116 21.8118 27.3334 15.0003 27.3334V29.3334C22.9164 29.3334 29.3337 22.9162 29.3337 15.0001H27.3337ZM15.0003 27.3334C8.18881 27.3334 2.66699 21.8116 2.66699 15.0001H0.666992C0.666992 22.9162 7.08424 29.3334 15.0003 29.3334V27.3334ZM2.66699 15.0001C2.66699 8.18857 8.18881 2.66675 15.0003 2.66675V0.666748C7.08424 0.666748 0.666992 7.084 0.666992 15.0001H2.66699ZM15.0003 2.66675C21.8118 2.66675 27.3337 8.18857 27.3337 15.0001H29.3337C29.3337 7.084 22.9164 0.666748 15.0003 0.666748V2.66675ZM21.0408 14.293L15.7074 8.95964L14.2932 10.3739L19.6266 15.7072L21.0408 14.293ZM14.2932 8.95964L8.95989 14.293L10.3741 15.7072L15.7074 10.3739L14.2932 8.95964ZM16.0003 20.3334L16.0003 9.66675L14.0003 9.66675L14.0003 20.3334L16.0003 20.3334Z"
+            fill="#2F4858"
+          />
+        </svg>
+        <span>Top</span>
+      </a>
+      <div class="cursor">
+        <span data-drag-tooltip>drag&nbsp;✋</span>
+        <span data-discover-tooltip>découvrir</span>
       </div>
-    </footer>
-    <a class="back-to-top-btn button" href="#">
-      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="M19.6266 15.7072C20.0171 16.0977 20.6502 16.0977 21.0408 15.7072C21.4313 15.3167 21.4313 14.6835 21.0408 14.293L19.6266 15.7072ZM15.0003 9.66675L15.7074 8.95964C15.3169 8.56912 14.6837 8.56912 14.2932 8.95964L15.0003 9.66675ZM8.95989 14.293C8.56936 14.6835 8.56936 15.3167 8.95989 15.7072C9.35041 16.0977 9.98357 16.0977 10.3741 15.7072L8.95989 14.293ZM14.0003 20.3334C14.0003 20.8857 14.448 21.3334 15.0003 21.3334C15.5526 21.3334 16.0003 20.8857 16.0003 20.3334L14.0003 20.3334ZM27.3337 15.0001C27.3337 21.8116 21.8118 27.3334 15.0003 27.3334V29.3334C22.9164 29.3334 29.3337 22.9162 29.3337 15.0001H27.3337ZM15.0003 27.3334C8.18881 27.3334 2.66699 21.8116 2.66699 15.0001H0.666992C0.666992 22.9162 7.08424 29.3334 15.0003 29.3334V27.3334ZM2.66699 15.0001C2.66699 8.18857 8.18881 2.66675 15.0003 2.66675V0.666748C7.08424 0.666748 0.666992 7.084 0.666992 15.0001H2.66699ZM15.0003 2.66675C21.8118 2.66675 27.3337 8.18857 27.3337 15.0001H29.3337C29.3337 7.084 22.9164 0.666748 15.0003 0.666748V2.66675ZM21.0408 14.293L15.7074 8.95964L14.2932 10.3739L19.6266 15.7072L21.0408 14.293ZM14.2932 8.95964L8.95989 14.293L10.3741 15.7072L15.7074 10.3739L14.2932 8.95964ZM16.0003 20.3334L16.0003 9.66675L14.0003 9.66675L14.0003 20.3334L16.0003 20.3334Z"
-          fill="#2F4858" />
-      </svg>
-      <span>Top</span>
-    </a>
-    <div class="cursor">
-      <span data-drag-tooltip>drag&nbsp;✋</span>
-      <span data-discover-tooltip>découvrir</span>
     </div>
-  </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-  <script src="../js/libs/barba.js"></script>
-  <script src="../js/app.js" type="module"></script>
-</body>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="../js/libs/barba.js"></script>
+    <script src="../js/app.js" type="module"></script>
+  </body>
 </html>
