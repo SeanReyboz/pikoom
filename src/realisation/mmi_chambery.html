@@ -1,448 +1,353 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <title>Pikoom &mdash; Agence Multimédia Étudiante</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#F97C60" />
-    <link
-      rel="icon"
-      type="image/svg"
-      href="../static/assets/icons/logo-p__orange.svg"
-    />
-    <!-- Swiper JS -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
-    />
-    <!-- Main stylesheet -->
-    <link href="../static/assets/css/main.css" rel="stylesheet" />
-  </head>
 
-  <body data-barba="wrapper">
-    <!-- page transition -->
-    <div class="loader">
-      <div class="page-transition"></div>
-    </div>
-    <div
-      class="barba-wrapper"
-      data-barba="container"
-      data-barba-namespace="quart-d-heure"
-    >
-      <header>
-        <div class="main-wrapper">
-          <!-- Navigation  -->
-          <nav role="navigation" class="navbar">
-            <a href="../index.html" class="clickable-indicator home">
-              <img
-                loading="lazy"
-                class="brand-icon"
-                src="../static/assets/icons/logo-p__orange.svg"
-                alt="Logo de l'agence"
-              />
-            </a>
-            <button class="burger clickable-indicator" data-opened="false">
-              menu
-            </button>
-            <ul>
-              <li>
-                <a href="../equipe.html" class="clickable-indicator"
-                  >L'équipe</a
-                >
-              </li>
-              <li>
-                <a href="../realisation.html" class="clickable-indicator"
-                  >Réalisations</a
-                >
-              </li>
-              <li>
-                <a href="../contact.html" class="clickable-indicator"
-                  >Contact</a
-                >
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </header>
-      <main>
-        <div class="main-wrapper">
-          <section class="realisation_title">
-            <div>
-              <div class="return">
-                <a href="../realisation.html" class="clickable-indicator">
-                  <svg
-                    class="arrow-back"
-                    width="25"
-                    height="15"
-                    viewBox="0 0 25 15"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M6.76234 14.7017C6.95284 14.8927 7.21123 15 7.48065 15C7.75007 15 8.00845 14.8927 8.19896 14.7017C8.38947 14.5107 8.49649 14.2516 8.49649 13.9815C8.49649 13.7114 8.38947 13.4524 8.19896 13.2614L3.46816 8.51832L24.0018 8.51832C24.2681 8.51368 24.522 8.40435 24.7087 8.21389C24.8954 8.02342 25 7.76705 25 7.5C25 7.23295 24.8954 6.97658 24.7087 6.78612C24.522 6.59565 24.2681 6.48632 24.0018 6.48168L3.46816 6.48168L8.19896 1.73864C8.38947 1.54764 8.49649 1.28859 8.49649 1.01847C8.49649 0.748358 8.38947 0.489305 8.19896 0.298304C8.00845 0.107303 7.75007 0 7.48065 0C7.21123 0 6.95284 0.107303 6.76234 0.298304L0.297535 6.77983C0.107027 6.97083 0 7.22988 0 7.5C0 7.77012 0.107027 8.02917 0.297535 8.22017L6.76234 14.7017Z"
-                      fill="#2F4858"
-                    />
-                  </svg>
-                  Les réalisations
-                </a>
-              </div>
-              <p>Étude de cas</p>
-              <h1>MMI Chambéry</h1>
-            </div>
-            <img
-              loading="lazy"
-              src="../static/assets/images/mmi_chambery_principal.png"
-              alt=""
-            />
-          </section>
-          <section class="realisation_brief">
-            <div class="display">
-              <div class="data">
-                <div>
-                  <h4>Date</h4>
-                  <div class="paragraph">
-                    <p>26 novembre</p>
-                  </div>
-                </div>
-                <div>
-                  <h4>Client·e·s</h4>
-                  <div class="paragraph">
-                    <p>Département MMI</p>
-                  </div>
-                </div>
-                <div>
-                  <h4>Expertise</h4>
-                  <div class="paragraph">
-                    <p>Programmation</p>
-                    <p>Web Design</p>
-                  </div>
-                </div>
-                <div>
-                  <h4>Référent·e·s</h4>
-                  <div class="paragraph">
-                    <p>Valentin Gassend</p>
-                    <p>Gabriel Berthaud</p>
-                  </div>
-                </div>
-              </div>
+<head>
+  <title>Pikoom &mdash; Agence Multimédia Étudiante</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#F97C60" />
+  <link rel="icon" type="image/svg" href="../static/assets/icons/logo-p__orange.svg" />
+  <!-- Swiper JS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <!-- Main stylesheet -->
+  <link href="../static/assets/css/main.css" rel="stylesheet" />
+</head>
 
-              <div class="articles">
-                <article>
-                  <h2 class="demande">La demande</h2>
-                  <p>
-                    Les deuxièmes années ont été sollicités durant 2 semaines
-                    pour réaliser un site web pour un client. La moitié d’entre
-                    nous a travaillé sur la refonte du site de MMI Chambéry pour
-                    Grégory Houzet. Cette demande a été motivée par l’arrivée du
-                    BUT. Il fallait mettre en avant la pluridisciplinarité des
-                    étudiant·e·s MMI et fournir des informations précises sur la
-                    formation.
-                  </p>
-                </article>
-                <article>
-                  <h2 class="solution">La solution Pikoom</h2>
-                  <p>
-                    Après avoir réalisé deux versions différentes, et après
-                    avoir reçu les avis du client, nous avons travaillé sur un
-                    site qui change de tout ce que l’on peut voir, simple, et
-                    clair, qui va à l’essentiel.
-                  </p>
-                </article>
-              </div>
-            </div>
-            <img
-              loading="lazy"
-              src="../static/assets/images/mmi_chambery_second.png"
-              alt=""
-            />
-          </section>
-          <section class="realisation_resume">
-            <div class="articles">
-              <article>
-                <h2 class="demarche">Notre démarche</h2>
-                <p>
-                  La première étape de la refonte du site a été de réfléchir à
-                  l’arborescence et aux informations qu’il était important de
-                  mettre en avant. Pour déterminer cela, nous nous sommes
-                  intéressés à la cible principale du site MMI, les futur·e·s
-                  étudiant·e·s qui cherchent des renseignements sur la
-                  formation. Nous avons défini les principaux points d’entrée et
-                  adapté nos maquettes en conséquence. Après un premier retour
-                  de nos professeurs, nous sommes parvenus à une version finale
-                  mettant en corrélation les besoins de la cible principale et
-                  ceux du client.
-                </p>
-              </article>
-              <div class="gallerie">
-                <img
-                  loading="lazy"
-                  src="../static/assets/images/mmi_chambery_third.png"
-                  alt=""
-                />
-              </div>
-              <article>
-                <h2 class="problemes">Problèmes rencontrés</h2>
-                <p>
-                  Le problème majeur que nous avons rencontré était de
-                  sélectionner les informations pertinentes parmi la multitude
-                  d’informations déjà présente sur l’actuel site web et celle
-                  données par notre client. Nous avons donc réalisé des
-                  expériences utilisateurs pour définir les informations
-                  indispensables à mettre en avant sur le site.
-                </p>
-              </article>
-            </div>
-
-            <section class="realisation_participant">
-              <h2 class="equipe">Notre équipe</h2>
-              <div class="swiper_rea swiper">
-                <div class="swiper-wrapper carouselle draggable">
-                  <div class="swiper-slide">
-                    <img
-                      src="../static/assets/images/valenting_logo-pikoom.png"
-                      alt="Valentin Gassend"
-                      loading="lazy"
-                    />
-                    <h4>Valentin Gassend</h4>
-                    <p>
-                      Très intéressant autant en webdesign qu’en développement,
-                      la supervision par des professionnels du métier est
-                      également très intéressante et nous a permis de donner un
-                      élan nouveau à MMI Chambéry.
-                    </p>
-                  </div>
-                  <div class="swiper-slide">
-                    <img
-                      src="../static/assets/images/gabrielb_logo-pikoom.png"
-                      alt="Gabriel Berthaud"
-                      loading="lazy"
-                    />
-                    <h4>Gabriel Berthaud</h4>
-                    <p>
-                      Une bonne expérience qui aura su nous apprendre à nous
-                      organiser et à travailler en autonomie.
-                    </p>
-                  </div>
-                  <div class="swiper-slide">
-                    <img
-                      src="../static/assets/images/clemencev_logo-pikoom.png"
-                      alt="Clémence Veyret"
-                      loading="lazy"
-                    />
-                    <h4>Clémence Veyret</h4>
-                    <p>
-                      Une bonne mise en situation de travail en équipe, qui
-                      amène beaucoup de fierté.
-                    </p>
-                  </div>
-                  <div class="swiper-slide">
-                    <img
-                      src="../static/assets/images/emmanuelf_logo-pikoom.png"
-                      alt="Emmanuel Faure"
-                      loading="lazy"
-                    />
-                    <h4>Emmanuel Faure</h4>
-                    <p>
-                      2 semaines intenses mais très instructives qui m’ont
-                      attiré encore plus dans le monde de la programmation
-                      malgré mes commits burlesque.
-                    </p>
-                  </div>
-                  <div class="swiper-slide">
-                    <img
-                      src="../static/assets/images/julienh_logo-pikoom.png"
-                      alt="Julien Hilt"
-                      loading="lazy"
-                    />
-                    <h4>Julien Hilt</h4>
-                    <p>
-                      La 1ère semaine était plus prenante que la 2e vu que je
-                      n’étais pas à l’aise avec la programmation. Et c’était
-                      quand même enrichissant puisque j’ai appris des choses
-                      très utiles pour l’avenir, notamment au niveau des
-                      animations JSON.
-                    </p>
-                  </div>
-                  <div class="swiper-slide">
-                    <img
-                      src="../static/assets/images/claudiaj_logo-pikoom.png"
-                      alt="Claudia Jacob"
-                      loading="lazy"
-                    />
-                    <h4>Claudia Jacob</h4>
-                    <p>
-                      C’est très enrichissant de travailler deux semaines à fond
-                      pour créer de A à Z un site internet avec l’aide d’un
-                      professionnel qui nous donne son avis et qui nous guide.
-                    </p>
-                  </div>
-                </div>
-                <div class="swiper-pagination"></div>
-              </div>
-              <a class="button cta" href="../equipe.html">
-                Rencontrer l'équipe !
-              </a>
-            </section>
-            <div class="articles">
-              <div class="gallerie">
-                <img
-                  loading="lazy"
-                  src="../static/assets/images/mmi_chambery_fourth.png"
-                  alt=""
-                />
-              </div>
-              <article>
-                <h2 class="bilan">Bilan général</h2>
-                <p>
-                  Ce projet a été une bonne occasion de travailler en équipe, de
-                  collaborer et de s'organiser dans un temps court. Nous avons
-                  donc dû être efficaces dans notre travail pour ne pas perdre
-                  de temps et prévoir des réunions régulières avec le client
-                  pour avoir sa validation.
-                </p>
-              </article>
-            </div>
-          </section>
-
-          <section class="realisation_images">
-            <img
-              loading="lazy"
-              src="../static/assets/images/mmi_chambery_fifth.png"
-              alt=""
-            />
-          </section>
-        </div>
-      </main>
-      <!-- Footer -->
-      <footer>
-        <div class="main-wrapper">
-          <nav class="footer-nav navbar">
-            <a
-              href="../index.html"
-              aria-current="page"
-              class="home clickable-indicator"
-            >
-              <img
-                class="brand-icon"
-                src="../static/assets/icons/logo-p__orange.svg"
-                alt="Logo de l'agence"
-                loading="lazy"
-              />
-            </a>
-            <ul>
-              <li>
-                <a href="../equipe.html" class="clickable-indicator"
-                  >L'équipe</a
-                >
-              </li>
-              <li>
-                <a href="../realisation.html" class="clickable-indicator">
-                  Réalisations
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <hr class="separator" />
-          <div class="inner-footer">
-            <div class="about-container">
-              <div class="about">
-                <h5>Pikoom</h5>
-                <p>
-                  Agence de communication étudiante optimiste et créative basée
-                  à Chambéry.
-                </p>
-              </div>
-              <div class="credits">
-                <a
-                  href="https://www.univ-smb.fr"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="button"
-                >
-                  <img
-                    src="../static/assets/images/logo-USMB.png"
-                    alt="Logo Université Savoie Mont-Blanc"
-                    class="credit-img"
-                    loading="lazy"
-                  />
-                </a>
-                <a
-                  href="https://mmi.univ-smb.fr/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="button"
-                >
-                  <img
-                    src="../static/assets/images/logo-MMICHY.png"
-                    alt="Logo IUT MMI Chambéry"
-                    class="credit-img"
-                    loading="lazy"
-                  />
-                </a>
-              </div>
-            </div>
-            <address class="address">
-              <h5>Adresse</h5>
-              <p>28 Avenue du Lac d'Annecy</p>
-              <p>73370 Le Bourget-du-Lac</p>
-              <p>France</p>
-            </address>
-            <div class="contact">
-              <h5>Contact</h5>
-              <ul>
-                <li>
-                  <a
-                    href="mailto:agence.pikoom@gmail.com"
-                    class="clickable-indicator"
-                  >
-                    Mail
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="//instagram.com/pikoomagence"
-                    target="_blank"
-                    class="clickable-indicator"
-                  >
-                    Instagram
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <hr class="separator" />
-          <div class="footer-bottom">
-            <div class="copyrights">
-              <p>Pikoom 🌵 &copy; 2022</p>
-              <a href="../mention.html" class="clickable-indicator">
-                Mentions légales
-              </a>
-            </div>
-          </div>
-        </div>
-      </footer>
-      <a class="back-to-top-btn button" href="#">
-        <svg
-          width="30"
-          height="30"
-          viewBox="0 0 30 30"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M19.6266 15.7072C20.0171 16.0977 20.6502 16.0977 21.0408 15.7072C21.4313 15.3167 21.4313 14.6835 21.0408 14.293L19.6266 15.7072ZM15.0003 9.66675L15.7074 8.95964C15.3169 8.56912 14.6837 8.56912 14.2932 8.95964L15.0003 9.66675ZM8.95989 14.293C8.56936 14.6835 8.56936 15.3167 8.95989 15.7072C9.35041 16.0977 9.98357 16.0977 10.3741 15.7072L8.95989 14.293ZM14.0003 20.3334C14.0003 20.8857 14.448 21.3334 15.0003 21.3334C15.5526 21.3334 16.0003 20.8857 16.0003 20.3334L14.0003 20.3334ZM27.3337 15.0001C27.3337 21.8116 21.8118 27.3334 15.0003 27.3334V29.3334C22.9164 29.3334 29.3337 22.9162 29.3337 15.0001H27.3337ZM15.0003 27.3334C8.18881 27.3334 2.66699 21.8116 2.66699 15.0001H0.666992C0.666992 22.9162 7.08424 29.3334 15.0003 29.3334V27.3334ZM2.66699 15.0001C2.66699 8.18857 8.18881 2.66675 15.0003 2.66675V0.666748C7.08424 0.666748 0.666992 7.084 0.666992 15.0001H2.66699ZM15.0003 2.66675C21.8118 2.66675 27.3337 8.18857 27.3337 15.0001H29.3337C29.3337 7.084 22.9164 0.666748 15.0003 0.666748V2.66675ZM21.0408 14.293L15.7074 8.95964L14.2932 10.3739L19.6266 15.7072L21.0408 14.293ZM14.2932 8.95964L8.95989 14.293L10.3741 15.7072L15.7074 10.3739L14.2932 8.95964ZM16.0003 20.3334L16.0003 9.66675L14.0003 9.66675L14.0003 20.3334L16.0003 20.3334Z"
-            fill="#2F4858"
-          />
-        </svg>
-        <span>Top</span>
-      </a>
-      <div class="cursor">
-        <span data-drag-tooltip>drag&nbsp;✋</span>
-        <span data-discover-tooltip>découvrir</span>
+<body data-barba="wrapper">
+  <!-- page transition -->
+  <div class="loader">
+    <div class="page-transition"></div>
+  </div>
+  <div class="barba-wrapper" data-barba="container" data-barba-namespace="quart-d-heure">
+    <header>
+      <div class="main-wrapper">
+        <!-- Navigation  -->
+        <nav role="navigation" class="navbar">
+          <a href="../index.html" class="clickable-indicator home">
+            <img loading="lazy" class="brand-icon" src="../static/assets/icons/logo-p__orange.svg"
+              alt="Logo de l'agence" />
+          </a>
+          <button class="burger clickable-indicator" data-opened="false">
+            menu
+          </button>
+          <ul>
+            <li>
+              <a href="../equipe.html" class="clickable-indicator">L'équipe</a>
+            </li>
+            <li>
+              <a href="../realisation.html" class="clickable-indicator">Réalisations</a>
+            </li>
+            <li>
+              <a href="../contact.html" class="clickable-indicator">Contact</a>
+            </li>
+          </ul>
+        </nav>
       </div>
+    </header>
+    <main>
+      <div class="main-wrapper">
+        <section class="realisation_title">
+          <div>
+            <div class="return">
+              <a href="../realisation.html" class="clickable-indicator">
+                <svg class="arrow-back" width="25" height="15" viewBox="0 0 25 15" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M6.76234 14.7017C6.95284 14.8927 7.21123 15 7.48065 15C7.75007 15 8.00845 14.8927 8.19896 14.7017C8.38947 14.5107 8.49649 14.2516 8.49649 13.9815C8.49649 13.7114 8.38947 13.4524 8.19896 13.2614L3.46816 8.51832L24.0018 8.51832C24.2681 8.51368 24.522 8.40435 24.7087 8.21389C24.8954 8.02342 25 7.76705 25 7.5C25 7.23295 24.8954 6.97658 24.7087 6.78612C24.522 6.59565 24.2681 6.48632 24.0018 6.48168L3.46816 6.48168L8.19896 1.73864C8.38947 1.54764 8.49649 1.28859 8.49649 1.01847C8.49649 0.748358 8.38947 0.489305 8.19896 0.298304C8.00845 0.107303 7.75007 0 7.48065 0C7.21123 0 6.95284 0.107303 6.76234 0.298304L0.297535 6.77983C0.107027 6.97083 0 7.22988 0 7.5C0 7.77012 0.107027 8.02917 0.297535 8.22017L6.76234 14.7017Z"
+                    fill="#2F4858" />
+                </svg>
+                Les réalisations
+              </a>
+            </div>
+            <p>Étude de cas</p>
+            <h1>MMI Chambéry</h1>
+          </div>
+          <img loading="lazy" src="../static/assets/images/mmi_chambery_principal.png" alt="" />
+        </section>
+        <section class="realisation_brief">
+          <div class="display">
+            <div class="data">
+              <div>
+                <h4>Date</h4>
+                <div class="paragraph">
+                  <p>26 novembre</p>
+                </div>
+              </div>
+              <div>
+                <h4>Client·e·s</h4>
+                <div class="paragraph">
+                  <p>Département MMI</p>
+                </div>
+              </div>
+              <div>
+                <h4>Expertise</h4>
+                <div class="paragraph">
+                  <p>Programmation</p>
+                  <p>Web Design</p>
+                </div>
+              </div>
+              <div>
+                <h4>Référent·e·s</h4>
+                <div class="paragraph">
+                  <p>Valentin Gassend</p>
+                  <p>Gabriel Berthaud</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="articles">
+              <article>
+                <h2 class="demande">La demande</h2>
+                <p>
+                  Les deuxièmes années ont été sollicités durant 2 semaines
+                  pour réaliser un site web pour un client. La moitié d’entre
+                  nous a travaillé sur la refonte du site de MMI Chambéry pour
+                  Grégory Houzet. Cette demande a été motivée par l’arrivée du
+                  BUT. Il fallait mettre en avant la pluridisciplinarité des
+                  étudiant·e·s MMI et fournir des informations précises sur la
+                  formation.
+                </p>
+              </article>
+              <article>
+                <h2 class="solution">La solution Pikoom</h2>
+                <p>
+                  Après avoir réalisé deux versions différentes, et après
+                  avoir reçu les avis du client, nous avons travaillé sur un
+                  site qui change de tout ce que l’on peut voir, simple, et
+                  clair, qui va à l’essentiel.
+                </p>
+              </article>
+            </div>
+          </div>
+          <img loading="lazy" src="../static/assets/images/mmi_chambery_second.png" alt="" />
+        </section>
+        <section class="realisation_resume">
+          <div class="articles">
+            <article>
+              <h2 class="demarche">Notre démarche</h2>
+              <p>
+                La première étape de la refonte du site a été de réfléchir à
+                l’arborescence et aux informations qu’il était important de
+                mettre en avant. Pour déterminer cela, nous nous sommes
+                intéressés à la cible principale du site MMI, les futur·e·s
+                étudiant·e·s qui cherchent des renseignements sur la
+                formation. Nous avons défini les principaux points d’entrée et
+                adapté nos maquettes en conséquence. Après un premier retour
+                de nos professeurs, nous sommes parvenus à une version finale
+                mettant en corrélation les besoins de la cible principale et
+                ceux du client.
+              </p>
+            </article>
+            <div class="gallerie">
+              <img loading="lazy" src="../static/assets/images/mmi_chambery_third.png" alt="" />
+            </div>
+            <article>
+              <h2 class="problemes">Problèmes rencontrés</h2>
+              <p>
+                Le problème majeur que nous avons rencontré était de
+                sélectionner les informations pertinentes parmi la multitude
+                d’informations déjà présente sur l’actuel site web et celle
+                données par notre client. Nous avons donc réalisé des
+                expériences utilisateurs pour définir les informations
+                indispensables à mettre en avant sur le site.
+              </p>
+            </article>
+          </div>
+
+          <section class="realisation_participant">
+            <h2 class="equipe">Notre équipe</h2>
+            <div class="swiper_rea swiper">
+              <div class="swiper-wrapper carouselle draggable">
+                <div class="swiper-slide">
+                  <img src="../static/assets/images/valenting_logo-pikoom.png" alt="Valentin Gassend" loading="lazy" />
+                  <h4>Valentin Gassend</h4>
+                  <p>
+                    Très intéressant autant en webdesign qu’en développement,
+                    la supervision par des professionnels du métier est
+                    également très intéressante et nous a permis de donner un
+                    élan nouveau à MMI Chambéry.
+                  </p>
+                </div>
+                <div class="swiper-slide">
+                  <img src="../static/assets/images/seanr_logo-pikoom.png" alt="Sean Reyboz" loading="lazy" />
+                  <h4>Sean Reyboz</h4>
+                  <p>
+                    Un projet très vaste et assez complexe sur lequel je n’ai que brièvement collaboré, mais qui m’a
+                    permis de développer de nombreuses compétences, notamment sur le CMS WordPress et sur le protocole
+                    Git.
+                  </p>
+                </div>
+                <div class="swiper-slide">
+                  <img src="../static/assets/images/gabrielb_logo-pikoom.png" alt="Gabriel Berthaud" loading="lazy" />
+                  <h4>Gabriel Berthaud</h4>
+                  <p>
+                    Une bonne expérience qui aura su nous apprendre à nous
+                    organiser et à travailler en autonomie.
+                  </p>
+                </div>
+                <div class="swiper-slide">
+                  <img src="../static/assets/images/clemencev_logo-pikoom.png" alt="Clémence Veyret" loading="lazy" />
+                  <h4>Clémence Veyret</h4>
+                  <p>
+                    Une bonne mise en situation de travail en équipe, qui
+                    amène beaucoup de fierté.
+                  </p>
+                </div>
+                <div class="swiper-slide">
+                  <img src="../static/assets/images/valentinl_logo-pikoom.png" alt="Valentin Lansigu" loading="lazy" />
+                  <h4>Valentin Lansigu</h4>
+                  <p>
+                    MMI et après était ma première expérience d’organisation d’un évènement et ce fut intense mais je
+                    suis content du résultat que cela a pu donner !
+                  </p>
+                </div>
+                <div class="swiper-slide">
+                  <img src="../static/assets/images/emmanuelf_logo-pikoom.png" alt="Emmanuel Faure" loading="lazy" />
+                  <h4>Emmanuel Faure</h4>
+                  <p>
+                    2 semaines intenses mais très instructives qui m’ont
+                    attiré encore plus dans le monde de la programmation
+                    malgré mes commits burlesque.
+                  </p>
+                </div>
+                <div class="swiper-slide">
+                  <img src="../static/assets/images/julienh_logo-pikoom.png" alt="Julien Hilt" loading="lazy" />
+                  <h4>Julien Hilt</h4>
+                  <p>
+                    La 1ère semaine était plus prenante que la 2e vu que je
+                    n’étais pas à l’aise avec la programmation. Et c’était
+                    quand même enrichissant puisque j’ai appris des choses
+                    très utiles pour l’avenir, notamment au niveau des
+                    animations JSON.
+                  </p>
+                </div>
+                <div class="swiper-slide">
+                  <img src="../static/assets/images/claudiaj_logo-pikoom.png" alt="Claudia Jacob" loading="lazy" />
+                  <h4>Claudia Jacob</h4>
+                  <p>
+                    C’est très enrichissant de travailler deux semaines à fond
+                    pour créer de A à Z un site internet avec l’aide d’un
+                    professionnel qui nous donne son avis et qui nous guide.
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <a class="button cta" href="../equipe.html">
+              Rencontrer l'équipe !
+            </a>
+          </section>
+          <div class="articles">
+            <div class="gallerie">
+              <img loading="lazy" src="../static/assets/images/mmi_chambery_fourth.png" alt="" />
+            </div>
+            <article>
+              <h2 class="bilan">Bilan général</h2>
+              <p>
+                Ce projet a été une bonne occasion de travailler en équipe, de
+                collaborer et de s'organiser dans un temps court. Nous avons
+                donc dû être efficaces dans notre travail pour ne pas perdre
+                de temps et prévoir des réunions régulières avec le client
+                pour avoir sa validation.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="realisation_images">
+          <img loading="lazy" src="../static/assets/images/mmi_chambery_fifth.png" alt="" />
+        </section>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <div class="main-wrapper">
+        <nav class="footer-nav navbar">
+          <a href="../index.html" aria-current="page" class="home clickable-indicator">
+            <img class="brand-icon" src="../static/assets/icons/logo-p__orange.svg" alt="Logo de l'agence"
+              loading="lazy" />
+          </a>
+          <ul>
+            <li>
+              <a href="../equipe.html" class="clickable-indicator">L'équipe</a>
+            </li>
+            <li>
+              <a href="../realisation.html" class="clickable-indicator">
+                Réalisations
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <hr class="separator" />
+        <div class="inner-footer">
+          <div class="about-container">
+            <div class="about">
+              <h5>Pikoom</h5>
+              <p>
+                Agence de communication étudiante optimiste et créative basée
+                à Chambéry.
+              </p>
+            </div>
+            <div class="credits">
+              <a href="https://www.univ-smb.fr" target="_blank" rel="noopener noreferrer" class="button">
+                <img src="../static/assets/images/logo-USMB.png" alt="Logo Université Savoie Mont-Blanc"
+                  class="credit-img" loading="lazy" />
+              </a>
+              <a href="https://mmi.univ-smb.fr/" target="_blank" rel="noopener noreferrer" class="button">
+                <img src="../static/assets/images/logo-MMICHY.png" alt="Logo IUT MMI Chambéry" class="credit-img"
+                  loading="lazy" />
+              </a>
+            </div>
+          </div>
+          <address class="address">
+            <h5>Adresse</h5>
+            <p>28 Avenue du Lac d'Annecy</p>
+            <p>73370 Le Bourget-du-Lac</p>
+            <p>France</p>
+          </address>
+          <div class="contact">
+            <h5>Contact</h5>
+            <ul>
+              <li>
+                <a href="mailto:agence.pikoom@gmail.com" class="clickable-indicator">
+                  Mail
+                </a>
+              </li>
+              <li>
+                <a href="//instagram.com/pikoomagence" target="_blank" class="clickable-indicator">
+                  Instagram
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr class="separator" />
+        <div class="footer-bottom">
+          <div class="copyrights">
+            <p>Pikoom 🌵 &copy; 2022</p>
+            <a href="../mention.html" class="clickable-indicator">
+              Mentions légales
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <a class="back-to-top-btn button" href="#">
+      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M19.6266 15.7072C20.0171 16.0977 20.6502 16.0977 21.0408 15.7072C21.4313 15.3167 21.4313 14.6835 21.0408 14.293L19.6266 15.7072ZM15.0003 9.66675L15.7074 8.95964C15.3169 8.56912 14.6837 8.56912 14.2932 8.95964L15.0003 9.66675ZM8.95989 14.293C8.56936 14.6835 8.56936 15.3167 8.95989 15.7072C9.35041 16.0977 9.98357 16.0977 10.3741 15.7072L8.95989 14.293ZM14.0003 20.3334C14.0003 20.8857 14.448 21.3334 15.0003 21.3334C15.5526 21.3334 16.0003 20.8857 16.0003 20.3334L14.0003 20.3334ZM27.3337 15.0001C27.3337 21.8116 21.8118 27.3334 15.0003 27.3334V29.3334C22.9164 29.3334 29.3337 22.9162 29.3337 15.0001H27.3337ZM15.0003 27.3334C8.18881 27.3334 2.66699 21.8116 2.66699 15.0001H0.666992C0.666992 22.9162 7.08424 29.3334 15.0003 29.3334V27.3334ZM2.66699 15.0001C2.66699 8.18857 8.18881 2.66675 15.0003 2.66675V0.666748C7.08424 0.666748 0.666992 7.084 0.666992 15.0001H2.66699ZM15.0003 2.66675C21.8118 2.66675 27.3337 8.18857 27.3337 15.0001H29.3337C29.3337 7.084 22.9164 0.666748 15.0003 0.666748V2.66675ZM21.0408 14.293L15.7074 8.95964L14.2932 10.3739L19.6266 15.7072L21.0408 14.293ZM14.2932 8.95964L8.95989 14.293L10.3741 15.7072L15.7074 10.3739L14.2932 8.95964ZM16.0003 20.3334L16.0003 9.66675L14.0003 9.66675L14.0003 20.3334L16.0003 20.3334Z"
+          fill="#2F4858" />
+      </svg>
+      <span>Top</span>
+    </a>
+    <div class="cursor">
+      <span data-drag-tooltip>drag&nbsp;✋</span>
+      <span data-discover-tooltip>découvrir</span>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-    <script src="../js/libs/barba.js"></script>
-    <script src="../js/app.js" type="module"></script>
-  </body>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="../js/libs/barba.js"></script>
+  <script src="../js/app.js" type="module"></script>
+</body>
+
 </html>
