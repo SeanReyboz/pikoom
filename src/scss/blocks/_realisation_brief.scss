@@ -32,6 +32,14 @@
     h2 {
       padding-bottom: 2.222vw;
       font: $title-medium;
+      display: inline-block;
+      &.context {
+        $n: random(6);
+        background: list.nth($list, $n);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+      }
       &.demande {
         $n: random(6);
         background: list.nth($list, $n);
@@ -39,17 +47,20 @@
         -webkit-background-clip: text;
         color: transparent;
       }
-      &.solution {
+      &.objectif_cible {
         $n: random(6);
         background: list.nth($list, $n);
-
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
       }
     }
+    .subtitle_articles{
+      font:$title-regular;
+    }
     p {
       font: $body-regular;
+      margin-bottom: 2.5vw;
     }
   }
   img,

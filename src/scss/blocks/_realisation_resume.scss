@@ -10,6 +10,7 @@
     h2 {
       padding-bottom: 2.222vw;
       font: $title-medium;
+      display: inline-block;
       &.demarche {
         $n: random(6);
         background: list.nth($list, $n);
@@ -43,9 +44,13 @@
       }
     }
     ul {
-      margin-bottom: 1.667vw;
+      margin-bottom: 3vw;
+      .subtitle_articles{
+        font:$title-regular;
+      }
       li {
-        font: $body-large;
+        font: $body-regular;
+        margin-top: 0.5vw;
       }
     }
     p {
